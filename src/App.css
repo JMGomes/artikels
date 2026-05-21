@@ -155,21 +155,12 @@
   flex-wrap: wrap;
   gap: 0.5rem;
   align-items: baseline;
-  margin-bottom: 0.35rem;
 }
 
-.result-answers {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1rem;
+.result-user-answer {
+  margin: 0.35rem 0 0;
   font-size: 0.9rem;
   color: var(--muted);
-}
-
-.result-answers em {
-  font-style: normal;
-  font-weight: 700;
-  color: var(--text);
 }
 
 .primary-btn {

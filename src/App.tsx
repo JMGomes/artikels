@@ -112,17 +112,16 @@ function App() {
                 className={entry.correct ? 'result correct' : 'result incorrect'}
               >
                 <div className="result-word">
-                  <strong>{entry.word.germanWord}</strong>
+                  <strong>
+                    {entry.word.artikel} {entry.word.germanWord}
+                  </strong>
                   <span className="translation">{entry.word.englishTranslation}</span>
                 </div>
-                <div className="result-answers">
-                  <span>
-                    You: <em>{entry.userAnswer}</em>
-                  </span>
-                  <span>
-                    Correct: <em>{entry.word.artikel}</em>
-                  </span>
-                </div>
+                {!entry.correct && (
+                  <p className="result-user-answer">
+                    You: {entry.userAnswer} {entry.word.germanWord}
+                  </p>
+                )}
               </li>
             ))}
           </ul>
