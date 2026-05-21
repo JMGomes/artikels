@@ -42,20 +42,20 @@ export function StudyTable({ words, onBack }: StudyTableProps) {
         <table className="study-table">
           <thead>
             <tr>
+              <th>Artikel</th>
               <th>German</th>
               <th>English</th>
-              <th>Artikel</th>
               <th>Plural</th>
             </tr>
           </thead>
           <tbody>
             {sorted.map((word) => (
               <tr key={word.germanWord}>
-                <td className="study-table__word">{word.germanWord}</td>
-                <td>{word.englishTranslation}</td>
                 <td>
                   <ColoredArtikel artikel={word.artikel} />
                 </td>
+                <td className="study-table__word">{word.germanWord}</td>
+                <td>{word.englishTranslation}</td>
                 <td>
                   <ColoredPlural pluralForm={word.pluralForm} />
                 </td>
