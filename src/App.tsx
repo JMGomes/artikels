@@ -6,7 +6,7 @@ import { StudyTable } from './components/StudyTable'
 import { TrainGame } from './components/TrainGame'
 import './App.css'
 
-type AppMode = 'loading' | 'landing' | 'study' | 'train'
+type AppMode = 'loading' | 'landing' | 'study' | 'practice'
 
 function App() {
   const [mode, setMode] = useState<AppMode>('loading')
@@ -55,12 +55,12 @@ function App() {
     return <StudyTable words={allWords} onBack={() => setMode('landing')} />
   }
 
-  if (mode === 'train') {
+  if (mode === 'practice') {
     return <TrainGame allWords={allWords} onBack={() => setMode('landing')} />
   }
 
   return (
-    <Landing onStudy={() => setMode('study')} onTrain={() => setMode('train')} />
+    <Landing onStudy={() => setMode('study')} onPractice={() => setMode('practice')} />
   )
 }
 

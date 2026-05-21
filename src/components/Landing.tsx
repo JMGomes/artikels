@@ -1,9 +1,9 @@
 type LandingProps = {
   onStudy: () => void
-  onTrain: () => void
+  onPractice: () => void
 }
 
-export function Landing({ onStudy, onTrain }: LandingProps) {
+export function Landing({ onStudy, onPractice }: LandingProps) {
   return (
     <div className="app">
       <header className="header">
@@ -15,8 +15,8 @@ export function Landing({ onStudy, onTrain }: LandingProps) {
         <button type="button" className="mode-btn mode-btn--study" onClick={onStudy}>
           Study
         </button>
-        <button type="button" className="mode-btn mode-btn--train" onClick={onTrain}>
-          Train
+        <button type="button" className="mode-btn mode-btn--practice" onClick={onPractice}>
+          Practice
         </button>
       </div>
     </div>
