@@ -252,20 +252,29 @@ export function pickPracticeRounds(
     byPair.set(card.pairId, entry)
   }
 
-  const rounds: PracticeRound[] = []
+  const pairs: PracticePair[] = []
   for (const [pairId, { questions, answers }] of byPair) {
     if (questions.length === 0 || answers.length === 0) continue
-    const pair: PracticePair = {
+    pairs.push({
       pairId,
       question: questions[Math.floor(Math.random() * questions.length)],
       answer: answers[Math.floor(Math.random() * answers.length)],
-    }
-    const direction: PracticeDirection =
-      Math.random() < 0.5 ? 'buildAnswer' : 'buildQuestion'
-    rounds.push({ pair, direction })
+    })
   }
 
-  return shuffle(rounds).slice(0, Math.min(count, rounds.length))
+  const selected = shuffle(pairs).slice(0, Math.min(count, pairs.length))
+  const buildAnswerCount = Math.min(Math.floor(count / 2), selected.length)
+  const directions: PracticeDirection[] = [
+    ...Array(buildAnswerCount).fill('buildAnswer'),
+    ...Array(selected.length - buildAnswerCount).fill('buildQuestion'),
+  ]
+
+  const rounds: PracticeRound[] = selected.map((pair, i) => ({
+    pair,
+    direction: directions[i],
+  }))
+
+  return shuffle(rounds)
 }
 
 export function getPromptAndTarget(round: PracticeRound): {
