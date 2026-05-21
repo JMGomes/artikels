@@ -165,19 +165,34 @@ export function gradeOrder(
   )
 }
 
+/** Same visible label (e.g. two "Kaan" chips from different cards). */
+export function segmentBankKey(text: string): string {
+  return text.trim().toLowerCase()
+}
+
 export function buildSegmentBank(
   card: SentenceCard,
   allCards: SentenceCard[],
   extraDistractors = 2,
 ): Segment[] {
   const pool = new Map<string, Segment>()
-  for (const seg of card.segments) {
+  const seenText = new Set<string>()
+
+  const add = (seg: Segment) => {
+    if (pool.has(seg.id)) return
+    const key = segmentBankKey(seg.text)
+    if (seenText.has(key)) return
     pool.set(seg.id, seg)
+    seenText.add(key)
+  }
+
+  for (const seg of card.segments) {
+    add(seg)
   }
   if (card.distractors) {
     for (const id of card.distractors) {
       const found = allCards.flatMap((c) => c.segments).find((s) => s.id === id)
-      if (found) pool.set(found.id, found)
+      if (found) add(found)
     }
   }
   const others = shuffle(
@@ -185,7 +200,7 @@ export function buildSegmentBank(
   )
   for (const seg of others) {
     if (pool.size >= card.segments.length + extraDistractors) break
-    if (!pool.has(seg.id)) pool.set(seg.id, seg)
+    add(seg)
   }
   return shuffle([...pool.values()])
 }
