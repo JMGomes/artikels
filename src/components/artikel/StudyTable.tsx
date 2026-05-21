@@ -1,5 +1,5 @@
 import type { Word } from '../../types'
-import { ColoredArtikel, ColoredPlural } from './ColoredText'
+import { ColoredArtikel, GermanWordWithPlural } from './ColoredText'
 
 type StudyTableProps = {
   words: Word[]
@@ -33,9 +33,6 @@ export function StudyTable({ words, onBack }: StudyTableProps) {
         <span>
           <span className="artikel-text artikel-text--das">das</span> neuter
         </span>
-        <span>
-          <span className="plural-die">die</span> plural
-        </span>
       </div>
 
       <div className="table-wrap">
@@ -45,7 +42,6 @@ export function StudyTable({ words, onBack }: StudyTableProps) {
               <th>Artikel</th>
               <th>German</th>
               <th>English</th>
-              <th>Plural</th>
             </tr>
           </thead>
           <tbody>
@@ -54,11 +50,10 @@ export function StudyTable({ words, onBack }: StudyTableProps) {
                 <td>
                   <ColoredArtikel artikel={word.artikel} />
                 </td>
-                <td className="study-table__word">{word.germanWord}</td>
-                <td>{word.englishTranslation}</td>
                 <td>
-                  <ColoredPlural pluralForm={word.pluralForm} />
+                  <GermanWordWithPlural word={word} />
                 </td>
+                <td>{word.englishTranslation}</td>
               </tr>
             ))}
           </tbody>

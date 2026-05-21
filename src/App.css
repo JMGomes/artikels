@@ -140,8 +140,14 @@
   border-bottom: none;
 }
 
-.study-table__word {
+.study-table__word,
+.german-with-plural__word {
   font-weight: 600;
+}
+
+.german-with-plural__plural {
+  font-weight: 500;
+  color: var(--muted);
 }
 
 .action-buttons {
