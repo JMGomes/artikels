@@ -1,27 +1,17 @@
-import { useCallback, useEffect, useState } from 'react'
-import type { AnswerRecord, Artikel, Word } from './types'
-import { loadWords, pickRandomWords } from './utils'
+import { useEffect, useState } from 'react'
+import type { Word } from './types'
+import { loadWords } from './utils'
+import { Landing } from './components/Landing'
+import { StudyTable } from './components/StudyTable'
+import { TrainGame } from './components/TrainGame'
 import './App.css'
 
-const QUESTIONS_PER_ROUND = 10
-const ARTICLES: Artikel[] = ['der', 'die', 'das']
-
-type GamePhase = 'loading' | 'playing' | 'finished'
+type AppMode = 'loading' | 'landing' | 'study' | 'train'
 
 function App() {
-  const [phase, setPhase] = useState<GamePhase>('loading')
+  const [mode, setMode] = useState<AppMode>('loading')
   const [error, setError] = useState<string | null>(null)
   const [allWords, setAllWords] = useState<Word[]>([])
-  const [roundWords, setRoundWords] = useState<Word[]>([])
-  const [currentIndex, setCurrentIndex] = useState(0)
-  const [answers, setAnswers] = useState<AnswerRecord[]>([])
-
-  const startRound = useCallback((words: Word[]) => {
-    setRoundWords(pickRandomWords(words, QUESTIONS_PER_ROUND))
-    setCurrentIndex(0)
-    setAnswers([])
-    setPhase('playing')
-  }, [])
 
   useEffect(() => {
     let cancelled = false
@@ -31,11 +21,10 @@ function App() {
         const words = await loadWords()
         if (cancelled) return
         setAllWords(words)
-        startRound(words)
+        setMode('landing')
       } catch {
         if (!cancelled) {
           setError('Failed to load words. Please refresh the page.')
-          setPhase('loading')
         }
       }
     }
@@ -44,33 +33,7 @@ function App() {
     return () => {
       cancelled = true
     }
-  }, [startRound])
-
-  const handleAnswer = (choice: Artikel) => {
-    const word = roundWords[currentIndex]
-    const record: AnswerRecord = {
-      word,
-      userAnswer: choice,
-      correct: choice === word.artikel,
-    }
-    const nextAnswers = [...answers, record]
-
-    if (currentIndex + 1 >= roundWords.length) {
-      setAnswers(nextAnswers)
-      setPhase('finished')
-      return
-    }
-
-    setAnswers(nextAnswers)
-    setCurrentIndex((index) => index + 1)
-  }
-
-  const handleRestart = () => {
-    if (allWords.length === 0) return
-    startRound(allWords)
-  }
-
-  const score = answers.filter((entry) => entry.correct).length
+  }, [])
 
   if (error) {
     return (
@@ -80,7 +43,7 @@ function App() {
     )
   }
 
-  if (phase === 'loading') {
+  if (mode === 'loading') {
     return (
       <div className="app">
         <p className="loading">Loading vocabulary…</p>
@@ -88,83 +51,16 @@ function App() {
     )
   }
 
-  if (phase === 'finished') {
-    return (
-      <div className="app">
-        <header className="header">
-          <h1>Artikel Trainer</h1>
-          <p className="subtitle">Round complete</p>
-        </header>
-
-        <section className="score-card">
-          <p className="score-label">Your score</p>
-          <p className="score-value">
-            {score} / {roundWords.length}
-          </p>
-        </section>
-
-        <section className="results">
-          <h2>Answers</h2>
-          <ul className="results-list">
-            {answers.map((entry, index) => (
-              <li
-                key={`${index}-${entry.word.germanWord}`}
-                className={entry.correct ? 'result correct' : 'result incorrect'}
-              >
-                <div className="result-word">
-                  <strong>
-                    {entry.word.artikel} {entry.word.germanWord}
-                  </strong>
-                  <span className="translation">{entry.word.englishTranslation}</span>
-                </div>
-                {!entry.correct && (
-                  <p className="result-user-answer">
-                    You: {entry.userAnswer} {entry.word.germanWord}
-                  </p>
-                )}
-              </li>
-            ))}
-          </ul>
-        </section>
-
-        <button type="button" className="primary-btn" onClick={handleRestart}>
-          Play again
-        </button>
-      </div>
-    )
+  if (mode === 'study') {
+    return <StudyTable words={allWords} onBack={() => setMode('landing')} />
   }
 
-  const currentWord = roundWords[currentIndex]
+  if (mode === 'train') {
+    return <TrainGame allWords={allWords} onBack={() => setMode('landing')} />
+  }
 
   return (
-    <div className="app">
-      <header className="header">
-        <h1>Artikel Trainer</h1>
-        <p className="subtitle">
-          Question {currentIndex + 1} of {roundWords.length}
-        </p>
-      </header>
-
-      <section className="question-card">
-        <p className="prompt">Choose the correct article</p>
-        <h2 className="german-word">{currentWord.germanWord}</h2>
-        <p className="translation">{currentWord.englishTranslation}</p>
-        <p className="plural">Plural: {currentWord.pluralForm}</p>
-      </section>
-
-      <div className="article-buttons">
-        {ARTICLES.map((article) => (
-          <button
-            key={article}
-            type="button"
-            className={`article-btn article-${article}`}
-            onClick={() => handleAnswer(article)}
-          >
-            {article}
-          </button>
-        ))}
-      </div>
-    </div>
+    <Landing onStudy={() => setMode('study')} onTrain={() => setMode('train')} />
   )
 }
 

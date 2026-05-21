@@ -8,6 +8,10 @@
   --muted: #5c6b7a;
   --card-bg: #ffffff;
   --border: #dde3ea;
+  --color-der: #2563eb;
+  --color-die: #dc2626;
+  --color-das: #dc2626;
+  --color-plural-die: #ea580c;
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -27,4 +31,5 @@ body {
   display: flex;
   align-items: flex-start;
   justify-content: center;
+  width: 100%;
 }
