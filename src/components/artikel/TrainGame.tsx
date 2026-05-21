@@ -1,6 +1,6 @@
 import { useCallback, useState } from 'react'
-import type { AnswerRecord, Artikel, Word } from '../types'
-import { pickRandomWords } from '../utils'
+import type { AnswerRecord, Artikel, Word } from '../../types'
+import { pickRandomWords } from '../../utils'
 
 const QUESTIONS_PER_ROUND = 10
 const ARTICLES: Artikel[] = ['der', 'die', 'das']

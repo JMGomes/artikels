@@ -1,0 +1,859 @@
+[
+  {
+    "id": "kaan-bibliothek-q",
+    "pairId": "kaan-bibliothek",
+    "role": "question",
+    "pattern": "w_question_wann",
+    "english": "When does Kaan go to the library?",
+    "segments": [
+      {
+        "id": "kb-q1",
+        "text": "Wann",
+        "english": "When",
+        "type": "other"
+      },
+      {
+        "id": "kb-q2",
+        "text": "geht",
+        "english": "goes",
+        "type": "verb"
+      },
+      {
+        "id": "kb-q3",
+        "text": "Kaan",
+        "english": "Kaan",
+        "type": "subject"
+      },
+      {
+        "id": "kb-q4",
+        "text": "in die Bibliothek",
+        "english": "to the library",
+        "type": "other"
+      }
+    ],
+    "correctOrder": [
+      "kb-q1",
+      "kb-q2",
+      "kb-q3",
+      "kb-q4"
+    ]
+  },
+  {
+    "id": "kaan-bibliothek-a",
+    "pairId": "kaan-bibliothek",
+    "role": "answer",
+    "pattern": "subject_first",
+    "english": "Kaan goes to the library in the afternoon.",
+    "segments": [
+      {
+        "id": "kb-a1",
+        "text": "Kaan",
+        "english": "Kaan",
+        "type": "subject"
+      },
+      {
+        "id": "kb-a2",
+        "text": "geht",
+        "english": "goes",
+        "type": "verb"
+      },
+      {
+        "id": "kb-a3",
+        "text": "am Nachmittag",
+        "english": "in the afternoon",
+        "type": "other"
+      },
+      {
+        "id": "kb-a4",
+        "text": "in die Bibliothek",
+        "english": "to the library",
+        "type": "other"
+      }
+    ],
+    "correctOrder": [
+      "kb-a1",
+      "kb-a2",
+      "kb-a3",
+      "kb-a4"
+    ]
+  },
+  {
+    "id": "kaan-was-wann-q1",
+    "pairId": "kaan-was-wann",
+    "role": "question",
+    "pattern": "w_question_was_wann",
+    "english": "What does Kaan do when?",
+    "segments": [
+      {
+        "id": "kww-q1",
+        "text": "Was",
+        "english": "What",
+        "type": "other"
+      },
+      {
+        "id": "kww-q2",
+        "text": "macht",
+        "english": "does",
+        "type": "verb"
+      },
+      {
+        "id": "kww-q3",
+        "text": "Kaan",
+        "english": "Kaan",
+        "type": "subject"
+      },
+      {
+        "id": "kww-q4",
+        "text": "wann",
+        "english": "when",
+        "type": "other"
+      }
+    ],
+    "correctOrder": [
+      "kww-q1",
+      "kww-q2",
+      "kww-q3",
+      "kww-q4"
+    ]
+  },
+  {
+    "id": "kaan-was-wann-q2",
+    "pairId": "kaan-was-wann",
+    "role": "question",
+    "pattern": "w_question_wann_was",
+    "english": "When does Kaan do what?",
+    "segments": [
+      {
+        "id": "kww2-q1",
+        "text": "Wann",
+        "english": "When",
+        "type": "other"
+      },
+      {
+        "id": "kww2-q2",
+        "text": "macht",
+        "english": "does",
+        "type": "verb"
+      },
+      {
+        "id": "kww2-q3",
+        "text": "Kaan",
+        "english": "Kaan",
+        "type": "subject"
+      },
+      {
+        "id": "kww2-q4",
+        "text": "was",
+        "english": "what",
+        "type": "other"
+      }
+    ],
+    "correctOrder": [
+      "kww2-q1",
+      "kww2-q2",
+      "kww2-q3",
+      "kww2-q4"
+    ]
+  },
+  {
+    "id": "kaan-was-wann-a",
+    "pairId": "kaan-was-wann",
+    "role": "answer",
+    "pattern": "time_first_v2",
+    "english": "In the morning Kaan has breakfast and reads messages.",
+    "segments": [
+      {
+        "id": "kww-a1",
+        "text": "Am Vormittag",
+        "english": "In the morning",
+        "type": "other"
+      },
+      {
+        "id": "kww-a2",
+        "text": "frühstückt",
+        "english": "has breakfast",
+        "type": "verb"
+      },
+      {
+        "id": "kww-a3",
+        "text": "Kaan",
+        "english": "Kaan",
+        "type": "subject"
+      },
+      {
+        "id": "kww-a4",
+        "text": "und",
+        "english": "and",
+        "type": "other"
+      },
+      {
+        "id": "kww-a5",
+        "text": "liest",
+        "english": "reads",
+        "type": "verb"
+      },
+      {
+        "id": "kww-a6",
+        "text": "Nachrichten",
+        "english": "messages",
+        "type": "other"
+      }
+    ],
+    "correctOrder": [
+      "kww-a1",
+      "kww-a2",
+      "kww-a3",
+      "kww-a4",
+      "kww-a5",
+      "kww-a6"
+    ],
+    "alternateOrders": [
+      [
+        "kww-a3",
+        "kww-a2",
+        "kww-a4",
+        "kww-a5",
+        "kww-a6",
+        "kww-a1"
+      ]
+    ]
+  },
+  {
+    "id": "kaan-vormittag-was-q",
+    "pairId": "kaan-vormittag-was",
+    "role": "question",
+    "pattern": "w_question_was",
+    "english": "What does Kaan do in the morning?",
+    "segments": [
+      {
+        "id": "kvw-q1",
+        "text": "Was",
+        "english": "What",
+        "type": "other"
+      },
+      {
+        "id": "kvw-q2",
+        "text": "macht",
+        "english": "does",
+        "type": "verb"
+      },
+      {
+        "id": "kvw-q3",
+        "text": "Kaan",
+        "english": "Kaan",
+        "type": "subject"
+      },
+      {
+        "id": "kvw-q4",
+        "text": "am Vormittag",
+        "english": "in the morning",
+        "type": "other"
+      }
+    ],
+    "correctOrder": [
+      "kvw-q1",
+      "kvw-q2",
+      "kvw-q3",
+      "kvw-q4"
+    ]
+  },
+  {
+    "id": "kaan-nachrichten-q",
+    "pairId": "kaan-nachrichten",
+    "role": "question",
+    "pattern": "w_question_wann",
+    "english": "When does Kaan read messages?",
+    "segments": [
+      {
+        "id": "kn-q1",
+        "text": "Wann",
+        "english": "When",
+        "type": "other"
+      },
+      {
+        "id": "kn-q2",
+        "text": "liest",
+        "english": "reads",
+        "type": "verb"
+      },
+      {
+        "id": "kn-q3",
+        "text": "Kaan",
+        "english": "Kaan",
+        "type": "subject"
+      },
+      {
+        "id": "kn-q4",
+        "text": "Nachrichten",
+        "english": "messages",
+        "type": "other"
+      }
+    ],
+    "correctOrder": [
+      "kn-q1",
+      "kn-q2",
+      "kn-q3",
+      "kn-q4"
+    ]
+  },
+  {
+    "id": "kaan-nachrichten-a",
+    "pairId": "kaan-nachrichten",
+    "role": "answer",
+    "pattern": "pronoun_er_statement",
+    "english": "He reads messages in the morning.",
+    "segments": [
+      {
+        "id": "kn-a1",
+        "text": "Er",
+        "english": "He",
+        "type": "subject"
+      },
+      {
+        "id": "kn-a2",
+        "text": "liest",
+        "english": "reads",
+        "type": "verb"
+      },
+      {
+        "id": "kn-a3",
+        "text": "am Morgen",
+        "english": "in the morning",
+        "type": "other"
+      },
+      {
+        "id": "kn-a4",
+        "text": "Nachrichten",
+        "english": "messages",
+        "type": "other"
+      }
+    ],
+    "correctOrder": [
+      "kn-a1",
+      "kn-a2",
+      "kn-a3",
+      "kn-a4"
+    ]
+  },
+  {
+    "id": "kaan-uni-a",
+    "pairId": "kaan-uni",
+    "role": "answer",
+    "pattern": "pronoun_er_statement",
+    "english": "He rides his bike to the university in the morning.",
+    "segments": [
+      {
+        "id": "ku-a1",
+        "text": "Er",
+        "english": "He",
+        "type": "subject"
+      },
+      {
+        "id": "ku-a2",
+        "text": "fährt",
+        "english": "rides / goes",
+        "type": "verb"
+      },
+      {
+        "id": "ku-a3",
+        "text": "am Vormittag",
+        "english": "in the morning",
+        "type": "other"
+      },
+      {
+        "id": "ku-a4",
+        "text": "mit dem Fahrrad",
+        "english": "by bike",
+        "type": "other"
+      },
+      {
+        "id": "ku-a5",
+        "text": "in die Uni",
+        "english": "to the university",
+        "type": "other"
+      }
+    ],
+    "correctOrder": [
+      "ku-a1",
+      "ku-a2",
+      "ku-a3",
+      "ku-a4",
+      "ku-a5"
+    ]
+  },
+  {
+    "id": "kaan-mensa-a",
+    "pairId": "kaan-mensa",
+    "role": "answer",
+    "pattern": "pronoun_er_statement",
+    "english": "At noon he goes to the canteen.",
+    "segments": [
+      {
+        "id": "km-a1",
+        "text": "Am Mittag",
+        "english": "At noon",
+        "type": "other"
+      },
+      {
+        "id": "km-a2",
+        "text": "geht",
+        "english": "goes",
+        "type": "verb"
+      },
+      {
+        "id": "km-a3",
+        "text": "er",
+        "english": "he",
+        "type": "subject"
+      },
+      {
+        "id": "km-a4",
+        "text": "in die Mensa",
+        "english": "to the canteen",
+        "type": "other"
+      }
+    ],
+    "correctOrder": [
+      "km-a1",
+      "km-a2",
+      "km-a3",
+      "km-a4"
+    ]
+  },
+  {
+    "id": "kaan-oma-a",
+    "pairId": "kaan-oma",
+    "role": "answer",
+    "pattern": "time_first_v2",
+    "english": "In the afternoon he visits his grandma.",
+    "segments": [
+      {
+        "id": "ko-a1",
+        "text": "Am Nachmittag",
+        "english": "In the afternoon",
+        "type": "other"
+      },
+      {
+        "id": "ko-a2",
+        "text": "besucht",
+        "english": "visits",
+        "type": "verb"
+      },
+      {
+        "id": "ko-a3",
+        "text": "er",
+        "english": "he",
+        "type": "subject"
+      },
+      {
+        "id": "ko-a4",
+        "text": "seine Oma",
+        "english": "his grandma",
+        "type": "other"
+      }
+    ],
+    "correctOrder": [
+      "ko-a1",
+      "ko-a2",
+      "ko-a3",
+      "ko-a4"
+    ]
+  },
+  {
+    "id": "kaan-marie-a",
+    "pairId": "kaan-marie",
+    "role": "answer",
+    "pattern": "time_first_v2",
+    "english": "In the afternoon he meets Marie.",
+    "segments": [
+      {
+        "id": "kma-a1",
+        "text": "Am Nachmittag",
+        "english": "In the afternoon",
+        "type": "other"
+      },
+      {
+        "id": "kma-a2",
+        "text": "trifft",
+        "english": "meets",
+        "type": "verb"
+      },
+      {
+        "id": "kma-a3",
+        "text": "er",
+        "english": "he",
+        "type": "subject"
+      },
+      {
+        "id": "kma-a4",
+        "text": "Marie",
+        "english": "Marie",
+        "type": "subject"
+      }
+    ],
+    "correctOrder": [
+      "kma-a1",
+      "kma-a2",
+      "kma-a3",
+      "kma-a4"
+    ]
+  },
+  {
+    "id": "kaan-abend-kino-q",
+    "pairId": "kaan-abend-kino",
+    "role": "question",
+    "pattern": "w_question_was",
+    "english": "What does he do in the evening?",
+    "segments": [
+      {
+        "id": "kak-q1",
+        "text": "Was",
+        "english": "What",
+        "type": "other"
+      },
+      {
+        "id": "kak-q2",
+        "text": "macht",
+        "english": "does",
+        "type": "verb"
+      },
+      {
+        "id": "kak-q3",
+        "text": "er",
+        "english": "he",
+        "type": "subject"
+      },
+      {
+        "id": "kak-q4",
+        "text": "am Abend",
+        "english": "in the evening",
+        "type": "other"
+      }
+    ],
+    "correctOrder": [
+      "kak-q1",
+      "kak-q2",
+      "kak-q3",
+      "kak-q4"
+    ]
+  },
+  {
+    "id": "kaan-abend-kino-a1",
+    "pairId": "kaan-abend-kino",
+    "role": "answer",
+    "pattern": "time_first_v2",
+    "english": "In the evening he goes to the cinema.",
+    "segments": [
+      {
+        "id": "kak-a1",
+        "text": "Am Abend",
+        "english": "In the evening",
+        "type": "other"
+      },
+      {
+        "id": "kak-a2",
+        "text": "geht",
+        "english": "goes",
+        "type": "verb"
+      },
+      {
+        "id": "kak-a3",
+        "text": "er",
+        "english": "he",
+        "type": "subject"
+      },
+      {
+        "id": "kak-a4",
+        "text": "ins Kino",
+        "english": "to the cinema",
+        "type": "other"
+      }
+    ],
+    "correctOrder": [
+      "kak-a1",
+      "kak-a2",
+      "kak-a3",
+      "kak-a4"
+    ],
+    "alternateOrders": [
+      [
+        "kak-a3",
+        "kak-a2",
+        "kak-a1",
+        "kak-a4"
+      ]
+    ]
+  },
+  {
+    "id": "kaan-abend-kino-a2",
+    "pairId": "kaan-abend-kino",
+    "role": "answer",
+    "pattern": "connector_dann",
+    "english": "Then he goes to the café.",
+    "segments": [
+      {
+        "id": "kak2-a1",
+        "text": "Dann",
+        "english": "Then",
+        "type": "other"
+      },
+      {
+        "id": "kak2-a2",
+        "text": "geht",
+        "english": "goes",
+        "type": "verb"
+      },
+      {
+        "id": "kak2-a3",
+        "text": "er",
+        "english": "he",
+        "type": "subject"
+      },
+      {
+        "id": "kak2-a4",
+        "text": "ins Café",
+        "english": "to the café",
+        "type": "other"
+      }
+    ],
+    "correctOrder": [
+      "kak2-a1",
+      "kak2-a2",
+      "kak2-a3",
+      "kak2-a4"
+    ],
+    "alternateOrders": [
+      [
+        "kak2-a3",
+        "kak2-a2",
+        "kak2-a1",
+        "kak2-a4"
+      ]
+    ]
+  },
+  {
+    "id": "kaan-zeitung-a",
+    "pairId": "kaan-zeitung-fussball",
+    "role": "answer",
+    "pattern": "pronoun_er_statement",
+    "english": "He reads the newspaper in the morning.",
+    "segments": [
+      {
+        "id": "kz-a1",
+        "text": "Er",
+        "english": "He",
+        "type": "subject"
+      },
+      {
+        "id": "kz-a2",
+        "text": "liest",
+        "english": "reads",
+        "type": "verb"
+      },
+      {
+        "id": "kz-a3",
+        "text": "am Vormittag",
+        "english": "in the morning",
+        "type": "other"
+      },
+      {
+        "id": "kz-a4",
+        "text": "Zeitung",
+        "english": "newspaper",
+        "type": "other"
+      }
+    ],
+    "correctOrder": [
+      "kz-a1",
+      "kz-a2",
+      "kz-a3",
+      "kz-a4"
+    ]
+  },
+  {
+    "id": "kaan-fussball-a",
+    "pairId": "kaan-zeitung-fussball",
+    "role": "answer",
+    "pattern": "time_first_v2",
+    "english": "In the afternoon he plays football.",
+    "segments": [
+      {
+        "id": "kf-a1",
+        "text": "Am Nachmittag",
+        "english": "In the afternoon",
+        "type": "other"
+      },
+      {
+        "id": "kf-a2",
+        "text": "spielt",
+        "english": "plays",
+        "type": "verb"
+      },
+      {
+        "id": "kf-a3",
+        "text": "er",
+        "english": "he",
+        "type": "subject"
+      },
+      {
+        "id": "kf-a4",
+        "text": "Fußball",
+        "english": "football",
+        "type": "other"
+      }
+    ],
+    "correctOrder": [
+      "kf-a1",
+      "kf-a2",
+      "kf-a3",
+      "kf-a4"
+    ]
+  },
+  {
+    "id": "ich-wochenende-a",
+    "pairId": "ich-wochenende",
+    "role": "answer",
+    "pattern": "pronoun_ich_statement",
+    "english": "I play football at the weekend.",
+    "segments": [
+      {
+        "id": "iw-a1",
+        "text": "Am Wochenende",
+        "english": "At the weekend",
+        "type": "other"
+      },
+      {
+        "id": "iw-a2",
+        "text": "spiele",
+        "english": "play",
+        "type": "verb"
+      },
+      {
+        "id": "iw-a3",
+        "text": "ich",
+        "english": "I",
+        "type": "subject"
+      },
+      {
+        "id": "iw-a4",
+        "text": "Fußball",
+        "english": "football",
+        "type": "other"
+      }
+    ],
+    "correctOrder": [
+      "iw-a1",
+      "iw-a2",
+      "iw-a3",
+      "iw-a4"
+    ],
+    "alternateOrders": [
+      [
+        "iw-a3",
+        "iw-a2",
+        "iw-a1",
+        "iw-a4"
+      ]
+    ]
+  },
+  {
+    "id": "kaan-sonntag-a",
+    "pairId": "kaan-sonntag-schlafen",
+    "role": "answer",
+    "pattern": "time_first_v2",
+    "english": "On Sunday Kaan sleeps for a long time.",
+    "segments": [
+      {
+        "id": "ks-a1",
+        "text": "Am Sonntag",
+        "english": "On Sunday",
+        "type": "other"
+      },
+      {
+        "id": "ks-a2",
+        "text": "schläft",
+        "english": "sleeps",
+        "type": "verb"
+      },
+      {
+        "id": "ks-a3",
+        "text": "Kaan",
+        "english": "Kaan",
+        "type": "subject"
+      },
+      {
+        "id": "ks-a4",
+        "text": "lange",
+        "english": "for a long time",
+        "type": "other"
+      }
+    ],
+    "correctOrder": [
+      "ks-a1",
+      "ks-a2",
+      "ks-a3",
+      "ks-a4"
+    ],
+    "alternateOrders": [
+      [
+        "ks-a3",
+        "ks-a2",
+        "ks-a1",
+        "ks-a4"
+      ]
+    ]
+  },
+  {
+    "id": "kaan-vormittag-und-a",
+    "pairId": "kaan-vormittag-was",
+    "role": "answer",
+    "pattern": "coordination_und",
+    "english": "In the morning Kaan has breakfast and reads messages.",
+    "segments": [
+      {
+        "id": "kvu-a1",
+        "text": "Am Vormittag",
+        "english": "In the morning",
+        "type": "other"
+      },
+      {
+        "id": "kvu-a2",
+        "text": "frühstückt",
+        "english": "has breakfast",
+        "type": "verb"
+      },
+      {
+        "id": "kvu-a3",
+        "text": "Kaan",
+        "english": "Kaan",
+        "type": "subject"
+      },
+      {
+        "id": "kvu-a4",
+        "text": "und",
+        "english": "and",
+        "type": "other"
+      },
+      {
+        "id": "kvu-a5",
+        "text": "liest",
+        "english": "reads",
+        "type": "verb"
+      },
+      {
+        "id": "kvu-a6",
+        "text": "Nachrichten",
+        "english": "messages",
+        "type": "other"
+      }
+    ],
+    "correctOrder": [
+      "kvu-a1",
+      "kvu-a2",
+      "kvu-a3",
+      "kvu-a4",
+      "kvu-a5",
+      "kvu-a6"
+    ]
+  }
+]

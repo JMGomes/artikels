@@ -1,4 +1,4 @@
-import type { Artikel } from '../types'
+import type { Artikel } from '../../types'
 
 export function ColoredArtikel({ artikel }: { artikel: Artikel }) {
   return <span className={`artikel-text artikel-text--${artikel}`}>{artikel}</span>

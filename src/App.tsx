@@ -1,30 +1,34 @@
 import { useEffect, useState } from 'react'
 import type { Word } from './types'
+import type { SentenceCard } from './types/sentence'
 import { loadWords } from './utils'
-import { Landing } from './components/Landing'
-import { StudyTable } from './components/StudyTable'
-import { TrainGame } from './components/TrainGame'
+import { loadSentences } from './utils/sentences'
+import { HomeHub } from './components/HomeHub'
+import { ArtikelModule } from './components/ArtikelModule'
+import { SentencesModule } from './components/SentencesModule'
 import './App.css'
 
-type AppMode = 'loading' | 'landing' | 'study' | 'practice'
+type AppMode = 'loading' | 'home' | 'artikel' | 'sentences'
 
 function App() {
   const [mode, setMode] = useState<AppMode>('loading')
   const [error, setError] = useState<string | null>(null)
   const [allWords, setAllWords] = useState<Word[]>([])
+  const [allSentences, setAllSentences] = useState<SentenceCard[]>([])
 
   useEffect(() => {
     let cancelled = false
 
     async function init() {
       try {
-        const words = await loadWords()
+        const [words, sentences] = await Promise.all([loadWords(), loadSentences()])
         if (cancelled) return
         setAllWords(words)
-        setMode('landing')
+        setAllSentences(sentences)
+        setMode('home')
       } catch {
         if (!cancelled) {
-          setError('Failed to load words. Please refresh the page.')
+          setError('Failed to load data. Please refresh the page.')
         }
       }
     }
@@ -46,21 +50,24 @@ function App() {
   if (mode === 'loading') {
     return (
       <div className="app">
-        <p className="loading">Loading vocabulary…</p>
+        <p className="loading">Loading…</p>
       </div>
     )
   }
 
-  if (mode === 'study') {
-    return <StudyTable words={allWords} onBack={() => setMode('landing')} />
+  if (mode === 'artikel') {
+    return <ArtikelModule words={allWords} onBack={() => setMode('home')} />
   }
 
-  if (mode === 'practice') {
-    return <TrainGame allWords={allWords} onBack={() => setMode('landing')} />
+  if (mode === 'sentences') {
+    return <SentencesModule cards={allSentences} onBack={() => setMode('home')} />
   }
 
   return (
-    <Landing onStudy={() => setMode('study')} onPractice={() => setMode('practice')} />
+    <HomeHub
+      onArtikel={() => setMode('artikel')}
+      onSentences={() => setMode('sentences')}
+    />
   )
 }
 

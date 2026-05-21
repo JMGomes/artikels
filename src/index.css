@@ -12,6 +12,9 @@
   --color-die: #dc2626;
   --color-das: #16a34a;
   --color-plural-die: #ea580c;
+  --color-segment-subject: #2563eb;
+  --color-segment-verb: #dc2626;
+  --color-segment-other: #64748b;
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
