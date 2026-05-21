@@ -461,6 +461,12 @@
   align-items: baseline;
 }
 
+.sentence-line__punct {
+  font-weight: 700;
+  font-size: 1.05rem;
+  line-height: 1;
+}
+
 .segment-chip {
   display: inline-flex;
   flex-direction: column;

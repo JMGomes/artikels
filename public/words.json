@@ -1,75 +1,105 @@
 [
   {
-    "germanWord": "Mann",
-    "englishTranslation": "man",
+    "germanWord": "Abend",
+    "englishTranslation": "evening",
     "artikel": "der",
-    "pluralForm": "die Männer"
+    "pluralForm": "die Abende"
   },
   {
-    "germanWord": "Frau",
-    "englishTranslation": "woman",
-    "artikel": "die",
-    "pluralForm": "die Frauen"
-  },
-  {
-    "germanWord": "Kind",
-    "englishTranslation": "child",
+    "germanWord": "Abendessen",
+    "englishTranslation": "dinner",
     "artikel": "das",
-    "pluralForm": "die Kinder"
+    "pluralForm": "die Abendessen"
   },
   {
-    "germanWord": "Vater",
-    "englishTranslation": "father",
+    "germanWord": "Adresse",
+    "englishTranslation": "address",
+    "artikel": "die",
+    "pluralForm": "die Adressen"
+  },
+  {
+    "germanWord": "Ampel",
+    "englishTranslation": "traffic light",
+    "artikel": "die",
+    "pluralForm": "die Ampeln"
+  },
+  {
+    "germanWord": "Anorak",
+    "englishTranslation": "anorak / windbreaker",
     "artikel": "der",
-    "pluralForm": "die Väter"
+    "pluralForm": "die Anoraks"
   },
   {
-    "germanWord": "Mutter",
-    "englishTranslation": "mother",
+    "germanWord": "Antwort",
+    "englishTranslation": "answer",
     "artikel": "die",
-    "pluralForm": "die Mütter"
+    "pluralForm": "die Antworten"
   },
   {
-    "germanWord": "Eltern",
-    "englishTranslation": "parents",
+    "germanWord": "Anzeige",
+    "englishTranslation": "display / sign",
     "artikel": "die",
-    "pluralForm": "die Eltern"
+    "pluralForm": "die Anzeigen"
   },
   {
-    "germanWord": "Sohn",
-    "englishTranslation": "son",
+    "germanWord": "Anzug",
+    "englishTranslation": "suit",
     "artikel": "der",
-    "pluralForm": "die Söhne"
+    "pluralForm": "die Anzüge"
   },
   {
-    "germanWord": "Tochter",
-    "englishTranslation": "daughter",
-    "artikel": "die",
-    "pluralForm": "die Töchter"
-  },
-  {
-    "germanWord": "Bruder",
-    "englishTranslation": "brother",
+    "germanWord": "Apfel",
+    "englishTranslation": "apple",
     "artikel": "der",
-    "pluralForm": "die Brüder"
+    "pluralForm": "die Äpfel"
   },
   {
-    "germanWord": "Schwester",
-    "englishTranslation": "sister",
-    "artikel": "die",
-    "pluralForm": "die Schwestern"
-  },
-  {
-    "germanWord": "Großvater (Opa)",
-    "englishTranslation": "grandfather",
+    "germanWord": "Apfelsaft",
+    "englishTranslation": "apple juice",
     "artikel": "der",
-    "pluralForm": "die Großväter"
+    "pluralForm": "die Apfelsäfte"
   },
   {
-    "germanWord": "Großmutter (Oma)",
-    "englishTranslation": "grandmother",
+    "germanWord": "Apotheke",
+    "englishTranslation": "pharmacy",
     "artikel": "die",
-    "pluralForm": "die Großmütter"
+    "pluralForm": "die Apotheken"
+  },
+  {
+    "germanWord": "Apothekerin",
+    "englishTranslation": "pharmacist (female)",
+    "artikel": "die",
+    "pluralForm": "die Apothekerinnen"
+  },
+  {
+    "germanWord": "Arm",
+    "englishTranslation": "arm",
+    "artikel": "der",
+    "pluralForm": "die Arme"
+  },
+  {
+    "germanWord": "Arzt",
+    "englishTranslation": "doctor (male)",
+    "artikel": "der",
+    "pluralForm": "die Ärzte"
+  },
+  {
+    "germanWord": "Ärztin",
+    "englishTranslation": "doctor (female)",
+    "artikel": "die",
+    "pluralForm": "die Ärztinnen"
+  },
+  {
+    "germanWord": "Auge",
+    "englishTranslation": "eye",
+    "artikel": "das",
+    "pluralForm": "die Augen"
+  },
+  {
+    "germanWord": "Auto",
+    "englishTranslation": "car",
+    "artikel": "das",
+    "pluralForm": "die Autos"
   },
   {
     "germanWord": "Baby",
@@ -78,64 +108,202 @@
     "pluralForm": "die Babys"
   },
   {
-    "germanWord": "Onkel",
-    "englishTranslation": "uncle",
-    "artikel": "der",
-    "pluralForm": "die Onkel"
-  },
-  {
-    "germanWord": "Tante",
-    "englishTranslation": "aunt",
+    "germanWord": "Bäckerei",
+    "englishTranslation": "bakery",
     "artikel": "die",
-    "pluralForm": "die Tanten"
+    "pluralForm": "die Bäckereien"
   },
   {
-    "germanWord": "Junge",
-    "englishTranslation": "boy",
-    "artikel": "der",
-    "pluralForm": "die Jungen"
-  },
-  {
-    "germanWord": "Mädchen",
-    "englishTranslation": "girl",
+    "germanWord": "Badezimmer",
+    "englishTranslation": "bathroom",
     "artikel": "das",
-    "pluralForm": "die Mädchen"
+    "pluralForm": "die Badezimmer"
   },
   {
-    "germanWord": "Freund",
-    "englishTranslation": "friend (male)",
+    "germanWord": "Bahnhof",
+    "englishTranslation": "train station",
     "artikel": "der",
-    "pluralForm": "die Freunde"
+    "pluralForm": "die Bahnhöfe"
   },
   {
-    "germanWord": "Freundin",
-    "englishTranslation": "friend (female)",
-    "artikel": "die",
-    "pluralForm": "die Freundinnen"
-  },
-  {
-    "germanWord": "Lehrer",
-    "englishTranslation": "teacher (male)",
+    "germanWord": "Balkon",
+    "englishTranslation": "balcony",
     "artikel": "der",
-    "pluralForm": "die Lehrer"
+    "pluralForm": "die Balkone"
   },
   {
-    "germanWord": "Lehrerin",
-    "englishTranslation": "teacher (female)",
+    "germanWord": "Banane",
+    "englishTranslation": "banana",
     "artikel": "die",
-    "pluralForm": "die Lehrerinnen"
+    "pluralForm": "die Bananen"
   },
   {
-    "germanWord": "Schüler",
-    "englishTranslation": "student (male)",
+    "germanWord": "Bank",
+    "englishTranslation": "bank",
+    "artikel": "die",
+    "pluralForm": "die Banken"
+  },
+  {
+    "germanWord": "Basilikum",
+    "englishTranslation": "basil",
     "artikel": "der",
-    "pluralForm": "die Schüler"
+    "pluralForm": "(no plural)"
   },
   {
-    "germanWord": "Schülerin",
-    "englishTranslation": "student (female)",
+    "germanWord": "Bauarbeiter",
+    "englishTranslation": "construction worker",
+    "artikel": "der",
+    "pluralForm": "die Bauarbeiter"
+  },
+  {
+    "germanWord": "Bauch",
+    "englishTranslation": "stomach / belly",
+    "artikel": "der",
+    "pluralForm": "die Bäuche"
+  },
+  {
+    "germanWord": "Bauchschmerzen",
+    "englishTranslation": "stomach ache",
     "artikel": "die",
-    "pluralForm": "die Schülerinnen"
+    "pluralForm": "die Bauchschmerzen"
+  },
+  {
+    "germanWord": "Baum",
+    "englishTranslation": "tree",
+    "artikel": "der",
+    "pluralForm": "die Bäume"
+  },
+  {
+    "germanWord": "Bedienung",
+    "englishTranslation": "service / waitstaff",
+    "artikel": "die",
+    "pluralForm": "die Bedienungen"
+  },
+  {
+    "germanWord": "Bein",
+    "englishTranslation": "leg",
+    "artikel": "das",
+    "pluralForm": "die Beine"
+  },
+  {
+    "germanWord": "Beispiel",
+    "englishTranslation": "example",
+    "artikel": "das",
+    "pluralForm": "die Beispiele"
+  },
+  {
+    "germanWord": "Bett",
+    "englishTranslation": "bed",
+    "artikel": "das",
+    "pluralForm": "die Betten"
+  },
+  {
+    "germanWord": "Bier",
+    "englishTranslation": "beer",
+    "artikel": "das",
+    "pluralForm": "die Biere"
+  },
+  {
+    "germanWord": "Bild",
+    "englishTranslation": "picture",
+    "artikel": "das",
+    "pluralForm": "die Bilder"
+  },
+  {
+    "germanWord": "Blau",
+    "englishTranslation": "blue",
+    "artikel": "das",
+    "pluralForm": "(no plural)"
+  },
+  {
+    "germanWord": "Bleistift",
+    "englishTranslation": "pencil",
+    "artikel": "der",
+    "pluralForm": "die Bleistifte"
+  },
+  {
+    "germanWord": "Blume",
+    "englishTranslation": "flower",
+    "artikel": "die",
+    "pluralForm": "die Blumen"
+  },
+  {
+    "germanWord": "Bluse",
+    "englishTranslation": "blouse",
+    "artikel": "die",
+    "pluralForm": "die Blusen"
+  },
+  {
+    "germanWord": "Blut",
+    "englishTranslation": "blood",
+    "artikel": "das",
+    "pluralForm": "(no plural)"
+  },
+  {
+    "germanWord": "Boden",
+    "englishTranslation": "floor",
+    "artikel": "der",
+    "pluralForm": "die Böden"
+  },
+  {
+    "germanWord": "Braun",
+    "englishTranslation": "brown",
+    "artikel": "das",
+    "pluralForm": "(no plural)"
+  },
+  {
+    "germanWord": "Brille",
+    "englishTranslation": "glasses",
+    "artikel": "die",
+    "pluralForm": "die Brillen"
+  },
+  {
+    "germanWord": "Brot",
+    "englishTranslation": "bread",
+    "artikel": "das",
+    "pluralForm": "die Brote"
+  },
+  {
+    "germanWord": "Brötchen",
+    "englishTranslation": "bread roll",
+    "artikel": "das",
+    "pluralForm": "die Brötchen"
+  },
+  {
+    "germanWord": "Bruder",
+    "englishTranslation": "brother",
+    "artikel": "der",
+    "pluralForm": "die Brüder"
+  },
+  {
+    "germanWord": "Buch",
+    "englishTranslation": "book",
+    "artikel": "das",
+    "pluralForm": "die Bücher"
+  },
+  {
+    "germanWord": "Buntstift",
+    "englishTranslation": "colored pencil",
+    "artikel": "der",
+    "pluralForm": "die Buntstifte"
+  },
+  {
+    "germanWord": "Büro",
+    "englishTranslation": "office",
+    "artikel": "das",
+    "pluralForm": "die Büros"
+  },
+  {
+    "germanWord": "Bus",
+    "englishTranslation": "bus",
+    "artikel": "der",
+    "pluralForm": "die Busse"
+  },
+  {
+    "germanWord": "Butter",
+    "englishTranslation": "butter",
+    "artikel": "die",
+    "pluralForm": "(no plural)"
   },
   {
     "germanWord": "Chef",
@@ -150,6 +318,534 @@
     "pluralForm": "die Chefinnen"
   },
   {
+    "germanWord": "Computer",
+    "englishTranslation": "computer",
+    "artikel": "der",
+    "pluralForm": "die Computer"
+  },
+  {
+    "germanWord": "Datum",
+    "englishTranslation": "date",
+    "artikel": "das",
+    "pluralForm": "die Daten"
+  },
+  {
+    "germanWord": "Dusche",
+    "englishTranslation": "shower",
+    "artikel": "die",
+    "pluralForm": "die Duschen"
+  },
+  {
+    "germanWord": "Ecke",
+    "englishTranslation": "corner",
+    "artikel": "die",
+    "pluralForm": "die Ecken"
+  },
+  {
+    "germanWord": "Ehepaar",
+    "englishTranslation": "married couple",
+    "artikel": "das",
+    "pluralForm": "die Ehepaare"
+  },
+  {
+    "germanWord": "Ei",
+    "englishTranslation": "egg",
+    "artikel": "das",
+    "pluralForm": "die Eier"
+  },
+  {
+    "germanWord": "Einkauf",
+    "englishTranslation": "shopping / purchase",
+    "artikel": "der",
+    "pluralForm": "die Einkäufe"
+  },
+  {
+    "germanWord": "Einkaufswagen",
+    "englishTranslation": "shopping cart",
+    "artikel": "der",
+    "pluralForm": "die Einkaufswagen"
+  },
+  {
+    "germanWord": "Eis",
+    "englishTranslation": "ice cream / ice",
+    "artikel": "das",
+    "pluralForm": "(no plural)"
+  },
+  {
+    "germanWord": "Eltern",
+    "englishTranslation": "parents",
+    "artikel": "die",
+    "pluralForm": "die Eltern"
+  },
+  {
+    "germanWord": "Essen",
+    "englishTranslation": "food",
+    "artikel": "das",
+    "pluralForm": "(no plural)"
+  },
+  {
+    "germanWord": "Fahrkarte",
+    "englishTranslation": "travel ticket",
+    "artikel": "die",
+    "pluralForm": "die Fahrkarten"
+  },
+  {
+    "germanWord": "Fahrrad",
+    "englishTranslation": "bicycle",
+    "artikel": "das",
+    "pluralForm": "die Fahrräder"
+  },
+  {
+    "germanWord": "Familie",
+    "englishTranslation": "family",
+    "artikel": "die",
+    "pluralForm": "die Familien"
+  },
+  {
+    "germanWord": "Farbe",
+    "englishTranslation": "color",
+    "artikel": "die",
+    "pluralForm": "die Farben"
+  },
+  {
+    "germanWord": "Federmäppchen",
+    "englishTranslation": "pencil case",
+    "artikel": "das",
+    "pluralForm": "die Federmäppchen"
+  },
+  {
+    "germanWord": "Fenster",
+    "englishTranslation": "window",
+    "artikel": "das",
+    "pluralForm": "die Fenster"
+  },
+  {
+    "germanWord": "Fernseher",
+    "englishTranslation": "television",
+    "artikel": "der",
+    "pluralForm": "die Fernseher"
+  },
+  {
+    "germanWord": "Fieber",
+    "englishTranslation": "fever",
+    "artikel": "das",
+    "pluralForm": "(no plural)"
+  },
+  {
+    "germanWord": "Finger",
+    "englishTranslation": "finger",
+    "artikel": "der",
+    "pluralForm": "die Finger"
+  },
+  {
+    "germanWord": "Fisch",
+    "englishTranslation": "fish",
+    "artikel": "der",
+    "pluralForm": "die Fische"
+  },
+  {
+    "germanWord": "Flasche",
+    "englishTranslation": "bottle",
+    "artikel": "die",
+    "pluralForm": "die Flaschen"
+  },
+  {
+    "germanWord": "Fleisch",
+    "englishTranslation": "meat",
+    "artikel": "das",
+    "pluralForm": "(no plural)"
+  },
+  {
+    "germanWord": "Flughafen",
+    "englishTranslation": "airport",
+    "artikel": "der",
+    "pluralForm": "die Flughäfen"
+  },
+  {
+    "germanWord": "Flugzeug",
+    "englishTranslation": "airplane",
+    "artikel": "das",
+    "pluralForm": "die Flugzeuge"
+  },
+  {
+    "germanWord": "Flur",
+    "englishTranslation": "hallway",
+    "artikel": "der",
+    "pluralForm": "die Flure"
+  },
+  {
+    "germanWord": "Frage",
+    "englishTranslation": "question",
+    "artikel": "die",
+    "pluralForm": "die Fragen"
+  },
+  {
+    "germanWord": "Frau",
+    "englishTranslation": "woman",
+    "artikel": "die",
+    "pluralForm": "die Frauen"
+  },
+  {
+    "germanWord": "Freund",
+    "englishTranslation": "friend (male)",
+    "artikel": "der",
+    "pluralForm": "die Freunde"
+  },
+  {
+    "germanWord": "Freundin",
+    "englishTranslation": "friend (female)",
+    "artikel": "die",
+    "pluralForm": "die Freundinnen"
+  },
+  {
+    "germanWord": "Frühstück",
+    "englishTranslation": "breakfast",
+    "artikel": "das",
+    "pluralForm": "die Frühstücke"
+  },
+  {
+    "germanWord": "Fuß",
+    "englishTranslation": "foot",
+    "artikel": "der",
+    "pluralForm": "die Füße"
+  },
+  {
+    "germanWord": "Fußgänger",
+    "englishTranslation": "pedestrian",
+    "artikel": "der",
+    "pluralForm": "die Fußgänger"
+  },
+  {
+    "germanWord": "Gabel",
+    "englishTranslation": "fork",
+    "artikel": "die",
+    "pluralForm": "die Gabeln"
+  },
+  {
+    "germanWord": "Garten",
+    "englishTranslation": "garden",
+    "artikel": "der",
+    "pluralForm": "die Gärten"
+  },
+  {
+    "germanWord": "Gelb",
+    "englishTranslation": "yellow",
+    "artikel": "das",
+    "pluralForm": "(no plural)"
+  },
+  {
+    "germanWord": "Geld",
+    "englishTranslation": "money",
+    "artikel": "das",
+    "pluralForm": "die Gelder"
+  },
+  {
+    "germanWord": "Gemüse",
+    "englishTranslation": "vegetables",
+    "artikel": "das",
+    "pluralForm": "die Gemüse"
+  },
+  {
+    "germanWord": "Gemüsegeschäft",
+    "englishTranslation": "greengrocer",
+    "artikel": "das",
+    "pluralForm": "die Gemüsegeschäfte"
+  },
+  {
+    "germanWord": "Geschäft",
+    "englishTranslation": "shop / store",
+    "artikel": "das",
+    "pluralForm": "die Geschäfte"
+  },
+  {
+    "germanWord": "Getränk",
+    "englishTranslation": "drink",
+    "artikel": "das",
+    "pluralForm": "die Getränke"
+  },
+  {
+    "germanWord": "Glas",
+    "englishTranslation": "glass",
+    "artikel": "das",
+    "pluralForm": "die Gläser"
+  },
+  {
+    "germanWord": "Grau",
+    "englishTranslation": "gray",
+    "artikel": "das",
+    "pluralForm": "(no plural)"
+  },
+  {
+    "germanWord": "Großeltern",
+    "englishTranslation": "grandparents",
+    "artikel": "die",
+    "pluralForm": "die Großeltern"
+  },
+  {
+    "germanWord": "Großmutter (Oma)",
+    "englishTranslation": "grandmother",
+    "artikel": "die",
+    "pluralForm": "die Großmütter"
+  },
+  {
+    "germanWord": "Großvater (Opa)",
+    "englishTranslation": "grandfather",
+    "artikel": "der",
+    "pluralForm": "die Großväter"
+  },
+  {
+    "germanWord": "Grün",
+    "englishTranslation": "green",
+    "artikel": "das",
+    "pluralForm": "(no plural)"
+  },
+  {
+    "germanWord": "Gurke",
+    "englishTranslation": "cucumber",
+    "artikel": "die",
+    "pluralForm": "die Gurken"
+  },
+  {
+    "germanWord": "Gürtel",
+    "englishTranslation": "belt",
+    "artikel": "der",
+    "pluralForm": "die Gürtel"
+  },
+  {
+    "germanWord": "Haar",
+    "englishTranslation": "hair",
+    "artikel": "das",
+    "pluralForm": "die Haare"
+  },
+  {
+    "germanWord": "Hals",
+    "englishTranslation": "neck / throat",
+    "artikel": "der",
+    "pluralForm": "die Hälse"
+  },
+  {
+    "germanWord": "Halsweh",
+    "englishTranslation": "sore throat",
+    "artikel": "das",
+    "pluralForm": "(no plural)"
+  },
+  {
+    "germanWord": "Haltestelle",
+    "englishTranslation": "bus/tram stop",
+    "artikel": "die",
+    "pluralForm": "die Haltestellen"
+  },
+  {
+    "germanWord": "Hand",
+    "englishTranslation": "hand",
+    "artikel": "die",
+    "pluralForm": "die Hände"
+  },
+  {
+    "germanWord": "Handschuh",
+    "englishTranslation": "glove",
+    "artikel": "der",
+    "pluralForm": "die Handschuhe"
+  },
+  {
+    "germanWord": "Handy",
+    "englishTranslation": "mobile phone",
+    "artikel": "das",
+    "pluralForm": "die Handys"
+  },
+  {
+    "germanWord": "Haus",
+    "englishTranslation": "house",
+    "artikel": "das",
+    "pluralForm": "die Häuser"
+  },
+  {
+    "germanWord": "Hausmeister",
+    "englishTranslation": "caretaker / janitor",
+    "artikel": "der",
+    "pluralForm": "die Hausmeister"
+  },
+  {
+    "germanWord": "Heft",
+    "englishTranslation": "notebook",
+    "artikel": "das",
+    "pluralForm": "die Hefte"
+  },
+  {
+    "germanWord": "Hemd",
+    "englishTranslation": "button-up shirt",
+    "artikel": "das",
+    "pluralForm": "die Hemden"
+  },
+  {
+    "germanWord": "Herd",
+    "englishTranslation": "stove",
+    "artikel": "der",
+    "pluralForm": "die Herde"
+  },
+  {
+    "germanWord": "Hose",
+    "englishTranslation": "pants / trousers",
+    "artikel": "die",
+    "pluralForm": "die Hosen"
+  },
+  {
+    "germanWord": "Hund",
+    "englishTranslation": "dog",
+    "artikel": "der",
+    "pluralForm": "die Hunde"
+  },
+  {
+    "germanWord": "Husten",
+    "englishTranslation": "cough",
+    "artikel": "der",
+    "pluralForm": "(no plural)"
+  },
+  {
+    "germanWord": "Hut",
+    "englishTranslation": "hat",
+    "artikel": "der",
+    "pluralForm": "die Hüte"
+  },
+  {
+    "germanWord": "Idee",
+    "englishTranslation": "idea",
+    "artikel": "die",
+    "pluralForm": "die Ideen"
+  },
+  {
+    "germanWord": "Jacke",
+    "englishTranslation": "jacket",
+    "artikel": "die",
+    "pluralForm": "die Jacken"
+  },
+  {
+    "germanWord": "Jackett",
+    "englishTranslation": "sports coat",
+    "artikel": "das",
+    "pluralForm": "die Jacketts"
+  },
+  {
+    "germanWord": "Jahr",
+    "englishTranslation": "year",
+    "artikel": "das",
+    "pluralForm": "die Jahre"
+  },
+  {
+    "germanWord": "Jahreszeit",
+    "englishTranslation": "season (of the year)",
+    "artikel": "die",
+    "pluralForm": "die Jahreszeiten"
+  },
+  {
+    "germanWord": "Jeans",
+    "englishTranslation": "jeans",
+    "artikel": "die",
+    "pluralForm": "die Jeans"
+  },
+  {
+    "germanWord": "Junge",
+    "englishTranslation": "boy",
+    "artikel": "der",
+    "pluralForm": "die Jungen"
+  },
+  {
+    "germanWord": "Kaffee",
+    "englishTranslation": "coffee",
+    "artikel": "der",
+    "pluralForm": "die Kaffees"
+  },
+  {
+    "germanWord": "Kalender",
+    "englishTranslation": "calendar",
+    "artikel": "der",
+    "pluralForm": "die Kalender"
+  },
+  {
+    "germanWord": "Kartoffel",
+    "englishTranslation": "potato",
+    "artikel": "die",
+    "pluralForm": "die Kartoffeln"
+  },
+  {
+    "germanWord": "Käse",
+    "englishTranslation": "cheese",
+    "artikel": "der",
+    "pluralForm": "die Käse"
+  },
+  {
+    "germanWord": "Kasse",
+    "englishTranslation": "checkout / cash register",
+    "artikel": "die",
+    "pluralForm": "die Kassen"
+  },
+  {
+    "germanWord": "Katze",
+    "englishTranslation": "cat",
+    "artikel": "die",
+    "pluralForm": "die Katzen"
+  },
+  {
+    "germanWord": "Kaufhaus",
+    "englishTranslation": "department store",
+    "artikel": "das",
+    "pluralForm": "die Kaufhäuser"
+  },
+  {
+    "germanWord": "Kellner",
+    "englishTranslation": "waiter",
+    "artikel": "der",
+    "pluralForm": "die Kellner"
+  },
+  {
+    "germanWord": "Kind",
+    "englishTranslation": "child",
+    "artikel": "das",
+    "pluralForm": "die Kinder"
+  },
+  {
+    "germanWord": "Kinderwagen",
+    "englishTranslation": "stroller / pram",
+    "artikel": "der",
+    "pluralForm": "die Kinderwagen"
+  },
+  {
+    "germanWord": "Kino",
+    "englishTranslation": "cinema",
+    "artikel": "das",
+    "pluralForm": "die Kinos"
+  },
+  {
+    "germanWord": "Kissen",
+    "englishTranslation": "pillow",
+    "artikel": "das",
+    "pluralForm": "die Kissen"
+  },
+  {
+    "germanWord": "Klasse",
+    "englishTranslation": "class",
+    "artikel": "die",
+    "pluralForm": "die Klassen"
+  },
+  {
+    "germanWord": "Kleid",
+    "englishTranslation": "dress",
+    "artikel": "das",
+    "pluralForm": "die Kleider"
+  },
+  {
+    "germanWord": "Kleidung",
+    "englishTranslation": "clothing",
+    "artikel": "die",
+    "pluralForm": "die Kleidungen"
+  },
+  {
+    "germanWord": "Köchin",
+    "englishTranslation": "cook (female)",
+    "artikel": "die",
+    "pluralForm": "die Köchinnen"
+  },
+  {
     "germanWord": "Kollege",
     "englishTranslation": "colleague (male)",
     "artikel": "der",
@@ -162,212 +858,1149 @@
     "pluralForm": "die Kolleginnen"
   },
   {
-    "germanWord": "Arzt",
-    "englishTranslation": "doctor (male)",
+    "germanWord": "Kopf",
+    "englishTranslation": "head",
     "artikel": "der",
-    "pluralForm": "die Ärzte"
+    "pluralForm": "die Köpfe"
   },
   {
-    "germanWord": "Ärztin",
-    "englishTranslation": "doctor (female)",
-    "artikel": "die",
-    "pluralForm": "die Ärztinnen"
+    "germanWord": "Kopfhörer",
+    "englishTranslation": "headphones",
+    "artikel": "der",
+    "pluralForm": "die Kopfhörer"
   },
-  { "germanWord": "Körper", "englishTranslation": "body", "artikel": "der", "pluralForm": "die Körper" },
-  { "germanWord": "Kopf", "englishTranslation": "head", "artikel": "der", "pluralForm": "die Köpfe" },
-  { "germanWord": "Haar", "englishTranslation": "hair", "artikel": "das", "pluralForm": "die Haare" },
-  { "germanWord": "Auge", "englishTranslation": "eye", "artikel": "das", "pluralForm": "die Augen" },
-  { "germanWord": "Ohr", "englishTranslation": "ear", "artikel": "das", "pluralForm": "die Ohren" },
-  { "germanWord": "Nase", "englishTranslation": "nose", "artikel": "die", "pluralForm": "die Nasen" },
-  { "germanWord": "Mund", "englishTranslation": "mouth", "artikel": "der", "pluralForm": "die Münder" },
-  { "germanWord": "Zahn", "englishTranslation": "tooth", "artikel": "der", "pluralForm": "die Zähne" },
-  { "germanWord": "Hals", "englishTranslation": "neck / throat", "artikel": "der", "pluralForm": "die Hälse" },
-  { "germanWord": "Arm", "englishTranslation": "arm", "artikel": "der", "pluralForm": "die Arme" },
-  { "germanWord": "Hand", "englishTranslation": "hand", "artikel": "die", "pluralForm": "die Hände" },
-  { "germanWord": "Finger", "englishTranslation": "finger", "artikel": "der", "pluralForm": "die Finger" },
-  { "germanWord": "Bauch", "englishTranslation": "stomach / belly", "artikel": "der", "pluralForm": "die Bäuche" },
-  { "germanWord": "Rücken", "englishTranslation": "back", "artikel": "der", "pluralForm": "die Rücken" },
-  { "germanWord": "Bein", "englishTranslation": "leg", "artikel": "das", "pluralForm": "die Beine" },
-  { "germanWord": "Fuß", "englishTranslation": "foot", "artikel": "der", "pluralForm": "die Füße" },
-  { "germanWord": "Blut", "englishTranslation": "blood", "artikel": "das", "pluralForm": "(no plural)" },
-  { "germanWord": "Krankheit", "englishTranslation": "illness", "artikel": "die", "pluralForm": "die Krankheiten" },
-  { "germanWord": "Schmerz", "englishTranslation": "pain", "artikel": "der", "pluralForm": "die Schmerzen" },
-  { "germanWord": "Medikament", "englishTranslation": "medicine", "artikel": "das", "pluralForm": "die Medikamente" },
-  { "germanWord": "Essen", "englishTranslation": "food", "artikel": "das", "pluralForm": "(no plural)" },
-  { "germanWord": "Getränk", "englishTranslation": "drink", "artikel": "das", "pluralForm": "die Getränke" },
-  { "germanWord": "Wasser", "englishTranslation": "water", "artikel": "das", "pluralForm": "die Wasser" },
-  { "germanWord": "Kaffee", "englishTranslation": "coffee", "artikel": "der", "pluralForm": "die Kaffees" },
-  { "germanWord": "Tee", "englishTranslation": "tea", "artikel": "der", "pluralForm": "die Tees" },
-  { "germanWord": "Milch", "englishTranslation": "milk", "artikel": "die", "pluralForm": "(no plural)" },
-  { "germanWord": "Saft", "englishTranslation": "juice", "artikel": "der", "pluralForm": "die Säfte" },
-  { "germanWord": "Wein", "englishTranslation": "wine", "artikel": "der", "pluralForm": "die Weine" },
-  { "germanWord": "Bier", "englishTranslation": "beer", "artikel": "das", "pluralForm": "die Biere" },
-  { "germanWord": "Brot", "englishTranslation": "bread", "artikel": "das", "pluralForm": "die Brote" },
-  { "germanWord": "Brötchen", "englishTranslation": "bread roll", "artikel": "das", "pluralForm": "die Brötchen" },
-  { "germanWord": "Butter", "englishTranslation": "butter", "artikel": "die", "pluralForm": "(no plural)" },
-  { "germanWord": "Käse", "englishTranslation": "cheese", "artikel": "der", "pluralForm": "die Käse" },
-  { "germanWord": "Wurst", "englishTranslation": "sausage", "artikel": "die", "pluralForm": "die Würste" },
-  { "germanWord": "Schinken", "englishTranslation": "ham", "artikel": "der", "pluralForm": "die Schinken" },
-  { "germanWord": "Ei", "englishTranslation": "egg", "artikel": "das", "pluralForm": "die Eier" },
-  { "germanWord": "Fleisch", "englishTranslation": "meat", "artikel": "das", "pluralForm": "(no plural)" },
-  { "germanWord": "Fisch", "englishTranslation": "fish", "artikel": "der", "pluralForm": "die Fische" },
-  { "germanWord": "Gemüse", "englishTranslation": "vegetables", "artikel": "das", "pluralForm": "die Gemüse" },
-  { "germanWord": "Obst", "englishTranslation": "fruit", "artikel": "das", "pluralForm": "(no plural)" },
-  { "germanWord": "Apfel", "englishTranslation": "apple", "artikel": "der", "pluralForm": "die Äpfel" },
-  { "germanWord": "Banane", "englishTranslation": "banana", "artikel": "die", "pluralForm": "die Bananen" },
-  { "germanWord": "Orange", "englishTranslation": "orange", "artikel": "die", "pluralForm": "die Orangen" },
-  { "germanWord": "Tomate", "englishTranslation": "tomato", "artikel": "die", "pluralForm": "die Tomaten" },
-  { "germanWord": "Kartoffel", "englishTranslation": "potato", "artikel": "die", "pluralForm": "die Kartoffeln" },
-  { "germanWord": "Zwiebel", "englishTranslation": "onion", "artikel": "die", "pluralForm": "die Zwiebeln" },
-  { "germanWord": "Salat", "englishTranslation": "salad / lettuce", "artikel": "der", "pluralForm": "die Salate" },
-  { "germanWord": "Suppe", "englishTranslation": "soup", "artikel": "die", "pluralForm": "die Suppen" },
-  { "germanWord": "Pizza", "englishTranslation": "pizza", "artikel": "die", "pluralForm": "die Pizzen" },
-  { "germanWord": "Nudel", "englishTranslation": "noodle", "artikel": "die", "pluralForm": "die Nudeln" },
-  { "germanWord": "Reis", "englishTranslation": "rice", "artikel": "der", "pluralForm": "(no plural)" },
-  { "germanWord": "Kuchen", "englishTranslation": "cake", "artikel": "der", "pluralForm": "die Kuchen" },
-  { "germanWord": "Schokolade", "englishTranslation": "chocolate", "artikel": "die", "pluralForm": "die Schokoladen" },
-  { "germanWord": "Eis", "englishTranslation": "ice cream / ice", "artikel": "das", "pluralForm": "(no plural)" },
-  { "germanWord": "Zucker", "englishTranslation": "sugar", "artikel": "der", "pluralForm": "(no plural)" },
-  { "germanWord": "Salz", "englishTranslation": "salt", "artikel": "das", "pluralForm": "(no plural)" },
-  { "germanWord": "Pfeffer", "englishTranslation": "pepper (spice)", "artikel": "der", "pluralForm": "(no plural)" },
-  { "germanWord": "Haus", "englishTranslation": "house", "artikel": "das", "pluralForm": "die Häuser" },
-  { "germanWord": "Wohnung", "englishTranslation": "apartment", "artikel": "die", "pluralForm": "die Wohnungen" },
-  { "germanWord": "Zimmer", "englishTranslation": "room", "artikel": "das", "pluralForm": "die Zimmer" },
-  { "germanWord": "Wohnzimmer", "englishTranslation": "living room", "artikel": "das", "pluralForm": "die Wohnzimmer" },
-  { "germanWord": "Schlafzimmer", "englishTranslation": "bedroom", "artikel": "das", "pluralForm": "die Schlafzimmer" },
-  { "germanWord": "Badezimmer", "englishTranslation": "bathroom", "artikel": "das", "pluralForm": "die Badezimmer" },
-  { "germanWord": "Küche", "englishTranslation": "kitchen", "artikel": "die", "pluralForm": "die Küchen" },
-  { "germanWord": "Flur", "englishTranslation": "hallway", "artikel": "der", "pluralForm": "die Flure" },
-  { "germanWord": "Balkon", "englishTranslation": "balcony", "artikel": "der", "pluralForm": "die Balkone" },
-  { "germanWord": "Garten", "englishTranslation": "garden", "artikel": "der", "pluralForm": "die Gärten" },
-  { "germanWord": "Tür", "englishTranslation": "door", "artikel": "die", "pluralForm": "die Türen" },
-  { "germanWord": "Fenster", "englishTranslation": "window", "artikel": "das", "pluralForm": "die Fenster" },
-  { "germanWord": "Wand", "englishTranslation": "wall", "artikel": "die", "pluralForm": "die Wände" },
-  { "germanWord": "Boden", "englishTranslation": "floor", "artikel": "der", "pluralForm": "die Böden" },
-  { "germanWord": "Tisch", "englishTranslation": "table", "artikel": "der", "pluralForm": "die Tische" },
-  { "germanWord": "Stuhl", "englishTranslation": "chair", "artikel": "der", "pluralForm": "die Stühle" },
-  { "germanWord": "Sofa", "englishTranslation": "sofa", "artikel": "das", "pluralForm": "die Sofas" },
-  { "germanWord": "Bett", "englishTranslation": "bed", "artikel": "das", "pluralForm": "die Betten" },
-  { "germanWord": "Schrank", "englishTranslation": "closet / cabinet", "artikel": "der", "pluralForm": "die Schränke" },
-  { "germanWord": "Regal", "englishTranslation": "shelf", "artikel": "das", "pluralForm": "die Regale" },
-  { "germanWord": "Lampe", "englishTranslation": "lamp", "artikel": "die", "pluralForm": "die Lampen" },
-  { "germanWord": "Teppich", "englishTranslation": "carpet", "artikel": "der", "pluralForm": "die Teppiche" },
-  { "germanWord": "Spiegel", "englishTranslation": "mirror", "artikel": "der", "pluralForm": "die Spiegel" },
-  { "germanWord": "Schlüssel", "englishTranslation": "key", "artikel": "der", "pluralForm": "die Schlüssel" },
-  { "germanWord": "Bild", "englishTranslation": "picture", "artikel": "das", "pluralForm": "die Bilder" },
-  { "germanWord": "Teller", "englishTranslation": "plate", "artikel": "der", "pluralForm": "die Teller" },
-  { "germanWord": "Tasse", "englishTranslation": "cup", "artikel": "die", "pluralForm": "die Tassen" },
-  { "germanWord": "Glas", "englishTranslation": "glass", "artikel": "das", "pluralForm": "die Gläser" },
-  { "germanWord": "Gabel", "englishTranslation": "fork", "artikel": "die", "pluralForm": "die Gabeln" },
-  { "germanWord": "Messer", "englishTranslation": "knife", "artikel": "das", "pluralForm": "die Messer" },
-  { "germanWord": "Löffel", "englishTranslation": "spoon", "artikel": "der", "pluralForm": "die Löffel" },
-  { "germanWord": "Topf", "englishTranslation": "pot", "artikel": "der", "pluralForm": "die Töpfe" },
-  { "germanWord": "Pfanne", "englishTranslation": "pan", "artikel": "die", "pluralForm": "die Pfannen" },
-  { "germanWord": "Herd", "englishTranslation": "stove", "artikel": "der", "pluralForm": "die Herde" },
-  { "germanWord": "Kühlschrank", "englishTranslation": "fridge", "artikel": "der", "pluralForm": "die Kühlschränke" },
-  { "germanWord": "Schule", "englishTranslation": "school", "artikel": "die", "pluralForm": "die Schulen" },
-  { "germanWord": "Klasse", "englishTranslation": "class", "artikel": "die", "pluralForm": "die Klassen" },
-  { "germanWord": "Kurs", "englishTranslation": "course", "artikel": "der", "pluralForm": "die Kurse" },
-  { "germanWord": "Universität", "englishTranslation": "university", "artikel": "die", "pluralForm": "die Universitäten" },
-  { "germanWord": "Buch", "englishTranslation": "book", "artikel": "das", "pluralForm": "die Bücher" },
-  { "germanWord": "Heft", "englishTranslation": "notebook", "artikel": "das", "pluralForm": "die Hefte" },
-  { "germanWord": "Stift", "englishTranslation": "pen", "artikel": "der", "pluralForm": "die Stifte" },
-  { "germanWord": "Bleistift", "englishTranslation": "pencil", "artikel": "der", "pluralForm": "die Bleistifte" },
-  { "germanWord": "Kugelschreiber", "englishTranslation": "ballpoint pen", "artikel": "der", "pluralForm": "die Kugelschreiber" },
-  { "germanWord": "Papier", "englishTranslation": "paper", "artikel": "das", "pluralForm": "die Papiere" },
-  { "germanWord": "Computer", "englishTranslation": "computer", "artikel": "der", "pluralForm": "die Computer" },
-  { "germanWord": "Laptop", "englishTranslation": "laptop", "artikel": "der", "pluralForm": "die Laptops" },
-  { "germanWord": "Handy", "englishTranslation": "mobile phone", "artikel": "das", "pluralForm": "die Handys" },
-  { "germanWord": "Telefon", "englishTranslation": "telephone", "artikel": "das", "pluralForm": "die Telefone" },
-  { "germanWord": "Schreibtisch", "englishTranslation": "desk", "artikel": "der", "pluralForm": "die Schreibtische" },
-  { "germanWord": "Tafel", "englishTranslation": "board / chalkboard", "artikel": "die", "pluralForm": "die Tafeln" },
-  { "germanWord": "Tasche", "englishTranslation": "bag", "artikel": "die", "pluralForm": "die Taschen" },
-  { "germanWord": "Rucksack", "englishTranslation": "backpack", "artikel": "der", "pluralForm": "die Rucksäcke" },
-  { "germanWord": "Brille", "englishTranslation": "glasses", "artikel": "die", "pluralForm": "die Brillen" },
-  { "germanWord": "Uhr", "englishTranslation": "clock / watch", "artikel": "die", "pluralForm": "die Uhren" },
-  { "germanWord": "Zeit", "englishTranslation": "time", "artikel": "die", "pluralForm": "die Zeiten" },
-  { "germanWord": "Stunde", "englishTranslation": "hour", "artikel": "die", "pluralForm": "die Stunden" },
-  { "germanWord": "Minute", "englishTranslation": "minute", "artikel": "die", "pluralForm": "die Minuten" },
-  { "germanWord": "Sekunde", "englishTranslation": "second", "artikel": "die", "pluralForm": "die Sekunden" },
-  { "germanWord": "Tag", "englishTranslation": "day", "artikel": "der", "pluralForm": "die Tage" },
-  { "germanWord": "Morgen", "englishTranslation": "morning", "artikel": "der", "pluralForm": "die Morgen" },
-  { "germanWord": "Vormittag", "englishTranslation": "forenoon", "artikel": "der", "pluralForm": "die Vormittage" },
-  { "germanWord": "Mittag", "englishTranslation": "noon", "artikel": "der", "pluralForm": "die Mittage" },
-  { "germanWord": "Nachmittag", "englishTranslation": "afternoon", "artikel": "der", "pluralForm": "die Nachmittage" },
-  { "germanWord": "Abend", "englishTranslation": "evening", "artikel": "der", "pluralForm": "die Abende" },
-  { "germanWord": "Nacht", "englishTranslation": "night", "artikel": "die", "pluralForm": "die Nächte" },
-  { "germanWord": "Woche", "englishTranslation": "week", "artikel": "die", "pluralForm": "die Wochen" },
-  { "germanWord": "Wochenende", "englishTranslation": "weekend", "artikel": "das", "pluralForm": "die Wochenenden" },
-  { "germanWord": "Monat", "englishTranslation": "month", "artikel": "der", "pluralForm": "die Monate" },
-  { "germanWord": "Jahr", "englishTranslation": "year", "artikel": "das", "pluralForm": "die Jahre" },
-  { "germanWord": "Datum", "englishTranslation": "date", "artikel": "das", "pluralForm": "die Daten" },
-  { "germanWord": "Kalender", "englishTranslation": "calendar", "artikel": "der", "pluralForm": "die Kalender" },
-  { "germanWord": "Termin", "englishTranslation": "appointment", "artikel": "der", "pluralForm": "die Termine" },
-  { "germanWord": "Urlaub", "englishTranslation": "vacation", "artikel": "der", "pluralForm": "die Urlaube" },
-  { "germanWord": "Pause", "englishTranslation": "break", "artikel": "die", "pluralForm": "die Pausen" },
-  { "germanWord": "Stadt", "englishTranslation": "city", "artikel": "die", "pluralForm": "die Städte" },
-  { "germanWord": "Land", "englishTranslation": "country", "artikel": "das", "pluralForm": "die Länder" },
-  { "germanWord": "Straße", "englishTranslation": "street", "artikel": "die", "pluralForm": "die Straßen" },
-  { "germanWord": "Platz", "englishTranslation": "square / plaza", "artikel": "der", "pluralForm": "die Plätze" },
-  { "germanWord": "Weg", "englishTranslation": "path / way", "artikel": "der", "pluralForm": "die Wege" },
-  { "germanWord": "Auto", "englishTranslation": "car", "artikel": "das", "pluralForm": "die Autos" },
-  { "germanWord": "Bus", "englishTranslation": "bus", "artikel": "der", "pluralForm": "die Busse" },
-  { "germanWord": "Zug", "englishTranslation": "train", "artikel": "der", "pluralForm": "die Züge" },
-  { "germanWord": "Fahrrad", "englishTranslation": "bicycle", "artikel": "das", "pluralForm": "die Fahrräder" },
-  { "germanWord": "U-Bahn", "englishTranslation": "subway", "artikel": "die", "pluralForm": "die U-Bahnen" },
-  { "germanWord": "Straßenbahn", "englishTranslation": "tram", "artikel": "die", "pluralForm": "die Straßenbahnen" },
-  { "germanWord": "Bahnhof", "englishTranslation": "train station", "artikel": "der", "pluralForm": "die Bahnhöfe" },
-  { "germanWord": "Haltestelle", "englishTranslation": "bus/tram stop", "artikel": "die", "pluralForm": "die Haltestellen" },
-  { "germanWord": "Flughafen", "englishTranslation": "airport", "artikel": "der", "pluralForm": "die Flughäfen" },
-  { "germanWord": "Flugzeug", "englishTranslation": "airplane", "artikel": "das", "pluralForm": "die Flugzeuge" },
-  { "germanWord": "Ticket", "englishTranslation": "ticket", "artikel": "das", "pluralForm": "die Tickets" },
-  { "germanWord": "Fahrkarte", "englishTranslation": "travel ticket", "artikel": "die", "pluralForm": "die Fahrkarten" },
-  { "germanWord": "Polizei", "englishTranslation": "police", "artikel": "die", "pluralForm": "(no plural)" },
-  { "germanWord": "Krankenhaus", "englishTranslation": "hospital", "artikel": "das", "pluralForm": "die Krankenhäuser" },
-  { "germanWord": "Apotheke", "englishTranslation": "pharmacy", "artikel": "die", "pluralForm": "die Apotheken" },
-  { "germanWord": "Bank", "englishTranslation": "bank", "artikel": "die", "pluralForm": "die Banken" },
-  { "germanWord": "Post", "englishTranslation": "post office", "artikel": "die", "pluralForm": "die Postämter" },
-  { "germanWord": "Supermarkt", "englishTranslation": "supermarket", "artikel": "der", "pluralForm": "die Supermärkte" },
-  { "germanWord": "Bäckerei", "englishTranslation": "bakery", "artikel": "die", "pluralForm": "die Bäckereien" },
-  { "germanWord": "Kleidung", "englishTranslation": "clothing", "artikel": "die", "pluralForm": "die Kleidungen" },
-  { "germanWord": "Hose", "englishTranslation": "pants / trousers", "artikel": "die", "pluralForm": "die Hosen" },
-  { "germanWord": "Jeans", "englishTranslation": "jeans", "artikel": "die", "pluralForm": "die Jeans" },
-  { "germanWord": "Hemd", "englishTranslation": "button-up shirt", "artikel": "das", "pluralForm": "die Hemden" },
-  { "germanWord": "T-Shirt", "englishTranslation": "t-shirt", "artikel": "das", "pluralForm": "die T-Shirts" },
-  { "germanWord": "Pullover", "englishTranslation": "sweater", "artikel": "der", "pluralForm": "die Pullover" },
-  { "germanWord": "Jacke", "englishTranslation": "jacket", "artikel": "die", "pluralForm": "die Jacken" },
-  { "germanWord": "Mantel", "englishTranslation": "coat", "artikel": "der", "pluralForm": "die Mäntel" },
-  { "germanWord": "Schuh", "englishTranslation": "shoe", "artikel": "der", "pluralForm": "die Schuhe" },
-  { "germanWord": "Stiefel", "englishTranslation": "boot", "artikel": "der", "pluralForm": "die Stiefel" },
-  { "germanWord": "Socke", "englishTranslation": "sock", "artikel": "die", "pluralForm": "die Socken" },
-  { "germanWord": "Kleid", "englishTranslation": "dress", "artikel": "das", "pluralForm": "die Kleider" },
-  { "germanWord": "Rock", "englishTranslation": "skirt", "artikel": "der", "pluralForm": "die Röcke" },
-  { "germanWord": "Hut", "englishTranslation": "hat", "artikel": "der", "pluralForm": "die Hüte" },
-  { "germanWord": "Mütze", "englishTranslation": "cap / beanie", "artikel": "die", "pluralForm": "die Mützen" },
-  { "germanWord": "Schal", "englishTranslation": "scarf", "artikel": "der", "pluralForm": "die Schals" },
-  { "germanWord": "Sonne", "englishTranslation": "sun", "artikel": "die", "pluralForm": "die Sonnen" },
-  { "germanWord": "Regen", "englishTranslation": "rain", "artikel": "der", "pluralForm": "(no plural)" },
-  { "germanWord": "Schnee", "englishTranslation": "snow", "artikel": "der", "pluralForm": "(no plural)" },
-  { "germanWord": "Wind", "englishTranslation": "wind", "artikel": "der", "pluralForm": "die Winde" },
-  { "germanWord": "Wolke", "englishTranslation": "cloud", "artikel": "die", "pluralForm": "die Wolken" },
-  { "germanWord": "Baum", "englishTranslation": "tree", "artikel": "der", "pluralForm": "die Bäume" },
-  { "germanWord": "Blume", "englishTranslation": "flower", "artikel": "die", "pluralForm": "die Blumen" },
-  { "germanWord": "Hund", "englishTranslation": "dog", "artikel": "der", "pluralForm": "die Hunde" },
-  { "germanWord": "Katze", "englishTranslation": "cat", "artikel": "die", "pluralForm": "die Katzen" },
-  { "germanWord": "Vogel", "englishTranslation": "bird", "artikel": "der", "pluralForm": "die Vögel" },
-  { "germanWord": "Geld", "englishTranslation": "money", "artikel": "das", "pluralForm": "die Gelder" },
-  { "germanWord": "Preis", "englishTranslation": "price", "artikel": "der", "pluralForm": "die Preise" },
-  { "germanWord": "Rechnung", "englishTranslation": "bill / invoice", "artikel": "die", "pluralForm": "die Rechnungen" },
-  { "germanWord": "Name", "englishTranslation": "name", "artikel": "der", "pluralForm": "die Namen" },
-  { "germanWord": "Vorname", "englishTranslation": "first name", "artikel": "der", "pluralForm": "die Vornamen" },
-  { "germanWord": "Nachname", "englishTranslation": "last name", "artikel": "der", "pluralForm": "die Nachnamen" },
-  { "germanWord": "Adresse", "englishTranslation": "address", "artikel": "die", "pluralForm": "die Adressen" },
-  { "germanWord": "Nummer", "englishTranslation": "number", "artikel": "die", "pluralForm": "die Nummern" },
-  { "germanWord": "Frage", "englishTranslation": "question", "artikel": "die", "pluralForm": "die Fragen" },
-  { "germanWord": "Antwort", "englishTranslation": "answer", "artikel": "die", "pluralForm": "die Antworten" },
-  { "germanWord": "Problem", "englishTranslation": "problem", "artikel": "das", "pluralForm": "die Probleme" },
-  { "germanWord": "Idee", "englishTranslation": "idea", "artikel": "die", "pluralForm": "die Ideen" },
-  { "germanWord": "Beispiel", "englishTranslation": "example", "artikel": "das", "pluralForm": "die Beispiele" },
-  { "germanWord": "Wort", "englishTranslation": "word", "artikel": "das", "pluralForm": "die Wörter" },
-  { "germanWord": "Satz", "englishTranslation": "sentence", "artikel": "der", "pluralForm": "die Sätze" }
+  {
+    "germanWord": "Kopfschmerzen",
+    "englishTranslation": "headache",
+    "artikel": "die",
+    "pluralForm": "die Kopfschmerzen"
+  },
+  {
+    "germanWord": "Körper",
+    "englishTranslation": "body",
+    "artikel": "der",
+    "pluralForm": "die Körper"
+  },
+  {
+    "germanWord": "Körperteil",
+    "englishTranslation": "body part",
+    "artikel": "der",
+    "pluralForm": "die Körperteile"
+  },
+  {
+    "germanWord": "Krankenhaus",
+    "englishTranslation": "hospital",
+    "artikel": "das",
+    "pluralForm": "die Krankenhäuser"
+  },
+  {
+    "germanWord": "Krankenpfleger",
+    "englishTranslation": "nurse (male)",
+    "artikel": "der",
+    "pluralForm": "die Krankenpfleger"
+  },
+  {
+    "germanWord": "Krankenschwester",
+    "englishTranslation": "nurse",
+    "artikel": "die",
+    "pluralForm": "die Krankenschwestern"
+  },
+  {
+    "germanWord": "Krankheit",
+    "englishTranslation": "illness",
+    "artikel": "die",
+    "pluralForm": "die Krankheiten"
+  },
+  {
+    "germanWord": "Krawatte",
+    "englishTranslation": "tie",
+    "artikel": "die",
+    "pluralForm": "die Krawatten"
+  },
+  {
+    "germanWord": "Kreuzung",
+    "englishTranslation": "intersection",
+    "artikel": "die",
+    "pluralForm": "die Kreuzungen"
+  },
+  {
+    "germanWord": "Küche",
+    "englishTranslation": "kitchen",
+    "artikel": "die",
+    "pluralForm": "die Küchen"
+  },
+  {
+    "germanWord": "Kuchen",
+    "englishTranslation": "cake",
+    "artikel": "der",
+    "pluralForm": "die Kuchen"
+  },
+  {
+    "germanWord": "Kugelschreiber",
+    "englishTranslation": "ballpoint pen",
+    "artikel": "der",
+    "pluralForm": "die Kugelschreiber"
+  },
+  {
+    "germanWord": "Kühlschrank",
+    "englishTranslation": "fridge",
+    "artikel": "der",
+    "pluralForm": "die Kühlschränke"
+  },
+  {
+    "germanWord": "Kuli",
+    "englishTranslation": "pen (colloquial)",
+    "artikel": "der",
+    "pluralForm": "die Kulis"
+  },
+  {
+    "germanWord": "Kurs",
+    "englishTranslation": "course",
+    "artikel": "der",
+    "pluralForm": "die Kurse"
+  },
+  {
+    "germanWord": "Kuscheltier",
+    "englishTranslation": "stuffed animal",
+    "artikel": "das",
+    "pluralForm": "die Kuscheltiere"
+  },
+  {
+    "germanWord": "Lampe",
+    "englishTranslation": "lamp",
+    "artikel": "die",
+    "pluralForm": "die Lampen"
+  },
+  {
+    "germanWord": "Land",
+    "englishTranslation": "country",
+    "artikel": "das",
+    "pluralForm": "die Länder"
+  },
+  {
+    "germanWord": "Laptop",
+    "englishTranslation": "laptop",
+    "artikel": "der",
+    "pluralForm": "die Laptops"
+  },
+  {
+    "germanWord": "Lebensmittel",
+    "englishTranslation": "groceries / foodstuffs",
+    "artikel": "die",
+    "pluralForm": "die Lebensmittel"
+  },
+  {
+    "germanWord": "Lehrer",
+    "englishTranslation": "teacher (male)",
+    "artikel": "der",
+    "pluralForm": "die Lehrer"
+  },
+  {
+    "germanWord": "Lehrerin",
+    "englishTranslation": "teacher (female)",
+    "artikel": "die",
+    "pluralForm": "die Lehrerinnen"
+  },
+  {
+    "germanWord": "Leute",
+    "englishTranslation": "people",
+    "artikel": "die",
+    "pluralForm": "die Leute"
+  },
+  {
+    "germanWord": "Limo",
+    "englishTranslation": "soft drink / lemonade",
+    "artikel": "die",
+    "pluralForm": "die Limos"
+  },
+  {
+    "germanWord": "Lineal",
+    "englishTranslation": "ruler",
+    "artikel": "das",
+    "pluralForm": "die Lineale"
+  },
+  {
+    "germanWord": "Löffel",
+    "englishTranslation": "spoon",
+    "artikel": "der",
+    "pluralForm": "die Löffel"
+  },
+  {
+    "germanWord": "Mädchen",
+    "englishTranslation": "girl",
+    "artikel": "das",
+    "pluralForm": "die Mädchen"
+  },
+  {
+    "germanWord": "Mann",
+    "englishTranslation": "man",
+    "artikel": "der",
+    "pluralForm": "die Männer"
+  },
+  {
+    "germanWord": "Mantel",
+    "englishTranslation": "coat",
+    "artikel": "der",
+    "pluralForm": "die Mäntel"
+  },
+  {
+    "germanWord": "Mechaniker",
+    "englishTranslation": "mechanic",
+    "artikel": "der",
+    "pluralForm": "die Mechaniker"
+  },
+  {
+    "germanWord": "Medikament",
+    "englishTranslation": "medicine",
+    "artikel": "das",
+    "pluralForm": "die Medikamente"
+  },
+  {
+    "germanWord": "Medizin",
+    "englishTranslation": "medicine",
+    "artikel": "die",
+    "pluralForm": "die Medizinen"
+  },
+  {
+    "germanWord": "Messer",
+    "englishTranslation": "knife",
+    "artikel": "das",
+    "pluralForm": "die Messer"
+  },
+  {
+    "germanWord": "Metzger",
+    "englishTranslation": "butcher",
+    "artikel": "der",
+    "pluralForm": "die Metzger"
+  },
+  {
+    "germanWord": "Metzgerei",
+    "englishTranslation": "butcher shop",
+    "artikel": "die",
+    "pluralForm": "die Metzgereien"
+  },
+  {
+    "germanWord": "Milch",
+    "englishTranslation": "milk",
+    "artikel": "die",
+    "pluralForm": "(no plural)"
+  },
+  {
+    "germanWord": "Minute",
+    "englishTranslation": "minute",
+    "artikel": "die",
+    "pluralForm": "die Minuten"
+  },
+  {
+    "germanWord": "Mitarbeiter",
+    "englishTranslation": "employee",
+    "artikel": "der",
+    "pluralForm": "die Mitarbeiter"
+  },
+  {
+    "germanWord": "Mittag",
+    "englishTranslation": "noon",
+    "artikel": "der",
+    "pluralForm": "die Mittage"
+  },
+  {
+    "germanWord": "Mittagessen",
+    "englishTranslation": "lunch",
+    "artikel": "das",
+    "pluralForm": "die Mittagessen"
+  },
+  {
+    "germanWord": "Monat",
+    "englishTranslation": "month",
+    "artikel": "der",
+    "pluralForm": "die Monate"
+  },
+  {
+    "germanWord": "Morgen",
+    "englishTranslation": "morning",
+    "artikel": "der",
+    "pluralForm": "die Morgen"
+  },
+  {
+    "germanWord": "Mund",
+    "englishTranslation": "mouth",
+    "artikel": "der",
+    "pluralForm": "die Münder"
+  },
+  {
+    "germanWord": "Mutter",
+    "englishTranslation": "mother",
+    "artikel": "die",
+    "pluralForm": "die Mütter"
+  },
+  {
+    "germanWord": "Mütze",
+    "englishTranslation": "cap / beanie",
+    "artikel": "die",
+    "pluralForm": "die Mützen"
+  },
+  {
+    "germanWord": "Nachmittag",
+    "englishTranslation": "afternoon",
+    "artikel": "der",
+    "pluralForm": "die Nachmittage"
+  },
+  {
+    "germanWord": "Nachname",
+    "englishTranslation": "last name",
+    "artikel": "der",
+    "pluralForm": "die Nachnamen"
+  },
+  {
+    "germanWord": "Nacht",
+    "englishTranslation": "night",
+    "artikel": "die",
+    "pluralForm": "die Nächte"
+  },
+  {
+    "germanWord": "Name",
+    "englishTranslation": "name",
+    "artikel": "der",
+    "pluralForm": "die Namen"
+  },
+  {
+    "germanWord": "Nase",
+    "englishTranslation": "nose",
+    "artikel": "die",
+    "pluralForm": "die Nasen"
+  },
+  {
+    "germanWord": "Nudel",
+    "englishTranslation": "noodle",
+    "artikel": "die",
+    "pluralForm": "die Nudeln"
+  },
+  {
+    "germanWord": "Nummer",
+    "englishTranslation": "number",
+    "artikel": "die",
+    "pluralForm": "die Nummern"
+  },
+  {
+    "germanWord": "Obst",
+    "englishTranslation": "fruit",
+    "artikel": "das",
+    "pluralForm": "(no plural)"
+  },
+  {
+    "germanWord": "Ohr",
+    "englishTranslation": "ear",
+    "artikel": "das",
+    "pluralForm": "die Ohren"
+  },
+  {
+    "germanWord": "Onkel",
+    "englishTranslation": "uncle",
+    "artikel": "der",
+    "pluralForm": "die Onkel"
+  },
+  {
+    "germanWord": "Orange",
+    "englishTranslation": "orange",
+    "artikel": "die",
+    "pluralForm": "die Orangen"
+  },
+  {
+    "germanWord": "Papier",
+    "englishTranslation": "paper",
+    "artikel": "das",
+    "pluralForm": "die Papiere"
+  },
+  {
+    "germanWord": "Patrone",
+    "englishTranslation": "ink cartridge",
+    "artikel": "die",
+    "pluralForm": "die Patronen"
+  },
+  {
+    "germanWord": "Pause",
+    "englishTranslation": "break",
+    "artikel": "die",
+    "pluralForm": "die Pausen"
+  },
+  {
+    "germanWord": "Petersilie",
+    "englishTranslation": "parsley",
+    "artikel": "die",
+    "pluralForm": "(no plural)"
+  },
+  {
+    "germanWord": "Pfanne",
+    "englishTranslation": "pan",
+    "artikel": "die",
+    "pluralForm": "die Pfannen"
+  },
+  {
+    "germanWord": "Pfeffer",
+    "englishTranslation": "pepper (spice)",
+    "artikel": "der",
+    "pluralForm": "(no plural)"
+  },
+  {
+    "germanWord": "Pflaster",
+    "englishTranslation": "bandage / plaster",
+    "artikel": "das",
+    "pluralForm": "die Pflaster"
+  },
+  {
+    "germanWord": "Pizza",
+    "englishTranslation": "pizza",
+    "artikel": "die",
+    "pluralForm": "die Pizzen"
+  },
+  {
+    "germanWord": "Platz",
+    "englishTranslation": "square / plaza",
+    "artikel": "der",
+    "pluralForm": "die Plätze"
+  },
+  {
+    "germanWord": "Polizei",
+    "englishTranslation": "police",
+    "artikel": "die",
+    "pluralForm": "(no plural)"
+  },
+  {
+    "germanWord": "Post",
+    "englishTranslation": "post office",
+    "artikel": "die",
+    "pluralForm": "die Postämter"
+  },
+  {
+    "germanWord": "Preis",
+    "englishTranslation": "price",
+    "artikel": "der",
+    "pluralForm": "die Preise"
+  },
+  {
+    "germanWord": "Problem",
+    "englishTranslation": "problem",
+    "artikel": "das",
+    "pluralForm": "die Probleme"
+  },
+  {
+    "germanWord": "Pulli",
+    "englishTranslation": "sweater (colloquial)",
+    "artikel": "der",
+    "pluralForm": "die Pullis"
+  },
+  {
+    "germanWord": "Pullover",
+    "englishTranslation": "sweater",
+    "artikel": "der",
+    "pluralForm": "die Pullover"
+  },
+  {
+    "germanWord": "Putzfrau",
+    "englishTranslation": "cleaner (female)",
+    "artikel": "die",
+    "pluralForm": "die Putzfrauen"
+  },
+  {
+    "germanWord": "Radiergummi",
+    "englishTranslation": "eraser",
+    "artikel": "der",
+    "pluralForm": "die Radiergummis"
+  },
+  {
+    "germanWord": "Rechnung",
+    "englishTranslation": "bill / invoice",
+    "artikel": "die",
+    "pluralForm": "die Rechnungen"
+  },
+  {
+    "germanWord": "Regal",
+    "englishTranslation": "shelf",
+    "artikel": "das",
+    "pluralForm": "die Regale"
+  },
+  {
+    "germanWord": "Regen",
+    "englishTranslation": "rain",
+    "artikel": "der",
+    "pluralForm": "(no plural)"
+  },
+  {
+    "germanWord": "Reis",
+    "englishTranslation": "rice",
+    "artikel": "der",
+    "pluralForm": "(no plural)"
+  },
+  {
+    "germanWord": "Rezeptionist",
+    "englishTranslation": "receptionist (male)",
+    "artikel": "der",
+    "pluralForm": "die Rezeptionisten"
+  },
+  {
+    "germanWord": "Rock",
+    "englishTranslation": "skirt",
+    "artikel": "der",
+    "pluralForm": "die Röcke"
+  },
+  {
+    "germanWord": "Rolltreppe",
+    "englishTranslation": "escalator",
+    "artikel": "die",
+    "pluralForm": "die Rolltreppen"
+  },
+  {
+    "germanWord": "Rot",
+    "englishTranslation": "red",
+    "artikel": "das",
+    "pluralForm": "(no plural)"
+  },
+  {
+    "germanWord": "Rücken",
+    "englishTranslation": "back",
+    "artikel": "der",
+    "pluralForm": "die Rücken"
+  },
+  {
+    "germanWord": "Rückenschmerzen",
+    "englishTranslation": "backache",
+    "artikel": "die",
+    "pluralForm": "die Rückenschmerzen"
+  },
+  {
+    "germanWord": "Rucksack",
+    "englishTranslation": "backpack",
+    "artikel": "der",
+    "pluralForm": "die Rucksäcke"
+  },
+  {
+    "germanWord": "S-Bahn",
+    "englishTranslation": "suburban train",
+    "artikel": "die",
+    "pluralForm": "die S-Bahnen"
+  },
+  {
+    "germanWord": "Saft",
+    "englishTranslation": "juice",
+    "artikel": "der",
+    "pluralForm": "die Säfte"
+  },
+  {
+    "germanWord": "Salat",
+    "englishTranslation": "salad / lettuce",
+    "artikel": "der",
+    "pluralForm": "die Salate"
+  },
+  {
+    "germanWord": "Salz",
+    "englishTranslation": "salt",
+    "artikel": "das",
+    "pluralForm": "(no plural)"
+  },
+  {
+    "germanWord": "Satz",
+    "englishTranslation": "sentence",
+    "artikel": "der",
+    "pluralForm": "die Sätze"
+  },
+  {
+    "germanWord": "Schal",
+    "englishTranslation": "scarf",
+    "artikel": "der",
+    "pluralForm": "die Schals"
+  },
+  {
+    "germanWord": "Schere",
+    "englishTranslation": "scissors",
+    "artikel": "die",
+    "pluralForm": "die Scheren"
+  },
+  {
+    "germanWord": "Schinken",
+    "englishTranslation": "ham",
+    "artikel": "der",
+    "pluralForm": "die Schinken"
+  },
+  {
+    "germanWord": "Schlafzimmer",
+    "englishTranslation": "bedroom",
+    "artikel": "das",
+    "pluralForm": "die Schlafzimmer"
+  },
+  {
+    "germanWord": "Schlüssel",
+    "englishTranslation": "key",
+    "artikel": "der",
+    "pluralForm": "die Schlüssel"
+  },
+  {
+    "germanWord": "Schmerz",
+    "englishTranslation": "pain",
+    "artikel": "der",
+    "pluralForm": "die Schmerzen"
+  },
+  {
+    "germanWord": "Schnee",
+    "englishTranslation": "snow",
+    "artikel": "der",
+    "pluralForm": "(no plural)"
+  },
+  {
+    "germanWord": "Schnupfen",
+    "englishTranslation": "cold (illness)",
+    "artikel": "der",
+    "pluralForm": "(no plural)"
+  },
+  {
+    "germanWord": "Schokolade",
+    "englishTranslation": "chocolate",
+    "artikel": "die",
+    "pluralForm": "die Schokoladen"
+  },
+  {
+    "germanWord": "Schrank",
+    "englishTranslation": "closet / cabinet",
+    "artikel": "der",
+    "pluralForm": "die Schränke"
+  },
+  {
+    "germanWord": "Schreibtisch",
+    "englishTranslation": "desk",
+    "artikel": "der",
+    "pluralForm": "die Schreibtische"
+  },
+  {
+    "germanWord": "Schuh",
+    "englishTranslation": "shoe",
+    "artikel": "der",
+    "pluralForm": "die Schuhe"
+  },
+  {
+    "germanWord": "Schule",
+    "englishTranslation": "school",
+    "artikel": "die",
+    "pluralForm": "die Schulen"
+  },
+  {
+    "germanWord": "Schüler",
+    "englishTranslation": "student (male)",
+    "artikel": "der",
+    "pluralForm": "die Schüler"
+  },
+  {
+    "germanWord": "Schülerin",
+    "englishTranslation": "student (female)",
+    "artikel": "die",
+    "pluralForm": "die Schülerinnen"
+  },
+  {
+    "germanWord": "Schwarz",
+    "englishTranslation": "black",
+    "artikel": "das",
+    "pluralForm": "(no plural)"
+  },
+  {
+    "germanWord": "Schwester",
+    "englishTranslation": "sister",
+    "artikel": "die",
+    "pluralForm": "die Schwestern"
+  },
+  {
+    "germanWord": "Seife",
+    "englishTranslation": "soap",
+    "artikel": "die",
+    "pluralForm": "die Seifen"
+  },
+  {
+    "germanWord": "Sekretärin",
+    "englishTranslation": "secretary (female)",
+    "artikel": "die",
+    "pluralForm": "die Sekretärinnen"
+  },
+  {
+    "germanWord": "Sekunde",
+    "englishTranslation": "second",
+    "artikel": "die",
+    "pluralForm": "die Sekunden"
+  },
+  {
+    "germanWord": "Smartphone",
+    "englishTranslation": "smartphone",
+    "artikel": "das",
+    "pluralForm": "die Smartphones"
+  },
+  {
+    "germanWord": "Socke",
+    "englishTranslation": "sock",
+    "artikel": "die",
+    "pluralForm": "die Socken"
+  },
+  {
+    "germanWord": "Sofa",
+    "englishTranslation": "sofa",
+    "artikel": "das",
+    "pluralForm": "die Sofas"
+  },
+  {
+    "germanWord": "Sohn",
+    "englishTranslation": "son",
+    "artikel": "der",
+    "pluralForm": "die Söhne"
+  },
+  {
+    "germanWord": "Sonne",
+    "englishTranslation": "sun",
+    "artikel": "die",
+    "pluralForm": "die Sonnen"
+  },
+  {
+    "germanWord": "Spaghetti",
+    "englishTranslation": "spaghetti",
+    "artikel": "die",
+    "pluralForm": "die Spaghetti"
+  },
+  {
+    "germanWord": "Spiegel",
+    "englishTranslation": "mirror",
+    "artikel": "der",
+    "pluralForm": "die Spiegel"
+  },
+  {
+    "germanWord": "Spitzer",
+    "englishTranslation": "pencil sharpener",
+    "artikel": "der",
+    "pluralForm": "die Spitzer"
+  },
+  {
+    "germanWord": "Stadt",
+    "englishTranslation": "city",
+    "artikel": "die",
+    "pluralForm": "die Städte"
+  },
+  {
+    "germanWord": "Stadtplan",
+    "englishTranslation": "city map",
+    "artikel": "der",
+    "pluralForm": "die Stadtpläne"
+  },
+  {
+    "germanWord": "Stiefel",
+    "englishTranslation": "boot",
+    "artikel": "der",
+    "pluralForm": "die Stiefel"
+  },
+  {
+    "germanWord": "Stift",
+    "englishTranslation": "pen",
+    "artikel": "der",
+    "pluralForm": "die Stifte"
+  },
+  {
+    "germanWord": "Straße",
+    "englishTranslation": "street",
+    "artikel": "die",
+    "pluralForm": "die Straßen"
+  },
+  {
+    "germanWord": "Straßenbahn",
+    "englishTranslation": "tram",
+    "artikel": "die",
+    "pluralForm": "die Straßenbahnen"
+  },
+  {
+    "germanWord": "Strumpf",
+    "englishTranslation": "stocking",
+    "artikel": "der",
+    "pluralForm": "die Strümpfe"
+  },
+  {
+    "germanWord": "Strumpfhose",
+    "englishTranslation": "tights",
+    "artikel": "die",
+    "pluralForm": "die Strumpfhosen"
+  },
+  {
+    "germanWord": "Stuhl",
+    "englishTranslation": "chair",
+    "artikel": "der",
+    "pluralForm": "die Stühle"
+  },
+  {
+    "germanWord": "Stunde",
+    "englishTranslation": "hour",
+    "artikel": "die",
+    "pluralForm": "die Stunden"
+  },
+  {
+    "germanWord": "Supermarkt",
+    "englishTranslation": "supermarket",
+    "artikel": "der",
+    "pluralForm": "die Supermärkte"
+  },
+  {
+    "germanWord": "Suppe",
+    "englishTranslation": "soup",
+    "artikel": "die",
+    "pluralForm": "die Suppen"
+  },
+  {
+    "germanWord": "T-Shirt",
+    "englishTranslation": "t-shirt",
+    "artikel": "das",
+    "pluralForm": "die T-Shirts"
+  },
+  {
+    "germanWord": "Tablette",
+    "englishTranslation": "tablet / pill",
+    "artikel": "die",
+    "pluralForm": "die Tabletten"
+  },
+  {
+    "germanWord": "Tafel",
+    "englishTranslation": "board / chalkboard",
+    "artikel": "die",
+    "pluralForm": "die Tafeln"
+  },
+  {
+    "germanWord": "Tag",
+    "englishTranslation": "day",
+    "artikel": "der",
+    "pluralForm": "die Tage"
+  },
+  {
+    "germanWord": "Tante",
+    "englishTranslation": "aunt",
+    "artikel": "die",
+    "pluralForm": "die Tanten"
+  },
+  {
+    "germanWord": "Tasche",
+    "englishTranslation": "bag",
+    "artikel": "die",
+    "pluralForm": "die Taschen"
+  },
+  {
+    "germanWord": "Taschentuch",
+    "englishTranslation": "tissue",
+    "artikel": "das",
+    "pluralForm": "die Taschentücher"
+  },
+  {
+    "germanWord": "Tasse",
+    "englishTranslation": "cup",
+    "artikel": "die",
+    "pluralForm": "die Tassen"
+  },
+  {
+    "germanWord": "Teddybär",
+    "englishTranslation": "teddy bear",
+    "artikel": "der",
+    "pluralForm": "die Teddybären"
+  },
+  {
+    "germanWord": "Tee",
+    "englishTranslation": "tea",
+    "artikel": "der",
+    "pluralForm": "die Tees"
+  },
+  {
+    "germanWord": "Telefon",
+    "englishTranslation": "telephone",
+    "artikel": "das",
+    "pluralForm": "die Telefone"
+  },
+  {
+    "germanWord": "Teller",
+    "englishTranslation": "plate",
+    "artikel": "der",
+    "pluralForm": "die Teller"
+  },
+  {
+    "germanWord": "Teppich",
+    "englishTranslation": "carpet",
+    "artikel": "der",
+    "pluralForm": "die Teppiche"
+  },
+  {
+    "germanWord": "Termin",
+    "englishTranslation": "appointment",
+    "artikel": "der",
+    "pluralForm": "die Termine"
+  },
+  {
+    "germanWord": "Ticket",
+    "englishTranslation": "ticket",
+    "artikel": "das",
+    "pluralForm": "die Tickets"
+  },
+  {
+    "germanWord": "Tisch",
+    "englishTranslation": "table",
+    "artikel": "der",
+    "pluralForm": "die Tische"
+  },
+  {
+    "germanWord": "Tochter",
+    "englishTranslation": "daughter",
+    "artikel": "die",
+    "pluralForm": "die Töchter"
+  },
+  {
+    "germanWord": "Tomate",
+    "englishTranslation": "tomato",
+    "artikel": "die",
+    "pluralForm": "die Tomaten"
+  },
+  {
+    "germanWord": "Tomatensoße",
+    "englishTranslation": "tomato sauce",
+    "artikel": "die",
+    "pluralForm": "die Tomatensoßen"
+  },
+  {
+    "germanWord": "Tomatensuppe",
+    "englishTranslation": "tomato soup",
+    "artikel": "die",
+    "pluralForm": "die Tomatensuppen"
+  },
+  {
+    "germanWord": "Topf",
+    "englishTranslation": "pot",
+    "artikel": "der",
+    "pluralForm": "die Töpfe"
+  },
+  {
+    "germanWord": "Tür",
+    "englishTranslation": "door",
+    "artikel": "die",
+    "pluralForm": "die Türen"
+  },
+  {
+    "germanWord": "Tüte",
+    "englishTranslation": "bag",
+    "artikel": "die",
+    "pluralForm": "die Tüten"
+  },
+  {
+    "germanWord": "U-Bahn",
+    "englishTranslation": "subway",
+    "artikel": "die",
+    "pluralForm": "die U-Bahnen"
+  },
+  {
+    "germanWord": "Uhr",
+    "englishTranslation": "clock / watch",
+    "artikel": "die",
+    "pluralForm": "die Uhren"
+  },
+  {
+    "germanWord": "Universität",
+    "englishTranslation": "university",
+    "artikel": "die",
+    "pluralForm": "die Universitäten"
+  },
+  {
+    "germanWord": "Unterhose",
+    "englishTranslation": "underpants",
+    "artikel": "die",
+    "pluralForm": "die Unterhosen"
+  },
+  {
+    "germanWord": "Urlaub",
+    "englishTranslation": "vacation",
+    "artikel": "der",
+    "pluralForm": "die Urlaube"
+  },
+  {
+    "germanWord": "Vater",
+    "englishTranslation": "father",
+    "artikel": "der",
+    "pluralForm": "die Väter"
+  },
+  {
+    "germanWord": "Verkäufer",
+    "englishTranslation": "salesman",
+    "artikel": "der",
+    "pluralForm": "die Verkäufer"
+  },
+  {
+    "germanWord": "Verkäuferin",
+    "englishTranslation": "saleswoman",
+    "artikel": "die",
+    "pluralForm": "die Verkäuferinnen"
+  },
+  {
+    "germanWord": "Vogel",
+    "englishTranslation": "bird",
+    "artikel": "der",
+    "pluralForm": "die Vögel"
+  },
+  {
+    "germanWord": "Vormittag",
+    "englishTranslation": "forenoon",
+    "artikel": "der",
+    "pluralForm": "die Vormittage"
+  },
+  {
+    "germanWord": "Vorname",
+    "englishTranslation": "first name",
+    "artikel": "der",
+    "pluralForm": "die Vornamen"
+  },
+  {
+    "germanWord": "Waage",
+    "englishTranslation": "scale",
+    "artikel": "die",
+    "pluralForm": "die Waagen"
+  },
+  {
+    "germanWord": "Wand",
+    "englishTranslation": "wall",
+    "artikel": "die",
+    "pluralForm": "die Wände"
+  },
+  {
+    "germanWord": "Wasser",
+    "englishTranslation": "water",
+    "artikel": "das",
+    "pluralForm": "die Wasser"
+  },
+  {
+    "germanWord": "Wecker",
+    "englishTranslation": "alarm clock",
+    "artikel": "der",
+    "pluralForm": "die Wecker"
+  },
+  {
+    "germanWord": "Weg",
+    "englishTranslation": "path / way",
+    "artikel": "der",
+    "pluralForm": "die Wege"
+  },
+  {
+    "germanWord": "Wein",
+    "englishTranslation": "wine",
+    "artikel": "der",
+    "pluralForm": "die Weine"
+  },
+  {
+    "germanWord": "Weiß",
+    "englishTranslation": "white",
+    "artikel": "das",
+    "pluralForm": "(no plural)"
+  },
+  {
+    "germanWord": "Wind",
+    "englishTranslation": "wind",
+    "artikel": "der",
+    "pluralForm": "die Winde"
+  },
+  {
+    "germanWord": "Windel",
+    "englishTranslation": "diaper",
+    "artikel": "die",
+    "pluralForm": "die Windeln"
+  },
+  {
+    "germanWord": "Woche",
+    "englishTranslation": "week",
+    "artikel": "die",
+    "pluralForm": "die Wochen"
+  },
+  {
+    "germanWord": "Wochenende",
+    "englishTranslation": "weekend",
+    "artikel": "das",
+    "pluralForm": "die Wochenenden"
+  },
+  {
+    "germanWord": "Wohnung",
+    "englishTranslation": "apartment",
+    "artikel": "die",
+    "pluralForm": "die Wohnungen"
+  },
+  {
+    "germanWord": "Wohnzimmer",
+    "englishTranslation": "living room",
+    "artikel": "das",
+    "pluralForm": "die Wohnzimmer"
+  },
+  {
+    "germanWord": "Wolke",
+    "englishTranslation": "cloud",
+    "artikel": "die",
+    "pluralForm": "die Wolken"
+  },
+  {
+    "germanWord": "Wort",
+    "englishTranslation": "word",
+    "artikel": "das",
+    "pluralForm": "die Wörter"
+  },
+  {
+    "germanWord": "Wurst",
+    "englishTranslation": "sausage",
+    "artikel": "die",
+    "pluralForm": "die Würste"
+  },
+  {
+    "germanWord": "Zahn",
+    "englishTranslation": "tooth",
+    "artikel": "der",
+    "pluralForm": "die Zähne"
+  },
+  {
+    "germanWord": "Zahnschmerzen",
+    "englishTranslation": "toothache",
+    "artikel": "die",
+    "pluralForm": "die Zahnschmerzen"
+  },
+  {
+    "germanWord": "Zebrastreifen",
+    "englishTranslation": "pedestrian crossing",
+    "artikel": "der",
+    "pluralForm": "die Zebrastreifen"
+  },
+  {
+    "germanWord": "Zeit",
+    "englishTranslation": "time",
+    "artikel": "die",
+    "pluralForm": "die Zeiten"
+  },
+  {
+    "germanWord": "Zeitung",
+    "englishTranslation": "newspaper",
+    "artikel": "die",
+    "pluralForm": "die Zeitungen"
+  },
+  {
+    "germanWord": "Zimmer",
+    "englishTranslation": "room",
+    "artikel": "das",
+    "pluralForm": "die Zimmer"
+  },
+  {
+    "germanWord": "Zitrone",
+    "englishTranslation": "lemon",
+    "artikel": "die",
+    "pluralForm": "die Zitronen"
+  },
+  {
+    "germanWord": "Zucker",
+    "englishTranslation": "sugar",
+    "artikel": "der",
+    "pluralForm": "(no plural)"
+  },
+  {
+    "germanWord": "Zug",
+    "englishTranslation": "train",
+    "artikel": "der",
+    "pluralForm": "die Züge"
+  },
+  {
+    "germanWord": "Zwiebel",
+    "englishTranslation": "onion",
+    "artikel": "die",
+    "pluralForm": "die Zwiebeln"
+  }
 ]

@@ -1,4 +1,4 @@
-import type { Segment } from '../../types/sentence'
+import type { Segment, SentenceRole } from '../../types/sentence'
 
 type ColoredSegmentProps = {
   segment: Segment
@@ -51,11 +51,12 @@ export function SentenceLine({
   order,
   showEnglish = false,
 }: {
-  card: { segments: Segment[] }
+  card: { segments: Segment[]; role?: SentenceRole }
   order: string[]
   showEnglish?: boolean
 }) {
   const byId = new Map(card.segments.map((s) => [s.id, s]))
+  const isQuestion = card.role === 'question'
   return (
     <p className="sentence-line">
       {order.map((id, i) => {
@@ -68,6 +69,7 @@ export function SentenceLine({
           </span>
         )
       })}
+      {isQuestion && <span className="sentence-line__punct">?</span>}
     </p>
   )
 }

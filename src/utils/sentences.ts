@@ -51,9 +51,16 @@ export function inferSegmentType(text: string, current: SegmentType): SegmentTyp
   return 'other'
 }
 
+export function finishGermanSentence(card: SentenceCard, text: string): string {
+  const trimmed = text.trimEnd()
+  if (card.role !== 'question' || trimmed.endsWith('?')) return text
+  return `${text}?`
+}
+
 export function renderGermanSentence(card: SentenceCard, order: string[]): string {
   const byId = new Map(card.segments.map((s) => [s.id, s]))
-  return order.map((id) => byId.get(id)?.text ?? '').join(' ')
+  const text = order.map((id) => byId.get(id)?.text ?? '').join(' ')
+  return finishGermanSentence(card, text)
 }
 
 export const PATTERN_INFO: Record<
@@ -170,6 +177,19 @@ export function segmentBankKey(text: string): string {
   return text.trim().toLowerCase()
 }
 
+function getPartnerCards(card: SentenceCard, allCards: SentenceCard[]): SentenceCard[] {
+  return allCards.filter((c) => c.pairId === card.pairId && c.id !== card.id)
+}
+
+/** Labels from the paired question/answer (e.g. Kaan when the target uses er). */
+function getPartnerSegmentKeys(card: SentenceCard, allCards: SentenceCard[]): Set<string> {
+  return new Set(
+    getPartnerCards(card, allCards).flatMap((c) =>
+      c.segments.map((s) => segmentBankKey(s.text)),
+    ),
+  )
+}
+
 export function buildSegmentBank(
   card: SentenceCard,
   allCards: SentenceCard[],
@@ -177,30 +197,36 @@ export function buildSegmentBank(
 ): Segment[] {
   const pool = new Map<string, Segment>()
   const seenText = new Set<string>()
+  const partnerKeys = getPartnerSegmentKeys(card, allCards)
 
-  const add = (seg: Segment) => {
+  for (const seg of card.segments) {
+    pool.set(seg.id, seg)
+    seenText.add(segmentBankKey(seg.text))
+  }
+
+  const addDistractor = (seg: Segment) => {
     if (pool.has(seg.id)) return
     const key = segmentBankKey(seg.text)
+    if (partnerKeys.has(key)) return
     if (seenText.has(key)) return
     pool.set(seg.id, seg)
     seenText.add(key)
   }
 
-  for (const seg of card.segments) {
-    add(seg)
-  }
   if (card.distractors) {
     for (const id of card.distractors) {
       const found = allCards.flatMap((c) => c.segments).find((s) => s.id === id)
-      if (found) add(found)
+      if (found) addDistractor(found)
     }
   }
   const others = shuffle(
-    allCards.filter((c) => c.id !== card.id).flatMap((c) => c.segments),
+    allCards
+      .filter((c) => c.id !== card.id && c.pairId !== card.pairId)
+      .flatMap((c) => c.segments),
   )
   for (const seg of others) {
     if (pool.size >= card.segments.length + extraDistractors) break
-    add(seg)
+    addDistractor(seg)
   }
   return shuffle([...pool.values()])
 }

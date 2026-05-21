@@ -237,6 +237,9 @@ export function SentencePractice({ cards, onBack }: SentencePracticeProps) {
               onClick={checked ? undefined : () => handleBuiltClick(seg.id)}
             />
           ))}
+          {targetCard.role === 'question' && builtSegments.length > 0 && (
+            <span className="sentence-line__punct">?</span>
+          )}
         </div>
         {checked && (
           <p
