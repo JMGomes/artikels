@@ -84,7 +84,7 @@ export function TrainGame({ allWords, onBack }: TrainGameProps) {
                 </div>
                 {!entry.correct && (
                   <p className="result-user-answer">
-                    You: {entry.userAnswer} {entry.word.germanWord}
+                    You: {entry.userAnswer}
                   </p>
                 )}
               </li>
