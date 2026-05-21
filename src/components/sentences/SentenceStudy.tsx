@@ -71,8 +71,19 @@ export function SentenceStudy({ cards, onBack }: SentenceStudyProps) {
           <span className="segment-chip segment-chip--verb segment-chip--sample">verb</span>
         </span>
         <span>
+          <span className="segment-chip segment-chip--time segment-chip--sample">time</span>
+        </span>
+        <span>
+          <span className="segment-chip segment-chip--questionWord segment-chip--sample">
+            Wann / Was / Wo…
+          </span>
+        </span>
+        <span>
+          <span className="segment-chip segment-chip--place segment-chip--sample">place</span>
+        </span>
+        <span>
           <span className="segment-chip segment-chip--other segment-chip--sample">other</span>
-          <span className="study-legend__note">time, question word, place…</span>
+          <span className="study-legend__note">dann, mit dem…</span>
         </span>
       </div>
 

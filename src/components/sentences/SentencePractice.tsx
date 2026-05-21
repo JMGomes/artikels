@@ -1,20 +1,21 @@
 import { useCallback, useMemo, useState } from 'react'
-import type { Segment, SentenceCard } from '../../types/sentence'
+import type { PracticeRound, Segment } from '../../types/sentence'
+import type { SentenceCard } from '../../types/sentence'
 import {
   buildSegmentBank,
+  getPromptAndTarget,
   gradeOrder,
-  pickPracticeRound,
-  renderOrderedText,
+  pickPracticeRounds,
+  renderGermanSentence,
 } from '../../utils/sentences'
-import { shuffle } from '../../utils'
 import { ColoredSegment, SentenceLine } from './ColoredSegment'
 
-const ROUND_SIZE = 8
+const ROUND_SIZE = 4
 
 type PracticePhase = 'playing' | 'roundComplete'
 
 type RoundResult = {
-  card: SentenceCard
+  round: PracticeRound
   userOrder: string[]
   correct: boolean
 }
@@ -24,20 +25,9 @@ type SentencePracticeProps = {
   onBack: () => void
 }
 
-function pickBalancedRound(cards: SentenceCard[], count: number): SentenceCard[] {
-  const questions = cards.filter((c) => c.role === 'question')
-  const answers = cards.filter((c) => c.role === 'answer')
-  const half = Math.floor(count / 2)
-  const qPick = shuffle(questions).slice(0, half)
-  const aPick = shuffle(answers).slice(0, count - half)
-  const combined = shuffle([...qPick, ...aPick])
-  if (combined.length >= count) return combined.slice(0, count)
-  return pickPracticeRound(cards, count)
-}
-
 export function SentencePractice({ cards, onBack }: SentencePracticeProps) {
-  const [roundCards, setRoundCards] = useState<SentenceCard[]>(() =>
-    pickBalancedRound(cards, ROUND_SIZE),
+  const [rounds, setRounds] = useState<PracticeRound[]>(() =>
+    pickPracticeRounds(cards, ROUND_SIZE),
   )
   const [index, setIndex] = useState(0)
   const [built, setBuilt] = useState<string[]>([])
@@ -46,16 +36,33 @@ export function SentencePractice({ cards, onBack }: SentencePracticeProps) {
   const [results, setResults] = useState<RoundResult[]>([])
   const [phase, setPhase] = useState<PracticePhase>('playing')
 
-  const current = roundCards[index]
+  const current = rounds[index]
+  const ui = current ? getPromptAndTarget(current) : null
+  const targetCard = ui?.targetCard
+
   const segmentBank = useMemo(
-    () => (current ? buildSegmentBank(current, cards) : []),
-    [current, cards],
+    () => (targetCard ? buildSegmentBank(targetCard, cards) : []),
+    [targetCard, cards],
   )
+
+  const targetSegmentIds = useMemo(
+    () => new Set(targetCard?.segments.map((s) => s.id) ?? []),
+    [targetCard],
+  )
+
+  const segmentById = useMemo(() => {
+    const map = new Map<string, Segment>()
+    if (targetCard) {
+      for (const seg of targetCard.segments) map.set(seg.id, seg)
+    }
+    for (const seg of segmentBank) map.set(seg.id, seg)
+    return map
+  }, [targetCard, segmentBank])
 
   const usedIds = new Set(built)
 
   const startRound = useCallback(() => {
-    setRoundCards(pickBalancedRound(cards, ROUND_SIZE))
+    setRounds(pickPracticeRounds(cards, ROUND_SIZE))
     setIndex(0)
     setBuilt([])
     setChecked(false)
@@ -79,15 +86,15 @@ export function SentencePractice({ cards, onBack }: SentencePracticeProps) {
   }
 
   const handleCheck = () => {
-    if (!current || built.length !== current.segments.length) return
-    const correct = gradeOrder(current, built)
+    if (!targetCard || !current || built.length !== targetCard.segments.length) return
+    const correct = gradeOrder(targetCard, built)
     setWasCorrect(correct)
     setChecked(true)
-    setResults((prev) => [...prev, { card: current, userOrder: built, correct }])
+    setResults((prev) => [...prev, { round: current, userOrder: built, correct }])
   }
 
   const handleNext = () => {
-    if (index + 1 >= roundCards.length) {
+    if (index + 1 >= rounds.length) {
       setPhase('roundComplete')
       return
     }
@@ -121,24 +128,35 @@ export function SentencePractice({ cards, onBack }: SentencePracticeProps) {
         <section className="results">
           <h2>Results</h2>
           <ul className="results-list">
-            {results.map((entry, i) => (
-              <li
-                key={`${i}-${entry.card.id}`}
-                className={entry.correct ? 'result correct' : 'result incorrect'}
-              >
-                <p className="result-meta">
-                  Build the <strong>{entry.card.role}</strong> · {entry.card.english}
-                </p>
-                <p className="result-built">
-                  You: {renderOrderedText(entry.card, entry.userOrder)}
-                </p>
-                {!entry.correct && (
-                  <div className="result-correct-line">
-                    <SentenceLine card={entry.card} order={entry.card.correctOrder} />
-                  </div>
-                )}
-              </li>
-            ))}
+            {results.map((entry, i) => {
+              const labels = getPromptAndTarget(entry.round)
+              return (
+                <li
+                  key={`${i}-${entry.round.pair.pairId}-${entry.round.direction}`}
+                  className={entry.correct ? 'result correct' : 'result incorrect'}
+                >
+                  <p className="result-meta">
+                    <span className="result-meta__label">{labels.promptLabel}:</span>
+                    <SentenceLine
+                      card={labels.promptCard}
+                      order={labels.promptCard.correctOrder}
+                    />
+                  </p>
+                  <p className="result-built">
+                    Du ({labels.targetLabel}):{' '}
+                    {renderGermanSentence(labels.targetCard, entry.userOrder)}
+                  </p>
+                  {!entry.correct && (
+                    <div className="result-correct-line">
+                      <SentenceLine
+                        card={labels.targetCard}
+                        order={labels.targetCard.correctOrder}
+                      />
+                    </div>
+                  )}
+                </li>
+              )
+            })}
           </ul>
         </section>
 
@@ -154,10 +172,12 @@ export function SentencePractice({ cards, onBack }: SentencePracticeProps) {
     )
   }
 
-  if (!current) {
+  if (!current || !ui || !targetCard) {
     return (
       <div className="app">
-        <p className="error">Not enough sentence cards to practice.</p>
+        <p className="error">
+          Not enough question–answer pairs to practice. Add pairs in sentences.json.
+        </p>
         <button type="button" className="back-btn" onClick={onBack}>
           ← Menu
         </button>
@@ -166,10 +186,10 @@ export function SentencePractice({ cards, onBack }: SentencePracticeProps) {
   }
 
   const builtSegments = built
-    .map((id) => current.segments.find((s) => s.id === id))
+    .map((id) => segmentById.get(id))
     .filter((s): s is Segment => Boolean(s))
 
-  const canCheck = built.length === current.segments.length && !checked
+  const canCheck = built.length === targetCard.segments.length && !checked
 
   return (
     <div className="app app--wide">
@@ -177,7 +197,7 @@ export function SentencePractice({ cards, onBack }: SentencePracticeProps) {
         <div>
           <h1>Practice</h1>
           <p className="subtitle">
-            {index + 1} of {roundCards.length}
+            {index + 1} of {rounds.length}
           </p>
         </div>
         <button type="button" className="back-btn" onClick={onBack}>
@@ -185,14 +205,19 @@ export function SentencePractice({ cards, onBack }: SentencePracticeProps) {
         </button>
       </header>
 
+      <section className="practice-question">
+        <p className="prompt">{ui.promptLabel}</p>
+        <SentenceLine card={ui.promptCard} order={ui.promptCard.correctOrder} />
+      </section>
+
       <section className="practice-prompt">
-        <p className="prompt">Build the {current.role}</p>
-        <p className="practice-prompt__english">{current.english}</p>
+        <p className="prompt">{ui.buildInstruction}</p>
+        <p className="practice-prompt__hint">Klicke die Segmente in der richtigen Reihenfolge.</p>
       </section>
 
       <section className="build-area">
         <div className="build-area__header">
-          <h2>Your sentence</h2>
+          <h2>{ui.targetLabel}</h2>
           {!checked && (
             <button type="button" className="text-btn" onClick={handleClear}>
               Clear
@@ -201,30 +226,33 @@ export function SentencePractice({ cards, onBack }: SentencePracticeProps) {
         </div>
         <div className="build-slots">
           {builtSegments.length === 0 && (
-            <p className="build-slots__empty">Click segments below in order</p>
+            <p className="build-slots__empty">Klicke die Segmente unten in der richtigen Reihenfolge</p>
           )}
           {builtSegments.map((seg) => (
             <ColoredSegment
               key={seg.id}
               segment={seg}
               inBuild
+              extraneous={!targetSegmentIds.has(seg.id)}
               onClick={checked ? undefined : () => handleBuiltClick(seg.id)}
             />
           ))}
         </div>
         {checked && (
-          <p className={`check-feedback ${wasCorrect ? 'check-feedback--ok' : 'check-feedback--bad'}`}>
-            {wasCorrect ? 'Correct!' : 'Not quite — see the correct order:'}
+          <p
+            className={`check-feedback ${wasCorrect ? 'check-feedback--ok' : 'check-feedback--bad'}`}
+          >
+            {wasCorrect ? 'Richtig!' : ui.feedbackWrongLabel}
           </p>
         )}
         {checked && !wasCorrect && (
-          <SentenceLine card={current} order={current.correctOrder} />
+          <SentenceLine card={targetCard} order={targetCard.correctOrder} />
         )}
       </section>
 
       {!checked && (
         <section className="segment-bank">
-          <h2>Segments</h2>
+          <h2>Segmente</h2>
           <div className="segment-bank__chips">
             {segmentBank.map((seg) => (
               <ColoredSegment
@@ -246,7 +274,7 @@ export function SentencePractice({ cards, onBack }: SentencePracticeProps) {
           </button>
         ) : (
           <button type="button" className="primary-btn" onClick={handleNext}>
-            {index + 1 >= roundCards.length ? 'See results' : 'Next'}
+            {index + 1 >= rounds.length ? 'See results' : 'Next'}
           </button>
         )}
       </div>

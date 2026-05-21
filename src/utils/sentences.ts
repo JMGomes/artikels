@@ -1,5 +1,60 @@
-import type { PatternId, Segment, SentenceCard } from '../types/sentence'
+import type {
+  PatternId,
+  PracticeDirection,
+  PracticePair,
+  PracticeRound,
+  Segment,
+  SegmentType,
+  SentenceCard,
+} from '../types/sentence'
 import { shuffle } from '../utils'
+
+const QUESTION_WORDS = new Set([
+  'wann',
+  'was',
+  'wer',
+  'wo',
+  'wohin',
+  'wie',
+  'Wann',
+  'Was',
+  'Wer',
+  'Wo',
+  'Wohin',
+  'Wie',
+])
+
+export function inferSegmentType(text: string, current: SegmentType): SegmentType {
+  if (current === 'subject' || current === 'verb') return current
+  const t = text.trim()
+  if (QUESTION_WORDS.has(t)) return 'questionWord'
+  if (
+    /^(Am|Im)\s/.test(text) ||
+    /^am (Morgen|Vormittag|Nachmittag|Abend|Mittag|Sonntag|Wochenende)\b/.test(text) ||
+    /^zu Mittag\b/.test(text) ||
+    /^(heute|morgen)\b/i.test(t)
+  ) {
+    return 'time'
+  }
+  if (
+    /^im\s/i.test(text) ||
+    /^in der\s/i.test(text) ||
+    /^ins\s/i.test(text) ||
+    /^in die\s/i.test(text) ||
+    /^zum\s/i.test(text) ||
+    /^zur\s/i.test(text) ||
+    /^nach\s/i.test(text) ||
+    /^zu Hause\b/i.test(text)
+  ) {
+    return 'place'
+  }
+  return 'other'
+}
+
+export function renderGermanSentence(card: SentenceCard, order: string[]): string {
+  const byId = new Map(card.segments.map((s) => [s.id, s]))
+  return order.map((id) => byId.get(id)?.text ?? '').join(' ')
+}
 
 export const PATTERN_INFO: Record<
   PatternId,
@@ -29,17 +84,41 @@ export const PATTERN_INFO: Record<
     title: 'Was … wann?',
     description: 'Was + verb + subject + wann.',
   },
+  w_question_wo: {
+    title: 'Wo-question',
+    description: 'Wo + verb + subject (+ place/time).',
+  },
+  w_question_wohin: {
+    title: 'Wohin-question',
+    description: 'Wohin + verb + subject (+ time).',
+  },
+  w_question_wer: {
+    title: 'Wer-question',
+    description: 'Wer + ist + person or role.',
+  },
+  w_question_wie: {
+    title: 'Wie-question',
+    description: 'Wie + verb (+ subject), e.g. Wie heißt du?',
+  },
   pronoun_er_statement: {
     title: 'Statement with er',
     description: 'Answer with pronoun er instead of the name.',
+  },
+  pronoun_sie_statement: {
+    title: 'Statement with sie',
+    description: 'Answer with pronoun sie (she).',
   },
   pronoun_ich_statement: {
     title: 'Statement with ich',
     description: 'First person: ich + verb or time + verb + ich.',
   },
-  coordination_und: {
-    title: 'Coordination with und',
-    description: 'Two activities joined with und.',
+  pronoun_du_statement: {
+    title: 'Statement with du',
+    description: 'Second person: du + verb or time + verb + du.',
+  },
+  pronoun_wir_statement: {
+    title: 'Statement with wir',
+    description: 'Wir + verb or time + verb + wir.',
   },
   connector_dann: {
     title: 'Connector dann',
@@ -111,15 +190,72 @@ export function buildSegmentBank(
   return shuffle([...pool.values()])
 }
 
-export function pickPracticeRound(
+export function pickPracticePairs(
   cards: SentenceCard[],
   count: number,
-): SentenceCard[] {
-  const eligible = cards.filter((c) => c.segments.length >= 4)
-  return shuffle(eligible).slice(0, Math.min(count, eligible.length))
+): PracticePair[] {
+  return pickPracticeRounds(cards, count).map((r) => r.pair)
 }
 
+export function pickPracticeRounds(
+  cards: SentenceCard[],
+  count: number,
+): PracticeRound[] {
+  const byPair = new Map<string, { questions: SentenceCard[]; answers: SentenceCard[] }>()
+
+  for (const card of cards) {
+    if (card.segments.length < 4) continue
+    const entry = byPair.get(card.pairId) ?? { questions: [], answers: [] }
+    if (card.role === 'question') entry.questions.push(card)
+    else entry.answers.push(card)
+    byPair.set(card.pairId, entry)
+  }
+
+  const rounds: PracticeRound[] = []
+  for (const [pairId, { questions, answers }] of byPair) {
+    if (questions.length === 0 || answers.length === 0) continue
+    const pair: PracticePair = {
+      pairId,
+      question: questions[Math.floor(Math.random() * questions.length)],
+      answer: answers[Math.floor(Math.random() * answers.length)],
+    }
+    const direction: PracticeDirection =
+      Math.random() < 0.5 ? 'buildAnswer' : 'buildQuestion'
+    rounds.push({ pair, direction })
+  }
+
+  return shuffle(rounds).slice(0, Math.min(count, rounds.length))
+}
+
+export function getPromptAndTarget(round: PracticeRound): {
+  promptCard: SentenceCard
+  targetCard: SentenceCard
+  promptLabel: string
+  targetLabel: string
+  buildInstruction: string
+  feedbackWrongLabel: string
+} {
+  if (round.direction === 'buildAnswer') {
+    return {
+      promptCard: round.pair.question,
+      targetCard: round.pair.answer,
+      promptLabel: 'Frage',
+      targetLabel: 'Deine Antwort',
+      buildInstruction: 'Bilde die Antwort auf Deutsch',
+      feedbackWrongLabel: 'Nicht ganz — richtige Antwort:',
+    }
+  }
+  return {
+    promptCard: round.pair.answer,
+    targetCard: round.pair.question,
+    promptLabel: 'Antwort',
+    targetLabel: 'Deine Frage',
+    buildInstruction: 'Bilde die Frage auf Deutsch',
+    feedbackWrongLabel: 'Nicht ganz — richtige Frage:',
+  }
+}
+
+/** @deprecated Use renderGermanSentence */
 export function renderOrderedText(card: SentenceCard, order: string[]): string {
-  const byId = new Map(card.segments.map((s) => [s.id, s]))
-  return order.map((id) => byId.get(id)?.text ?? '').join(' ')
+  return renderGermanSentence(card, order)
 }

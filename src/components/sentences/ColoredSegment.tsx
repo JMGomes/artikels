@@ -6,6 +6,8 @@ type ColoredSegmentProps = {
   onClick?: () => void
   used?: boolean
   inBuild?: boolean
+  /** Segment is not part of the sentence being built (e.g. distractor). */
+  extraneous?: boolean
 }
 
 export function ColoredSegment({
@@ -14,6 +16,7 @@ export function ColoredSegment({
   onClick,
   used = false,
   inBuild = false,
+  extraneous = false,
 }: ColoredSegmentProps) {
   const className = [
     'segment-chip',
@@ -21,6 +24,7 @@ export function ColoredSegment({
     onClick ? 'segment-chip--clickable' : '',
     used ? 'segment-chip--used' : '',
     inBuild ? 'segment-chip--build' : '',
+    extraneous ? 'segment-chip--extraneous' : '',
   ]
     .filter(Boolean)
     .join(' ')

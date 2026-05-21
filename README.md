@@ -16,7 +16,7 @@ Data: [`public/words.json`](public/words.json)
 ### Sentences
 
 - **Study:** one example per sentence pattern (Q/A pairs when available)
-- **Practice:** build the correct segment order for a question or answer (8 cards per round)
+- **Practice:** each round randomly shows either a German **question** (you build the answer) or an **answer** (you build the question); 4 pairs per round
 
 Data: [`public/sentences.json`](public/sentences.json)
 
@@ -30,7 +30,7 @@ Data: [`public/sentences.json`](public/sentences.json)
   "pattern": "time_first_v2 | subject_first | w_question_wann | ...",
   "english": "Full meaning for the practice prompt",
   "segments": [
-    { "id": "seg-1", "text": "Am Vormittag", "english": "In the morning", "type": "subject | verb | other" }
+    { "id": "seg-1", "text": "Am Vormittag", "english": "In the morning", "type": "subject | verb | time | questionWord | other" }
   ],
   "correctOrder": ["seg-1", "seg-2"],
   "alternateOrders": [["optional", "valid", "order"]],
