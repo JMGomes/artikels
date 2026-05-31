@@ -2,7 +2,7 @@ import { useCallback, useMemo, useState, type KeyboardEvent } from 'react'
 import type { ConjugationRound, PronounKey } from '../../types/verb'
 import type { VerbEntry } from '../../types/verb'
 import {
-  PRONOUN_LABELS,
+  getPronounDisplayLabel,
   buildSessionRounds,
   getConjugationForm,
   gradeConjugation,
@@ -141,7 +141,7 @@ export function ConjugationPractice({ verbs, onBack }: ConjugationPracticeProps)
                   className={r.correct ? 'result correct' : 'result incorrect'}
                 >
                   <strong>{round.verb.infinitive}</strong> ({round.verb.english}) —{' '}
-                  {PRONOUN_LABELS[r.pronoun]}: you wrote <em>{r.userAnswer || '—'}</em>
+                  {getPronounDisplayLabel(r.pronoun)}: you wrote <em>{r.userAnswer || '—'}</em>
                   {!r.correct && (
                     <>
                       {' '}
@@ -258,7 +258,7 @@ export function ConjugationPractice({ verbs, onBack }: ConjugationPracticeProps)
             return (
               <div key={pronoun} className="conjugation-prompt-row">
                 <label className="conjugation-prompt-row__label" htmlFor={`conj-${pronoun}`}>
-                  {PRONOUN_LABELS[pronoun]}
+                  {getPronounDisplayLabel(pronoun)}
                 </label>
                 <div className="conjugation-prompt-row__field">
                   <input

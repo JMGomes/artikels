@@ -1,5 +1,5 @@
 import type { PronounKey, VerbEntry } from '../../types/verb'
-import { PRONOUN_LABELS, PRONOUN_ORDER } from '../../utils/verbs'
+import { TABLE_PRONOUN_ROWS, getTableRowForm } from '../../utils/verbs'
 
 type ConjugationTableProps = {
   verb: VerbEntry
@@ -7,6 +7,10 @@ type ConjugationTableProps = {
   testedPronouns?: PronounKey[]
   /** Pronouns the user got wrong */
   wrongPronouns?: PronounKey[]
+}
+
+function rowMatches(keys: PronounKey[], pronouns: Set<PronounKey>): boolean {
+  return keys.some((key) => pronouns.has(key))
 }
 
 export function ConjugationTable({
@@ -30,19 +34,21 @@ export function ConjugationTable({
           </tr>
         </thead>
         <tbody>
-          {PRONOUN_ORDER.map((key) => {
+          {TABLE_PRONOUN_ROWS.map((row) => {
+            const isTested = rowMatches(row.keys, tested)
+            const isWrong = rowMatches(row.keys, wrong)
             const rowClass = [
-              tested.has(key) ? 'conjugation-table__row--tested' : '',
-              wrong.has(key) ? 'conjugation-table__row--wrong' : '',
-              tested.has(key) && !wrong.has(key) ? 'conjugation-table__row--correct' : '',
+              isTested ? 'conjugation-table__row--tested' : '',
+              isWrong ? 'conjugation-table__row--wrong' : '',
+              isTested && !isWrong ? 'conjugation-table__row--correct' : '',
             ]
               .filter(Boolean)
               .join(' ')
 
             return (
-              <tr key={key} className={rowClass || undefined}>
-                <td>{PRONOUN_LABELS[key]}</td>
-                <td>{verb.present[key]}</td>
+              <tr key={row.id} className={rowClass || undefined}>
+                <td>{row.label}</td>
+                <td>{getTableRowForm(verb, row.keys)}</td>
               </tr>
             )
           })}
