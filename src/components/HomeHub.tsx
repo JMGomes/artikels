@@ -2,9 +2,10 @@ type HomeHubProps = {
   onArtikel: () => void
   onSentences: () => void
   onWordOrder: () => void
+  onConjugation: () => void
 }
 
-export function HomeHub({ onArtikel, onSentences, onWordOrder }: HomeHubProps) {
+export function HomeHub({ onArtikel, onSentences, onWordOrder, onConjugation }: HomeHubProps) {
   return (
     <div className="app">
       <header className="header">
@@ -24,6 +25,10 @@ export function HomeHub({ onArtikel, onSentences, onWordOrder }: HomeHubProps) {
         <button type="button" className="hub-btn hub-btn--wordorder" onClick={onWordOrder}>
           <span className="hub-btn__title">Word order</span>
           <span className="hub-btn__desc">Daily routine · ich/du/wir</span>
+        </button>
+        <button type="button" className="hub-btn hub-btn--conjugation" onClick={onConjugation}>
+          <span className="hub-btn__title">Verbs</span>
+          <span className="hub-btn__desc">Present tense · conjugation</span>
         </button>
       </div>
     </div>

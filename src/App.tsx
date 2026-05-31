@@ -2,16 +2,19 @@ import { useEffect, useState } from 'react'
 import type { Word } from './types'
 import type { SentenceCard } from './types/sentence'
 import type { StatementCard } from './types/statement'
+import type { VerbEntry } from './types/verb'
 import { loadWords } from './utils'
 import { loadSentences } from './utils/sentences'
 import { loadStatements } from './utils/statements'
+import { loadVerbs } from './utils/verbs'
 import { HomeHub } from './components/HomeHub'
 import { ArtikelModule } from './components/ArtikelModule'
+import { ConjugationModule } from './components/ConjugationModule'
 import { SentencesModule } from './components/SentencesModule'
 import { WordOrderModule } from './components/WordOrderModule'
 import './App.css'
 
-type AppMode = 'loading' | 'home' | 'artikel' | 'sentences' | 'wordorder'
+type AppMode = 'loading' | 'home' | 'artikel' | 'sentences' | 'wordorder' | 'conjugation'
 
 function App() {
   const [mode, setMode] = useState<AppMode>('loading')
@@ -19,21 +22,24 @@ function App() {
   const [allWords, setAllWords] = useState<Word[]>([])
   const [allSentences, setAllSentences] = useState<SentenceCard[]>([])
   const [allStatements, setAllStatements] = useState<StatementCard[]>([])
+  const [allVerbs, setAllVerbs] = useState<VerbEntry[]>([])
 
   useEffect(() => {
     let cancelled = false
 
     async function init() {
       try {
-        const [words, sentences, statements] = await Promise.all([
+        const [words, sentences, statements, verbs] = await Promise.all([
           loadWords(),
           loadSentences(),
           loadStatements(),
+          loadVerbs(),
         ])
         if (cancelled) return
         setAllWords(words)
         setAllSentences(sentences)
         setAllStatements(statements)
+        setAllVerbs(verbs)
         setMode('home')
       } catch {
         if (!cancelled) {
@@ -76,11 +82,16 @@ function App() {
     return <WordOrderModule cards={allStatements} onBack={() => setMode('home')} />
   }
 
+  if (mode === 'conjugation') {
+    return <ConjugationModule verbs={allVerbs} onBack={() => setMode('home')} />
+  }
+
   return (
     <HomeHub
       onArtikel={() => setMode('artikel')}
       onSentences={() => setMode('sentences')}
       onWordOrder={() => setMode('wordorder')}
+      onConjugation={() => setMode('conjugation')}
     />
   )
 }

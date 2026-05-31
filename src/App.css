@@ -401,6 +401,156 @@
   background: #7c3aed;
 }
 
+.hub-btn--conjugation {
+  background: #c2410c;
+}
+
+.conjugation-prompt-card {
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 1.25rem;
+  margin-bottom: 1rem;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
+}
+
+.conjugation-prompt-card__verb {
+  margin: 0 0 0.5rem;
+  font-size: 1.2rem;
+}
+
+.conjugation-prompt-card__en {
+  font-weight: 500;
+  color: var(--muted);
+  margin-left: 0.35rem;
+}
+
+.conjugation-prompt-rows {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.conjugation-prompt-row {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.85rem;
+}
+
+.conjugation-prompt-row__label {
+  flex: 0 0 7.5rem;
+  font-weight: 700;
+  font-size: 1.05rem;
+  color: var(--color-segment-subject);
+  padding-top: 0.55rem;
+}
+
+.conjugation-prompt-row__field {
+  flex: 1;
+  min-width: 0;
+}
+
+.conjugation-prompt-row__hint {
+  margin: 0.35rem 0 0;
+  font-size: 0.9rem;
+  color: var(--muted);
+}
+
+.conjugation-prompt-row__hint--ok {
+  color: #27ae60;
+  font-weight: 600;
+}
+
+.conjugation-input {
+  width: 100%;
+  max-width: 320px;
+  font-size: 1.15rem;
+  padding: 0.6rem 0.75rem;
+  border: 2px solid var(--border);
+  border-radius: 8px;
+  font-family: inherit;
+}
+
+.conjugation-input:focus {
+  outline: none;
+  border-color: var(--color-segment-subject);
+}
+
+.conjugation-input:disabled {
+  background: #f1f5f9;
+  color: var(--muted);
+}
+
+.conjugation-input--correct {
+  border-color: #27ae60;
+}
+
+.conjugation-input--wrong {
+  border-color: #e74c3c;
+}
+
+.conjugation-table-wrap {
+  margin-bottom: 1.25rem;
+}
+
+.conjugation-table__title {
+  margin: 0 0 0.65rem;
+  font-size: 0.95rem;
+}
+
+.conjugation-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.95rem;
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.conjugation-table th,
+.conjugation-table td {
+  padding: 0.5rem 0.85rem;
+  text-align: left;
+  border-bottom: 1px solid var(--border);
+}
+
+.conjugation-table th {
+  background: #eef2f6;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--muted);
+}
+
+.conjugation-table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.conjugation-table__row--tested {
+  background: rgba(37, 99, 235, 0.06);
+}
+
+.conjugation-table__row--correct {
+  background: rgba(39, 174, 96, 0.08);
+}
+
+.conjugation-table__row--wrong {
+  background: rgba(231, 76, 60, 0.1);
+}
+
+.conjugation-session-tables {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  margin-bottom: 1.5rem;
+}
+
+.conjugation-session-tables h2 {
+  margin: 0 0 0.5rem;
+  font-size: 1.1rem;
+}
+
 .statement-scope-note {
   margin: 0.35rem 0 0;
   font-size: 0.85rem;
