@@ -1,32 +1,32 @@
 import { useState } from 'react'
-import type { SentenceCard } from '../types/sentence'
-import { SentenceStudy } from './sentences/SentenceStudy'
-import { SentencePractice } from './sentences/SentencePractice'
+import type { StatementCard } from '../types/statement'
+import { WordOrderPractice } from './wordorder/WordOrderPractice'
+import { WordOrderStudy } from './wordorder/WordOrderStudy'
 
-type SentencesMode = 'menu' | 'study' | 'practice'
+type WordOrderMode = 'menu' | 'study' | 'practice'
 
-type SentencesModuleProps = {
-  cards: SentenceCard[]
+type WordOrderModuleProps = {
+  cards: StatementCard[]
   onBack: () => void
 }
 
-export function SentencesModule({ cards, onBack }: SentencesModuleProps) {
-  const [mode, setMode] = useState<SentencesMode>('menu')
+export function WordOrderModule({ cards, onBack }: WordOrderModuleProps) {
+  const [mode, setMode] = useState<WordOrderMode>('menu')
 
   if (mode === 'study') {
-    return <SentenceStudy cards={cards} onBack={() => setMode('menu')} />
+    return <WordOrderStudy cards={cards} onBack={() => setMode('menu')} />
   }
 
   if (mode === 'practice') {
-    return <SentencePractice cards={cards} onBack={() => setMode('menu')} />
+    return <WordOrderPractice cards={cards} onBack={() => setMode('menu')} />
   }
 
   return (
     <div className="app">
       <header className="header header--row">
         <div>
-          <h1>Sentences</h1>
-          <p className="subtitle">Questions &amp; answers (A1)</p>
+          <h1>Word order</h1>
+          <p className="subtitle">Daily routine · ich/du/wir · time &amp; nicht</p>
         </div>
         <button type="button" className="back-btn" onClick={onBack}>
           ← Home

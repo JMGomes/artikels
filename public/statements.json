@@ -1,0 +1,351 @@
+[
+  {
+    "id": "a-ich-lese-zeitung",
+    "patternFamily": "A",
+    "pattern": "subject_first_simple",
+    "english": "I often read the newspaper.",
+    "slotOrder": "Subject · Verb · Mittelfeld · Object",
+    "segments": [
+      { "id": "a1-s", "text": "Ich", "english": "I", "type": "subject" },
+      { "id": "a1-v", "text": "lese", "english": "read", "type": "verb" },
+      { "id": "a1-m", "text": "oft", "english": "often", "type": "mittelfeld" },
+      { "id": "a1-o", "text": "Zeitung", "english": "newspaper", "type": "object" }
+    ],
+    "correctOrder": ["a1-s", "a1-v", "a1-m", "a1-o"]
+  },
+  {
+    "id": "a-ich-spiele-fussball",
+    "patternFamily": "A",
+    "pattern": "subject_first_simple",
+    "english": "I like to play football.",
+    "slotOrder": "Subject · Verb · Mittelfeld · Object",
+    "segments": [
+      { "id": "a2-s", "text": "Ich", "english": "I", "type": "subject" },
+      { "id": "a2-v", "text": "spiele", "english": "play", "type": "verb" },
+      { "id": "a2-m", "text": "gern", "english": "gladly / like to", "type": "mittelfeld" },
+      { "id": "a2-o", "text": "Fußball", "english": "football", "type": "object" }
+    ],
+    "correctOrder": ["a2-s", "a2-v", "a2-m", "a2-o"]
+  },
+  {
+    "id": "a-kaan-isst-pizza",
+    "patternFamily": "A",
+    "pattern": "subject_first_simple",
+    "english": "Kaan likes to eat pizza.",
+    "slotOrder": "Subject · Verb · Mittelfeld · Object",
+    "segments": [
+      { "id": "a3-s", "text": "Kaan", "english": "Kaan", "type": "subject" },
+      { "id": "a3-v", "text": "isst", "english": "eats", "type": "verb" },
+      { "id": "a3-m", "text": "gern", "english": "gladly / like to", "type": "mittelfeld" },
+      { "id": "a3-o", "text": "Pizza", "english": "pizza", "type": "object" }
+    ],
+    "correctOrder": ["a3-s", "a3-v", "a3-m", "a3-o"]
+  },
+  {
+    "id": "a-ich-fruehstuecke",
+    "patternFamily": "A",
+    "pattern": "subject_first_simple",
+    "english": "I have breakfast in the morning.",
+    "slotOrder": "Subject · Verb · Time",
+    "segments": [
+      { "id": "a4-s", "text": "Ich", "english": "I", "type": "subject" },
+      { "id": "a4-v", "text": "frühstücke", "english": "have breakfast", "type": "verb" },
+      { "id": "a4-t", "text": "morgens", "english": "in the morning", "type": "time" }
+    ],
+    "correctOrder": ["a4-s", "a4-v", "a4-t"],
+    "alternateOrders": [["a4-t", "a4-v", "a4-s"]]
+  },
+  {
+    "id": "a-ich-gehe-cafe",
+    "patternFamily": "A",
+    "pattern": "subject_first_simple",
+    "english": "In the evening I go to the café.",
+    "slotOrder": "Time · Verb · Subject · Place",
+    "segments": [
+      { "id": "a5-t", "text": "Abends", "english": "in the evening", "type": "time" },
+      { "id": "a5-v", "text": "gehe", "english": "go", "type": "verb" },
+      { "id": "a5-s", "text": "ich", "english": "I", "type": "subject" },
+      { "id": "a5-p", "text": "ins Café", "english": "to the café", "type": "place" }
+    ],
+    "correctOrder": ["a5-t", "a5-v", "a5-s", "a5-p"],
+    "alternateOrders": [["a5-s", "a5-v", "a5-t", "a5-p"]]
+  },
+  {
+    "id": "b-morgen-kino",
+    "patternFamily": "B",
+    "pattern": "time_first_v2",
+    "english": "Tomorrow I am going to the cinema.",
+    "slotOrder": "Time · Verb · Subject · Place",
+    "segments": [
+      { "id": "b1-t", "text": "Morgen", "english": "tomorrow", "type": "time" },
+      { "id": "b1-v", "text": "fahre", "english": "go / am going", "type": "verb" },
+      { "id": "b1-s", "text": "ich", "english": "I", "type": "subject" },
+      { "id": "b1-p", "text": "ins Kino", "english": "to the cinema", "type": "place" }
+    ],
+    "correctOrder": ["b1-t", "b1-v", "b1-s", "b1-p"],
+    "alternateOrders": [["b1-s", "b1-v", "b1-t", "b1-p"]]
+  },
+  {
+    "id": "b-sonntags-freunde",
+    "patternFamily": "B",
+    "pattern": "time_first_v2",
+    "english": "On Sundays I meet my friends.",
+    "slotOrder": "Time · Verb · Subject · Object",
+    "segments": [
+      { "id": "b2-t", "text": "Sonntags", "english": "on Sundays", "type": "time" },
+      { "id": "b2-v", "text": "treffe", "english": "meet", "type": "verb" },
+      { "id": "b2-s", "text": "ich", "english": "I", "type": "subject" },
+      { "id": "b2-o", "text": "meine Freunde", "english": "my friends", "type": "object" }
+    ],
+    "correctOrder": ["b2-t", "b2-v", "b2-s", "b2-o"],
+    "alternateOrders": [["b2-s", "b2-v", "b2-t", "b2-o"]]
+  },
+  {
+    "id": "b-vormittags-arbeite",
+    "patternFamily": "B",
+    "pattern": "time_first_v2",
+    "english": "In the morning I work.",
+    "slotOrder": "Time · Verb · Subject",
+    "segments": [
+      { "id": "b3-t", "text": "Vormittags", "english": "in the morning", "type": "time" },
+      { "id": "b3-v", "text": "arbeite", "english": "work", "type": "verb" },
+      { "id": "b3-s", "text": "ich", "english": "I", "type": "subject" }
+    ],
+    "correctOrder": ["b3-t", "b3-v", "b3-s"],
+    "alternateOrders": [["b3-s", "b3-v", "b3-t"]]
+  },
+  {
+    "id": "b-mittags-kantine",
+    "patternFamily": "B",
+    "pattern": "time_first_v2",
+    "english": "At noon I go to the canteen.",
+    "slotOrder": "Time · Verb · Subject · Place",
+    "segments": [
+      { "id": "b4-t", "text": "Mittags", "english": "at noon", "type": "time" },
+      { "id": "b4-v", "text": "gehe", "english": "go", "type": "verb" },
+      { "id": "b4-s", "text": "ich", "english": "I", "type": "subject" },
+      { "id": "b4-p", "text": "in die Kantine", "english": "to the canteen", "type": "place" }
+    ],
+    "correctOrder": ["b4-t", "b4-v", "b4-s", "b4-p"],
+    "alternateOrders": [["b4-s", "b4-v", "b4-t", "b4-p"]]
+  },
+  {
+    "id": "b-ich-fahre-uni",
+    "patternFamily": "B",
+    "pattern": "time_first_v2",
+    "english": "On weekdays I go to the university.",
+    "slotOrder": "Subject · Verb · Time · Place (or Time · Verb · Subject · Place)",
+    "segments": [
+      { "id": "b5-s", "text": "Ich", "english": "I", "type": "subject" },
+      { "id": "b5-v", "text": "fahre", "english": "go", "type": "verb" },
+      { "id": "b5-t", "text": "wochentags", "english": "on weekdays", "type": "time" },
+      { "id": "b5-p", "text": "in die Uni", "english": "to the university", "type": "place" }
+    ],
+    "correctOrder": ["b5-s", "b5-v", "b5-t", "b5-p"],
+    "alternateOrders": [["b5-t", "b5-v", "b5-s", "b5-p"]]
+  },
+  {
+    "id": "b-ich-schlafe-nachts",
+    "patternFamily": "B",
+    "pattern": "time_first_v2",
+    "english": "At night I sleep.",
+    "slotOrder": "Time · Verb · Subject",
+    "segments": [
+      { "id": "b6-t", "text": "Nachts", "english": "at night", "type": "time" },
+      { "id": "b6-v", "text": "schlafe", "english": "sleep", "type": "verb" },
+      { "id": "b6-s", "text": "ich", "english": "I", "type": "subject" }
+    ],
+    "correctOrder": ["b6-t", "b6-v", "b6-s"],
+    "alternateOrders": [["b6-s", "b6-v", "b6-t"]]
+  },
+  {
+    "id": "e-du-kaufst-brot",
+    "patternFamily": "E",
+    "pattern": "time_first_v2",
+    "english": "In the morning you buy bread.",
+    "slotOrder": "Time · Verb · Subject · Object",
+    "segments": [
+      { "id": "e1-t", "text": "Vormittags", "english": "in the morning", "type": "time" },
+      { "id": "e1-v", "text": "kaufst", "english": "buy", "type": "verb" },
+      { "id": "e1-s", "text": "du", "english": "you", "type": "subject" },
+      { "id": "e1-o", "text": "Brot", "english": "bread", "type": "object" }
+    ],
+    "correctOrder": ["e1-t", "e1-v", "e1-s", "e1-o"],
+    "alternateOrders": [["e1-s", "e1-v", "e1-t", "e1-o"]]
+  },
+  {
+    "id": "e-du-liest-buch",
+    "patternFamily": "E",
+    "pattern": "time_first_v2",
+    "english": "In the afternoon you read a book.",
+    "slotOrder": "Time · Verb · Subject · Object",
+    "segments": [
+      { "id": "e2-t", "text": "Nachmittags", "english": "in the afternoon", "type": "time" },
+      { "id": "e2-v", "text": "liest", "english": "read", "type": "verb" },
+      { "id": "e2-s", "text": "du", "english": "you", "type": "subject" },
+      { "id": "e2-o", "text": "ein Buch", "english": "a book", "type": "object" }
+    ],
+    "correctOrder": ["e2-t", "e2-v", "e2-s", "e2-o"],
+    "alternateOrders": [["e2-s", "e2-v", "e2-t", "e2-o"]]
+  },
+  {
+    "id": "e-ihr-geht-kino",
+    "patternFamily": "E",
+    "pattern": "time_first_v2",
+    "english": "In the evening you (plural) go to the cinema.",
+    "slotOrder": "Time · Verb · Subject · Place",
+    "segments": [
+      { "id": "e3-t", "text": "Abends", "english": "in the evening", "type": "time" },
+      { "id": "e3-v", "text": "geht", "english": "go", "type": "verb" },
+      { "id": "e3-s", "text": "ihr", "english": "you (plural)", "type": "subject" },
+      { "id": "e3-p", "text": "ins Kino", "english": "to the cinema", "type": "place" }
+    ],
+    "correctOrder": ["e3-t", "e3-v", "e3-s", "e3-p"],
+    "alternateOrders": [["e3-s", "e3-v", "e3-t", "e3-p"]]
+  },
+  {
+    "id": "e-wir-gehen-kino",
+    "patternFamily": "E",
+    "pattern": "time_first_v2",
+    "english": "In the evening we go to the cinema with friends.",
+    "slotOrder": "Time · Verb · Subject · Rest",
+    "segments": [
+      { "id": "e4-t", "text": "Abends", "english": "in the evening", "type": "time" },
+      { "id": "e4-v", "text": "gehen", "english": "go", "type": "verb" },
+      { "id": "e4-s", "text": "wir", "english": "we", "type": "subject" },
+      { "id": "e4-o", "text": "mit Freunden", "english": "with friends", "type": "other" },
+      { "id": "e4-p", "text": "ins Kino", "english": "to the cinema", "type": "place" }
+    ],
+    "correctOrder": ["e4-t", "e4-v", "e4-s", "e4-o", "e4-p"],
+    "alternateOrders": [["e4-s", "e4-v", "e4-t", "e4-o", "e4-p"]]
+  },
+  {
+    "id": "e-er-besucht-familie",
+    "patternFamily": "E",
+    "pattern": "time_first_v2",
+    "english": "At night he visits his family.",
+    "slotOrder": "Time · Verb · Subject · Object",
+    "segments": [
+      { "id": "e5-t", "text": "Nachts", "english": "at night", "type": "time" },
+      { "id": "e5-v", "text": "besucht", "english": "visits", "type": "verb" },
+      { "id": "e5-s", "text": "er", "english": "he", "type": "subject" },
+      { "id": "e5-o", "text": "die Familie", "english": "the family", "type": "object" }
+    ],
+    "correctOrder": ["e5-t", "e5-v", "e5-s", "e5-o"],
+    "alternateOrders": [["e5-s", "e5-v", "e5-t", "e5-o"]]
+  },
+  {
+    "id": "e-wir-kochen-gemuese",
+    "patternFamily": "E",
+    "pattern": "time_first_v2",
+    "english": "At noon we cook vegetables.",
+    "slotOrder": "Time · Verb · Subject · Object",
+    "segments": [
+      { "id": "e6-t", "text": "Mittags", "english": "at noon", "type": "time" },
+      { "id": "e6-v", "text": "kochen", "english": "cook", "type": "verb" },
+      { "id": "e6-s", "text": "wir", "english": "we", "type": "subject" },
+      { "id": "e6-o", "text": "Gemüse", "english": "vegetables", "type": "object" }
+    ],
+    "correctOrder": ["e6-t", "e6-v", "e6-s", "e6-o"],
+    "alternateOrders": [["e6-s", "e6-v", "e6-t", "e6-o"]]
+  },
+  {
+    "id": "c-wochenende-nicht-uni",
+    "patternFamily": "C",
+    "pattern": "time_nicht_scope",
+    "english": "On weekends I do not go to the university.",
+    "scopeNote": "Negation applies to going to university (nicht before in die Uni).",
+    "slotOrder": "Subject · Verb · Time · nicht · Place",
+    "segments": [
+      { "id": "c1-s", "text": "Ich", "english": "I", "type": "subject" },
+      { "id": "c1-v", "text": "gehe", "english": "go", "type": "verb" },
+      { "id": "c1-t", "text": "am Wochenende", "english": "on the weekend", "type": "time" },
+      { "id": "c1-n", "text": "nicht", "english": "not", "type": "negation" },
+      { "id": "c1-p", "text": "in die Uni", "english": "to the university", "type": "place" }
+    ],
+    "correctOrder": ["c1-s", "c1-v", "c1-t", "c1-n", "c1-p"],
+    "alternateOrders": [["c1-t", "c1-v", "c1-s", "c1-n", "c1-p"]]
+  },
+  {
+    "id": "c-wochenende-nicht-fahrrad",
+    "patternFamily": "C",
+    "pattern": "time_nicht_scope",
+    "english": "On weekends I do not ride my bike in the city.",
+    "scopeNote": "Negation applies to cycling (nicht before Fahrrad fahren).",
+    "slotOrder": "Time · Verb · Subject · nicht · Rest",
+    "segments": [
+      { "id": "c2-t", "text": "Am Wochenende", "english": "on the weekend", "type": "time" },
+      { "id": "c2-v", "text": "fahre", "english": "ride / go", "type": "verb" },
+      { "id": "c2-s", "text": "ich", "english": "I", "type": "subject" },
+      { "id": "c2-n", "text": "nicht", "english": "not", "type": "negation" },
+      { "id": "c2-o", "text": "Fahrrad", "english": "bicycle", "type": "object" },
+      { "id": "c2-p", "text": "in der Stadt", "english": "in the city", "type": "place" }
+    ],
+    "correctOrder": ["c2-t", "c2-v", "c2-s", "c2-n", "c2-o", "c2-p"],
+    "alternateOrders": [["c2-s", "c2-v", "c2-t", "c2-n", "c2-o", "c2-p"]]
+  },
+  {
+    "id": "c-abends-nicht-cafe",
+    "patternFamily": "C",
+    "pattern": "time_nicht_scope",
+    "english": "In the evening I do not go to the café.",
+    "scopeNote": "Negation applies to going to the café (nicht before ins Café).",
+    "slotOrder": "Time · Verb · Subject · nicht · Place",
+    "segments": [
+      { "id": "c3-t", "text": "Abends", "english": "in the evening", "type": "time" },
+      { "id": "c3-v", "text": "gehe", "english": "go", "type": "verb" },
+      { "id": "c3-s", "text": "ich", "english": "I", "type": "subject" },
+      { "id": "c3-n", "text": "nicht", "english": "not", "type": "negation" },
+      { "id": "c3-p", "text": "ins Café", "english": "to the café", "type": "place" }
+    ],
+    "correctOrder": ["c3-t", "c3-v", "c3-s", "c3-n", "c3-p"],
+    "alternateOrders": [["c3-s", "c3-v", "c3-t", "c3-n", "c3-p"]]
+  },
+  {
+    "id": "d-kaan-auch-gern-pizza",
+    "patternFamily": "D",
+    "pattern": "modifiers_chain",
+    "english": "Kaan also likes to eat pizza.",
+    "slotOrder": "Subject · Verb · auch · gern · Object",
+    "segments": [
+      { "id": "d1-s", "text": "Kaan", "english": "Kaan", "type": "subject" },
+      { "id": "d1-v", "text": "isst", "english": "eats", "type": "verb" },
+      { "id": "d1-m1", "text": "auch", "english": "also", "type": "mittelfeld" },
+      { "id": "d1-m2", "text": "gern", "english": "gladly / like to", "type": "mittelfeld" },
+      { "id": "d1-o", "text": "Pizza", "english": "pizza", "type": "object" }
+    ],
+    "correctOrder": ["d1-s", "d1-v", "d1-m1", "d1-m2", "d1-o"]
+  },
+  {
+    "id": "d-kaan-auch-nicht-gern-pizza",
+    "patternFamily": "D",
+    "pattern": "modifiers_chain",
+    "english": "Kaan also does not like to eat pizza.",
+    "slotOrder": "Subject · Verb · auch · nicht · gern · Object",
+    "segments": [
+      { "id": "d2-s", "text": "Kaan", "english": "Kaan", "type": "subject" },
+      { "id": "d2-v", "text": "isst", "english": "eats", "type": "verb" },
+      { "id": "d2-m1", "text": "auch", "english": "also", "type": "mittelfeld" },
+      { "id": "d2-n", "text": "nicht", "english": "not", "type": "negation" },
+      { "id": "d2-m2", "text": "gern", "english": "gladly / like to", "type": "mittelfeld" },
+      { "id": "d2-o", "text": "Pizza", "english": "pizza", "type": "object" }
+    ],
+    "correctOrder": ["d2-s", "d2-v", "d2-m1", "d2-n", "d2-m2", "d2-o"]
+  },
+  {
+    "id": "d-er-joggt-nicht",
+    "patternFamily": "D",
+    "pattern": "modifiers_chain",
+    "english": "In the afternoon he does not like to jog.",
+    "slotOrder": "Time · Verb · Subject · nicht · gern",
+    "segments": [
+      { "id": "d3-t", "text": "Nachmittags", "english": "in the afternoon", "type": "time" },
+      { "id": "d3-v", "text": "joggt", "english": "jogs", "type": "verb" },
+      { "id": "d3-s", "text": "er", "english": "he", "type": "subject" },
+      { "id": "d3-n", "text": "nicht", "english": "not", "type": "negation" },
+      { "id": "d3-m", "text": "gern", "english": "gladly / like to", "type": "mittelfeld" }
+    ],
+    "correctOrder": ["d3-t", "d3-v", "d3-s", "d3-n", "d3-m"],
+    "alternateOrders": [["d3-s", "d3-v", "d3-t", "d3-n", "d3-m"]]
+  }
+]

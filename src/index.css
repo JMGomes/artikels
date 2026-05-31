@@ -17,6 +17,9 @@
   --color-segment-time: #ea580c;
   --color-segment-question: #7c3aed;
   --color-segment-place: #0d9488;
+  --color-segment-mittelfeld: #a16207;
+  --color-segment-negation: #be123c;
+  --color-segment-object: #0369a1;
   --color-segment-other: #64748b;
   font-synthesis: none;
   text-rendering: optimizeLegibility;

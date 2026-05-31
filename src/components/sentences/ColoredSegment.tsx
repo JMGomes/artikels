@@ -1,7 +1,10 @@
 import type { Segment, SentenceRole } from '../../types/sentence'
+import type { StatementSegment } from '../../types/statement'
+
+export type ChipSegment = Segment | StatementSegment
 
 type ColoredSegmentProps = {
-  segment: Segment
+  segment: ChipSegment
   showEnglish?: boolean
   onClick?: () => void
   used?: boolean
@@ -51,7 +54,7 @@ export function SentenceLine({
   order,
   showEnglish = false,
 }: {
-  card: { segments: Segment[]; role?: SentenceRole }
+  card: { segments: ChipSegment[]; role?: SentenceRole }
   order: string[]
   showEnglish?: boolean
 }) {
