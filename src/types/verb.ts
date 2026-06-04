@@ -13,7 +13,13 @@ export interface VerbEntry {
   id: string
   infinitive: string
   english: string
+  irregular: boolean
   present: Record<PronounKey, string>
+}
+
+export type VerbFilter = {
+  includeRegular: boolean
+  includeIrregular: boolean
 }
 
 export type ConjugationPromptResult = {

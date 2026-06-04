@@ -3,9 +3,18 @@ type HomeHubProps = {
   onSentences: () => void
   onWordOrder: () => void
   onConjugation: () => void
+  onColors: () => void
+  onTime: () => void
 }
 
-export function HomeHub({ onArtikel, onSentences, onWordOrder, onConjugation }: HomeHubProps) {
+export function HomeHub({
+  onArtikel,
+  onSentences,
+  onWordOrder,
+  onConjugation,
+  onColors,
+  onTime,
+}: HomeHubProps) {
   return (
     <div className="app">
       <header className="header">
@@ -29,6 +38,14 @@ export function HomeHub({ onArtikel, onSentences, onWordOrder, onConjugation }: 
         <button type="button" className="hub-btn hub-btn--conjugation" onClick={onConjugation}>
           <span className="hub-btn__title">Verbs</span>
           <span className="hub-btn__desc">Present tense · conjugation</span>
+        </button>
+        <button type="button" className="hub-btn hub-btn--colors" onClick={onColors}>
+          <span className="hub-btn__title">Colors</span>
+          <span className="hub-btn__desc">Match English &amp; German</span>
+        </button>
+        <button type="button" className="hub-btn hub-btn--time" onClick={onTime}>
+          <span className="hub-btn__title">Clock</span>
+          <span className="hub-btn__desc">Digital ↔ German time</span>
         </button>
       </div>
     </div>

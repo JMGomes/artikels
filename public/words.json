@@ -210,12 +210,6 @@
     "pluralForm": "die Bilder"
   },
   {
-    "germanWord": "Blau",
-    "englishTranslation": "blue",
-    "artikel": "das",
-    "pluralForm": "(no plural)"
-  },
-  {
     "germanWord": "Bleistift",
     "englishTranslation": "pencil",
     "artikel": "der",
@@ -246,12 +240,6 @@
     "pluralForm": "die Böden"
   },
   {
-    "germanWord": "Braun",
-    "englishTranslation": "brown",
-    "artikel": "das",
-    "pluralForm": "(no plural)"
-  },
-  {
     "germanWord": "Brille",
     "englishTranslation": "glasses",
     "artikel": "die",
@@ -280,12 +268,6 @@
     "englishTranslation": "book",
     "artikel": "das",
     "pluralForm": "die Bücher"
-  },
-  {
-    "germanWord": "Buntstift",
-    "englishTranslation": "colored pencil",
-    "artikel": "der",
-    "pluralForm": "die Buntstifte"
   },
   {
     "germanWord": "Büro",
@@ -402,18 +384,6 @@
     "pluralForm": "die Familien"
   },
   {
-    "germanWord": "Farbe",
-    "englishTranslation": "color",
-    "artikel": "die",
-    "pluralForm": "die Farben"
-  },
-  {
-    "germanWord": "Federmäppchen",
-    "englishTranslation": "pencil case",
-    "artikel": "das",
-    "pluralForm": "die Federmäppchen"
-  },
-  {
     "germanWord": "Fenster",
     "englishTranslation": "window",
     "artikel": "das",
@@ -528,12 +498,6 @@
     "pluralForm": "die Gärten"
   },
   {
-    "germanWord": "Gelb",
-    "englishTranslation": "yellow",
-    "artikel": "das",
-    "pluralForm": "(no plural)"
-  },
-  {
     "germanWord": "Geld",
     "englishTranslation": "money",
     "artikel": "das",
@@ -570,12 +534,6 @@
     "pluralForm": "die Gläser"
   },
   {
-    "germanWord": "Grau",
-    "englishTranslation": "gray",
-    "artikel": "das",
-    "pluralForm": "(no plural)"
-  },
-  {
     "germanWord": "Großeltern",
     "englishTranslation": "grandparents",
     "artikel": "die",
@@ -592,12 +550,6 @@
     "englishTranslation": "grandfather",
     "artikel": "der",
     "pluralForm": "die Großväter"
-  },
-  {
-    "germanWord": "Grün",
-    "englishTranslation": "green",
-    "artikel": "das",
-    "pluralForm": "(no plural)"
   },
   {
     "germanWord": "Gurke",
@@ -1350,12 +1302,6 @@
     "pluralForm": "die Rolltreppen"
   },
   {
-    "germanWord": "Rot",
-    "englishTranslation": "red",
-    "artikel": "das",
-    "pluralForm": "(no plural)"
-  },
-  {
     "germanWord": "Rücken",
     "englishTranslation": "back",
     "artikel": "der",
@@ -1492,12 +1438,6 @@
     "englishTranslation": "student (female)",
     "artikel": "die",
     "pluralForm": "die Schülerinnen"
-  },
-  {
-    "germanWord": "Schwarz",
-    "englishTranslation": "black",
-    "artikel": "das",
-    "pluralForm": "(no plural)"
   },
   {
     "germanWord": "Schwester",
@@ -1882,12 +1822,6 @@
     "englishTranslation": "wine",
     "artikel": "der",
     "pluralForm": "die Weine"
-  },
-  {
-    "germanWord": "Weiß",
-    "englishTranslation": "white",
-    "artikel": "das",
-    "pluralForm": "(no plural)"
   },
   {
     "germanWord": "Wind",

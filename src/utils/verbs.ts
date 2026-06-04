@@ -1,4 +1,4 @@
-import type { ConjugationRound, PronounKey, VerbEntry } from '../types/verb'
+import type { ConjugationRound, PronounKey, VerbEntry, VerbFilter } from '../types/verb'
 import { shuffle } from '../utils'
 
 /** Third-person singular shares one conjugation (and one practice slot). */
@@ -85,6 +85,25 @@ export function normalizeConjugationAnswer(value: string): string {
 
 export function gradeConjugation(expected: string, userAnswer: string): boolean {
   return normalizeConjugationAnswer(expected) === normalizeConjugationAnswer(userAnswer)
+}
+
+export function filterVerbsByType(verbs: VerbEntry[], filter: VerbFilter): VerbEntry[] {
+  return verbs.filter((verb) => {
+    if (verb.irregular && filter.includeIrregular) return true
+    if (!verb.irregular && filter.includeRegular) return true
+    return false
+  })
+}
+
+export function countVerbsByType(verbs: VerbEntry[]): { regular: number; irregular: number } {
+  return verbs.reduce(
+    (acc, verb) => {
+      if (verb.irregular) acc.irregular += 1
+      else acc.regular += 1
+      return acc
+    },
+    { regular: 0, irregular: 0 },
+  )
 }
 
 export function pickSessionVerbs(verbs: VerbEntry[], count: number): VerbEntry[] {

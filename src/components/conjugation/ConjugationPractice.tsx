@@ -1,6 +1,5 @@
 import { useCallback, useMemo, useState, type KeyboardEvent } from 'react'
-import type { ConjugationRound, PronounKey } from '../../types/verb'
-import type { VerbEntry } from '../../types/verb'
+import type { ConjugationRound, PronounKey, VerbEntry, VerbFilter } from '../../types/verb'
 import {
   getPronounDisplayLabel,
   buildSessionRounds,
@@ -16,14 +15,23 @@ type Phase = 'prompt' | 'roundComplete' | 'sessionComplete'
 
 type ConjugationPracticeProps = {
   verbs: VerbEntry[]
+  filter: VerbFilter | null
   onBack: () => void
+}
+
+function filterSubtitle(filter: VerbFilter | null): string {
+  if (!filter) return 'Present tense'
+  if (filter.includeRegular && filter.includeIrregular) return 'Regular & irregular verbs'
+  if (filter.includeIrregular) return 'Irregular verbs only'
+  return 'Regular verbs only'
 }
 
 function emptyInputs(): [string, string] {
   return ['', '']
 }
 
-export function ConjugationPractice({ verbs, onBack }: ConjugationPracticeProps) {
+export function ConjugationPractice({ verbs, filter, onBack }: ConjugationPracticeProps) {
+  const subtitle = filterSubtitle(filter)
   const [rounds, setRounds] = useState<ConjugationRound[]>(() =>
     buildSessionRounds(verbs, ROUNDS_PER_SESSION),
   )
@@ -120,7 +128,7 @@ export function ConjugationPractice({ verbs, onBack }: ConjugationPracticeProps)
             <p className="subtitle">Session complete</p>
           </div>
           <button type="button" className="back-btn" onClick={onBack}>
-            ← Menu
+            ← Setup
           </button>
         </header>
 
@@ -174,7 +182,7 @@ export function ConjugationPractice({ verbs, onBack }: ConjugationPracticeProps)
             Play again
           </button>
           <button type="button" className="secondary-btn" onClick={onBack}>
-            Menu
+            Change verbs
           </button>
         </div>
       </div>
@@ -186,7 +194,7 @@ export function ConjugationPractice({ verbs, onBack }: ConjugationPracticeProps)
       <div className="app">
         <p className="error">Not enough verbs to practice. Add verbs in verbs.json.</p>
         <button type="button" className="back-btn" onClick={onBack}>
-          ← Menu
+          ← Setup
         </button>
       </div>
     )
@@ -200,11 +208,11 @@ export function ConjugationPractice({ verbs, onBack }: ConjugationPracticeProps)
           <div>
             <h1>Practice</h1>
             <p className="subtitle">
-              Verb {roundIndex + 1} of {rounds.length} — full conjugation
+              {subtitle} · Verb {roundIndex + 1} of {rounds.length} — full conjugation
             </p>
           </div>
           <button type="button" className="back-btn" onClick={onBack}>
-            ← Menu
+            ← Setup
           </button>
         </header>
 
@@ -229,11 +237,11 @@ export function ConjugationPractice({ verbs, onBack }: ConjugationPracticeProps)
         <div>
           <h1>Practice</h1>
           <p className="subtitle">
-            Verb {roundIndex + 1} of {rounds.length}
+            {subtitle} · Verb {roundIndex + 1} of {rounds.length}
           </p>
         </div>
         <button type="button" className="back-btn" onClick={onBack}>
-          ← Menu
+          ← Setup
         </button>
       </header>
 

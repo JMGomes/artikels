@@ -1,133 +1,5 @@
 [
   {
-    "id": "sein",
-    "infinitive": "sein",
-    "english": "to be",
-    "present": {
-      "ich": "bin",
-      "du": "bist",
-      "er": "ist",
-      "sie": "ist",
-      "es": "ist",
-      "wir": "sind",
-      "ihr": "seid",
-      "sie_plural": "sind",
-      "Sie": "sind"
-    }
-  },
-  {
-    "id": "haben",
-    "infinitive": "haben",
-    "english": "to have",
-    "present": {
-      "ich": "habe",
-      "du": "hast",
-      "er": "hat",
-      "sie": "hat",
-      "es": "hat",
-      "wir": "haben",
-      "ihr": "habt",
-      "sie_plural": "haben",
-      "Sie": "haben"
-    }
-  },
-  {
-    "id": "gehen",
-    "infinitive": "gehen",
-    "english": "to go",
-    "present": {
-      "ich": "gehe",
-      "du": "gehst",
-      "er": "geht",
-      "sie": "geht",
-      "es": "geht",
-      "wir": "gehen",
-      "ihr": "geht",
-      "sie_plural": "gehen",
-      "Sie": "gehen"
-    }
-  },
-  {
-    "id": "kommen",
-    "infinitive": "kommen",
-    "english": "to come",
-    "present": {
-      "ich": "komme",
-      "du": "kommst",
-      "er": "kommt",
-      "sie": "kommt",
-      "es": "kommt",
-      "wir": "kommen",
-      "ihr": "kommt",
-      "sie_plural": "kommen",
-      "Sie": "kommen"
-    }
-  },
-  {
-    "id": "machen",
-    "infinitive": "machen",
-    "english": "to do / make",
-    "present": {
-      "ich": "mache",
-      "du": "machst",
-      "er": "macht",
-      "sie": "macht",
-      "es": "macht",
-      "wir": "machen",
-      "ihr": "macht",
-      "sie_plural": "machen",
-      "Sie": "machen"
-    }
-  },
-  {
-    "id": "essen",
-    "infinitive": "essen",
-    "english": "to eat",
-    "present": {
-      "ich": "esse",
-      "du": "isst",
-      "er": "isst",
-      "sie": "isst",
-      "es": "isst",
-      "wir": "essen",
-      "ihr": "esst",
-      "sie_plural": "essen",
-      "Sie": "essen"
-    }
-  },
-  {
-    "id": "trinken",
-    "infinitive": "trinken",
-    "english": "to drink",
-    "present": {
-      "ich": "trinke",
-      "du": "trinkst",
-      "er": "trinkt",
-      "sie": "trinkt",
-      "es": "trinkt",
-      "wir": "trinken",
-      "ihr": "trinkt",
-      "sie_plural": "trinken",
-      "Sie": "trinken"
-    }
-  },
-  {
-    "id": "schlafen",
-    "infinitive": "schlafen",
-    "english": "to sleep",
-    "present": {
-      "ich": "schlafe",
-      "du": "schläfst",
-      "er": "schläft",
-      "sie": "schläft",
-      "es": "schläft",
-      "wir": "schlafen",
-      "ihr": "schlaft",
-      "sie_plural": "schlafen",
-      "Sie": "schlafen"
-    }
-  },
-  {
     "id": "arbeiten",
     "infinitive": "arbeiten",
     "english": "to work",
@@ -141,151 +13,8 @@
       "ihr": "arbeitet",
       "sie_plural": "arbeiten",
       "Sie": "arbeiten"
-    }
-  },
-  {
-    "id": "lernen",
-    "infinitive": "lernen",
-    "english": "to learn",
-    "present": {
-      "ich": "lerne",
-      "du": "lernst",
-      "er": "lernt",
-      "sie": "lernt",
-      "es": "lernt",
-      "wir": "lernen",
-      "ihr": "lernt",
-      "sie_plural": "lernen",
-      "Sie": "lernen"
-    }
-  },
-  {
-    "id": "lesen",
-    "infinitive": "lesen",
-    "english": "to read",
-    "present": {
-      "ich": "lese",
-      "du": "liest",
-      "er": "liest",
-      "sie": "liest",
-      "es": "liest",
-      "wir": "lesen",
-      "ihr": "lest",
-      "sie_plural": "lesen",
-      "Sie": "lesen"
-    }
-  },
-  {
-    "id": "schreiben",
-    "infinitive": "schreiben",
-    "english": "to write",
-    "present": {
-      "ich": "schreibe",
-      "du": "schreibst",
-      "er": "schreibt",
-      "sie": "schreibt",
-      "es": "schreibt",
-      "wir": "schreiben",
-      "ihr": "schreibt",
-      "sie_plural": "schreiben",
-      "Sie": "schreiben"
-    }
-  },
-  {
-    "id": "spielen",
-    "infinitive": "spielen",
-    "english": "to play",
-    "present": {
-      "ich": "spiele",
-      "du": "spielst",
-      "er": "spielt",
-      "sie": "spielt",
-      "es": "spielt",
-      "wir": "spielen",
-      "ihr": "spielt",
-      "sie_plural": "spielen",
-      "Sie": "spielen"
-    }
-  },
-  {
-    "id": "wohnen",
-    "infinitive": "wohnen",
-    "english": "to live",
-    "present": {
-      "ich": "wohne",
-      "du": "wohnst",
-      "er": "wohnt",
-      "sie": "wohnt",
-      "es": "wohnt",
-      "wir": "wohnen",
-      "ihr": "wohnt",
-      "sie_plural": "wohnen",
-      "Sie": "wohnen"
-    }
-  },
-  {
-    "id": "fahren",
-    "infinitive": "fahren",
-    "english": "to drive / go (by vehicle)",
-    "present": {
-      "ich": "fahre",
-      "du": "fährst",
-      "er": "fährt",
-      "sie": "fährt",
-      "es": "fährt",
-      "wir": "fahren",
-      "ihr": "fahrt",
-      "sie_plural": "fahren",
-      "Sie": "fahren"
-    }
-  },
-  {
-    "id": "kaufen",
-    "infinitive": "kaufen",
-    "english": "to buy",
-    "present": {
-      "ich": "kaufe",
-      "du": "kaufst",
-      "er": "kauft",
-      "sie": "kauft",
-      "es": "kauft",
-      "wir": "kaufen",
-      "ihr": "kauft",
-      "sie_plural": "kaufen",
-      "Sie": "kaufen"
-    }
-  },
-  {
-    "id": "kochen",
-    "infinitive": "kochen",
-    "english": "to cook",
-    "present": {
-      "ich": "koche",
-      "du": "kochst",
-      "er": "kocht",
-      "sie": "kocht",
-      "es": "kocht",
-      "wir": "kochen",
-      "ihr": "kocht",
-      "sie_plural": "kochen",
-      "Sie": "kochen"
-    }
-  },
-  {
-    "id": "treffen",
-    "infinitive": "treffen",
-    "english": "to meet",
-    "present": {
-      "ich": "treffe",
-      "du": "triffst",
-      "er": "trifft",
-      "sie": "trifft",
-      "es": "trifft",
-      "wir": "treffen",
-      "ihr": "trefft",
-      "sie_plural": "treffen",
-      "Sie": "treffen"
-    }
+    },
+    "irregular": false
   },
   {
     "id": "besuchen",
@@ -301,102 +30,92 @@
       "ihr": "besucht",
       "sie_plural": "besuchen",
       "Sie": "besuchen"
+    },
+    "irregular": false
+  },
+  {
+    "id": "duerfen",
+    "infinitive": "dürfen",
+    "english": "may / to be allowed to",
+    "present": {
+      "ich": "darf",
+      "du": "darfst",
+      "er": "darf",
+      "sie": "darf",
+      "es": "darf",
+      "wir": "dürfen",
+      "ihr": "dürft",
+      "sie_plural": "dürfen",
+      "Sie": "dürfen"
+    },
+    "irregular": true
+  },
+  {
+    "id": "essen",
+    "infinitive": "essen",
+    "english": "to eat",
+    "present": {
+      "ich": "esse",
+      "du": "isst",
+      "er": "isst",
+      "sie": "isst",
+      "es": "isst",
+      "wir": "essen",
+      "ihr": "esst",
+      "sie_plural": "essen",
+      "Sie": "essen"
+    },
+    "irregular": true
+  },
+  {
+    "id": "fahren",
+    "infinitive": "fahren",
+    "english": "to drive / go (by vehicle)",
+    "present": {
+      "ich": "fahre",
+      "du": "fährst",
+      "er": "fährt",
+      "sie": "fährt",
+      "es": "fährt",
+      "wir": "fahren",
+      "ihr": "fahrt",
+      "sie_plural": "fahren",
+      "Sie": "fahren"
+    },
+    "irregular": true
+  },
+  {
+    "id": "fallen",
+    "infinitive": "fallen",
+    "english": "to fall",
+    "irregular": true,
+    "present": {
+      "ich": "falle",
+      "du": "fällst",
+      "er": "fällt",
+      "sie": "fällt",
+      "es": "fällt",
+      "wir": "fallen",
+      "ihr": "fallt",
+      "sie_plural": "fallen",
+      "Sie": "fallen"
     }
   },
   {
-    "id": "heissen",
-    "infinitive": "heißen",
-    "english": "to be called",
+    "id": "fangen",
+    "infinitive": "fangen",
+    "english": "to catch",
+    "irregular": true,
     "present": {
-      "ich": "heiße",
-      "du": "heißt",
-      "er": "heißt",
-      "sie": "heißt",
-      "es": "heißt",
-      "wir": "heißen",
-      "ihr": "heißt",
-      "sie_plural": "heißen",
-      "Sie": "heißen"
-    }
-  },
-  {
-    "id": "sprechen",
-    "infinitive": "sprechen",
-    "english": "to speak",
-    "present": {
-      "ich": "spreche",
-      "du": "sprichst",
-      "er": "spricht",
-      "sie": "spricht",
-      "es": "spricht",
-      "wir": "sprechen",
-      "ihr": "sprecht",
-      "sie_plural": "sprechen",
-      "Sie": "sprechen"
-    }
-  },
-  {
-    "id": "hoeren",
-    "infinitive": "hören",
-    "english": "to hear / listen",
-    "present": {
-      "ich": "höre",
-      "du": "hörst",
-      "er": "hört",
-      "sie": "hört",
-      "es": "hört",
-      "wir": "hören",
-      "ihr": "hört",
-      "sie_plural": "hören",
-      "Sie": "hören"
-    }
-  },
-  {
-    "id": "sehen",
-    "infinitive": "sehen",
-    "english": "to see",
-    "present": {
-      "ich": "sehe",
-      "du": "siehst",
-      "er": "sieht",
-      "sie": "sieht",
-      "es": "sieht",
-      "wir": "sehen",
-      "ihr": "seht",
-      "sie_plural": "sehen",
-      "Sie": "sehen"
-    }
-  },
-  {
-    "id": "nehmen",
-    "infinitive": "nehmen",
-    "english": "to take",
-    "present": {
-      "ich": "nehme",
-      "du": "nimmst",
-      "er": "nimmt",
-      "sie": "nimmt",
-      "es": "nimmt",
-      "wir": "nehmen",
-      "ihr": "nehmt",
-      "sie_plural": "nehmen",
-      "Sie": "nehmen"
-    }
-  },
-  {
-    "id": "geben",
-    "infinitive": "geben",
-    "english": "to give",
-    "present": {
-      "ich": "gebe",
-      "du": "gibst",
-      "er": "gibt",
-      "sie": "gibt",
-      "es": "gibt",
-      "wir": "geben",
-      "ihr": "gebt",
-      "sie_plural": "geben",
-      "Sie": "geben"
+      "ich": "fange",
+      "du": "fängst",
+      "er": "fängt",
+      "sie": "fängt",
+      "es": "fängt",
+      "wir": "fangen",
+      "ihr": "fangt",
+      "sie_plural": "fangen",
+      "Sie": "fangen"
     }
   },
   {
@@ -413,7 +132,161 @@
       "ihr": "findet",
       "sie_plural": "finden",
       "Sie": "finden"
+    },
+    "irregular": false
+  },
+  {
+    "id": "geben",
+    "infinitive": "geben",
+    "english": "to give",
+    "present": {
+      "ich": "gebe",
+      "du": "gibst",
+      "er": "gibt",
+      "sie": "gibt",
+      "es": "gibt",
+      "wir": "geben",
+      "ihr": "gebt",
+      "sie_plural": "geben",
+      "Sie": "geben"
+    },
+    "irregular": true
+  },
+  {
+    "id": "gehen",
+    "infinitive": "gehen",
+    "english": "to go",
+    "present": {
+      "ich": "gehe",
+      "du": "gehst",
+      "er": "geht",
+      "sie": "geht",
+      "es": "geht",
+      "wir": "gehen",
+      "ihr": "geht",
+      "sie_plural": "gehen",
+      "Sie": "gehen"
+    },
+    "irregular": false
+  },
+  {
+    "id": "haben",
+    "infinitive": "haben",
+    "english": "to have",
+    "present": {
+      "ich": "habe",
+      "du": "hast",
+      "er": "hat",
+      "sie": "hat",
+      "es": "hat",
+      "wir": "haben",
+      "ihr": "habt",
+      "sie_plural": "haben",
+      "Sie": "haben"
+    },
+    "irregular": true
+  },
+  {
+    "id": "heissen",
+    "infinitive": "heißen",
+    "english": "to be called",
+    "present": {
+      "ich": "heiße",
+      "du": "heißt",
+      "er": "heißt",
+      "sie": "heißt",
+      "es": "heißt",
+      "wir": "heißen",
+      "ihr": "heißt",
+      "sie_plural": "heißen",
+      "Sie": "heißen"
+    },
+    "irregular": true
+  },
+  {
+    "id": "helfen",
+    "infinitive": "helfen",
+    "english": "to help",
+    "irregular": true,
+    "present": {
+      "ich": "helfe",
+      "du": "hilfst",
+      "er": "hilft",
+      "sie": "hilft",
+      "es": "hilft",
+      "wir": "helfen",
+      "ihr": "helft",
+      "sie_plural": "helfen",
+      "Sie": "helfen"
     }
+  },
+  {
+    "id": "hoeren",
+    "infinitive": "hören",
+    "english": "to hear / listen",
+    "present": {
+      "ich": "höre",
+      "du": "hörst",
+      "er": "hört",
+      "sie": "hört",
+      "es": "hört",
+      "wir": "hören",
+      "ihr": "hört",
+      "sie_plural": "hören",
+      "Sie": "hören"
+    },
+    "irregular": false
+  },
+  {
+    "id": "kaufen",
+    "infinitive": "kaufen",
+    "english": "to buy",
+    "present": {
+      "ich": "kaufe",
+      "du": "kaufst",
+      "er": "kauft",
+      "sie": "kauft",
+      "es": "kauft",
+      "wir": "kaufen",
+      "ihr": "kauft",
+      "sie_plural": "kaufen",
+      "Sie": "kaufen"
+    },
+    "irregular": false
+  },
+  {
+    "id": "kochen",
+    "infinitive": "kochen",
+    "english": "to cook",
+    "present": {
+      "ich": "koche",
+      "du": "kochst",
+      "er": "kocht",
+      "sie": "kocht",
+      "es": "kocht",
+      "wir": "kochen",
+      "ihr": "kocht",
+      "sie_plural": "kochen",
+      "Sie": "kochen"
+    },
+    "irregular": false
+  },
+  {
+    "id": "kommen",
+    "infinitive": "kommen",
+    "english": "to come",
+    "present": {
+      "ich": "komme",
+      "du": "kommst",
+      "er": "kommt",
+      "sie": "kommt",
+      "es": "kommt",
+      "wir": "kommen",
+      "ihr": "kommt",
+      "sie_plural": "kommen",
+      "Sie": "kommen"
+    },
+    "irregular": false
   },
   {
     "id": "koennen",
@@ -429,55 +302,76 @@
       "ihr": "könnt",
       "sie_plural": "können",
       "Sie": "können"
+    },
+    "irregular": true
+  },
+  {
+    "id": "laufen",
+    "infinitive": "laufen",
+    "english": "to run",
+    "irregular": true,
+    "present": {
+      "ich": "laufe",
+      "du": "läufst",
+      "er": "läuft",
+      "sie": "läuft",
+      "es": "läuft",
+      "wir": "laufen",
+      "ihr": "lauft",
+      "sie_plural": "laufen",
+      "Sie": "laufen"
     }
   },
   {
-    "id": "muessen",
-    "infinitive": "müssen",
-    "english": "must / to have to",
+    "id": "lernen",
+    "infinitive": "lernen",
+    "english": "to learn",
     "present": {
-      "ich": "muss",
-      "du": "musst",
-      "er": "muss",
-      "sie": "muss",
-      "es": "muss",
-      "wir": "müssen",
-      "ihr": "müsst",
-      "sie_plural": "müssen",
-      "Sie": "müssen"
-    }
+      "ich": "lerne",
+      "du": "lernst",
+      "er": "lernt",
+      "sie": "lernt",
+      "es": "lernt",
+      "wir": "lernen",
+      "ihr": "lernt",
+      "sie_plural": "lernen",
+      "Sie": "lernen"
+    },
+    "irregular": false
   },
   {
-    "id": "wollen",
-    "infinitive": "wollen",
-    "english": "to want",
+    "id": "lesen",
+    "infinitive": "lesen",
+    "english": "to read",
     "present": {
-      "ich": "will",
-      "du": "willst",
-      "er": "will",
-      "sie": "will",
-      "es": "will",
-      "wir": "wollen",
-      "ihr": "wollt",
-      "sie_plural": "wollen",
-      "Sie": "wollen"
-    }
+      "ich": "lese",
+      "du": "liest",
+      "er": "liest",
+      "sie": "liest",
+      "es": "liest",
+      "wir": "lesen",
+      "ihr": "lest",
+      "sie_plural": "lesen",
+      "Sie": "lesen"
+    },
+    "irregular": true
   },
   {
-    "id": "duerfen",
-    "infinitive": "dürfen",
-    "english": "may / to be allowed to",
+    "id": "machen",
+    "infinitive": "machen",
+    "english": "to do / make",
     "present": {
-      "ich": "darf",
-      "du": "darfst",
-      "er": "darf",
-      "sie": "darf",
-      "es": "darf",
-      "wir": "dürfen",
-      "ihr": "dürft",
-      "sie_plural": "dürfen",
-      "Sie": "dürfen"
-    }
+      "ich": "mache",
+      "du": "machst",
+      "er": "macht",
+      "sie": "macht",
+      "es": "macht",
+      "wir": "machen",
+      "ihr": "macht",
+      "sie_plural": "machen",
+      "Sie": "machen"
+    },
+    "irregular": false
   },
   {
     "id": "moegen",
@@ -493,6 +387,211 @@
       "ihr": "mögt",
       "sie_plural": "mögen",
       "Sie": "mögen"
-    }
+    },
+    "irregular": true
+  },
+  {
+    "id": "muessen",
+    "infinitive": "müssen",
+    "english": "must / to have to",
+    "present": {
+      "ich": "muss",
+      "du": "musst",
+      "er": "muss",
+      "sie": "muss",
+      "es": "muss",
+      "wir": "müssen",
+      "ihr": "müsst",
+      "sie_plural": "müssen",
+      "Sie": "müssen"
+    },
+    "irregular": true
+  },
+  {
+    "id": "nehmen",
+    "infinitive": "nehmen",
+    "english": "to take",
+    "present": {
+      "ich": "nehme",
+      "du": "nimmst",
+      "er": "nimmt",
+      "sie": "nimmt",
+      "es": "nimmt",
+      "wir": "nehmen",
+      "ihr": "nehmt",
+      "sie_plural": "nehmen",
+      "Sie": "nehmen"
+    },
+    "irregular": true
+  },
+  {
+    "id": "schlafen",
+    "infinitive": "schlafen",
+    "english": "to sleep",
+    "present": {
+      "ich": "schlafe",
+      "du": "schläfst",
+      "er": "schläft",
+      "sie": "schläft",
+      "es": "schläft",
+      "wir": "schlafen",
+      "ihr": "schlaft",
+      "sie_plural": "schlafen",
+      "Sie": "schlafen"
+    },
+    "irregular": true
+  },
+  {
+    "id": "schreiben",
+    "infinitive": "schreiben",
+    "english": "to write",
+    "present": {
+      "ich": "schreibe",
+      "du": "schreibst",
+      "er": "schreibt",
+      "sie": "schreibt",
+      "es": "schreibt",
+      "wir": "schreiben",
+      "ihr": "schreibt",
+      "sie_plural": "schreiben",
+      "Sie": "schreiben"
+    },
+    "irregular": false
+  },
+  {
+    "id": "sehen",
+    "infinitive": "sehen",
+    "english": "to see",
+    "present": {
+      "ich": "sehe",
+      "du": "siehst",
+      "er": "sieht",
+      "sie": "sieht",
+      "es": "sieht",
+      "wir": "sehen",
+      "ihr": "seht",
+      "sie_plural": "sehen",
+      "Sie": "sehen"
+    },
+    "irregular": true
+  },
+  {
+    "id": "sein",
+    "infinitive": "sein",
+    "english": "to be",
+    "present": {
+      "ich": "bin",
+      "du": "bist",
+      "er": "ist",
+      "sie": "ist",
+      "es": "ist",
+      "wir": "sind",
+      "ihr": "seid",
+      "sie_plural": "sind",
+      "Sie": "sind"
+    },
+    "irregular": true
+  },
+  {
+    "id": "spielen",
+    "infinitive": "spielen",
+    "english": "to play",
+    "present": {
+      "ich": "spiele",
+      "du": "spielst",
+      "er": "spielt",
+      "sie": "spielt",
+      "es": "spielt",
+      "wir": "spielen",
+      "ihr": "spielt",
+      "sie_plural": "spielen",
+      "Sie": "spielen"
+    },
+    "irregular": false
+  },
+  {
+    "id": "sprechen",
+    "infinitive": "sprechen",
+    "english": "to speak",
+    "present": {
+      "ich": "spreche",
+      "du": "sprichst",
+      "er": "spricht",
+      "sie": "spricht",
+      "es": "spricht",
+      "wir": "sprechen",
+      "ihr": "sprecht",
+      "sie_plural": "sprechen",
+      "Sie": "sprechen"
+    },
+    "irregular": true
+  },
+  {
+    "id": "treffen",
+    "infinitive": "treffen",
+    "english": "to meet",
+    "present": {
+      "ich": "treffe",
+      "du": "triffst",
+      "er": "trifft",
+      "sie": "trifft",
+      "es": "trifft",
+      "wir": "treffen",
+      "ihr": "trefft",
+      "sie_plural": "treffen",
+      "Sie": "treffen"
+    },
+    "irregular": true
+  },
+  {
+    "id": "trinken",
+    "infinitive": "trinken",
+    "english": "to drink",
+    "present": {
+      "ich": "trinke",
+      "du": "trinkst",
+      "er": "trinkt",
+      "sie": "trinkt",
+      "es": "trinkt",
+      "wir": "trinken",
+      "ihr": "trinkt",
+      "sie_plural": "trinken",
+      "Sie": "trinken"
+    },
+    "irregular": false
+  },
+  {
+    "id": "wohnen",
+    "infinitive": "wohnen",
+    "english": "to live",
+    "present": {
+      "ich": "wohne",
+      "du": "wohnst",
+      "er": "wohnt",
+      "sie": "wohnt",
+      "es": "wohnt",
+      "wir": "wohnen",
+      "ihr": "wohnt",
+      "sie_plural": "wohnen",
+      "Sie": "wohnen"
+    },
+    "irregular": false
+  },
+  {
+    "id": "wollen",
+    "infinitive": "wollen",
+    "english": "to want",
+    "present": {
+      "ich": "will",
+      "du": "willst",
+      "er": "will",
+      "sie": "will",
+      "es": "will",
+      "wir": "wollen",
+      "ihr": "wollt",
+      "sie_plural": "wollen",
+      "Sie": "wollen"
+    },
+    "irregular": true
   }
 ]

@@ -1,0 +1,92 @@
+[
+  {
+    "id": "white",
+    "english": "white",
+    "german": "weiß",
+    "hex": "#FFFFFF"
+  },
+  {
+    "id": "black",
+    "english": "black",
+    "german": "schwarz",
+    "hex": "#000000"
+  },
+  {
+    "id": "grey",
+    "english": "grey",
+    "german": "grau",
+    "hex": "#808080"
+  },
+  {
+    "id": "blue",
+    "english": "blue",
+    "german": "blau",
+    "hex": "#2563EB"
+  },
+  {
+    "id": "green",
+    "english": "green",
+    "german": "grün",
+    "hex": "#16A34A"
+  },
+  {
+    "id": "yellow",
+    "english": "yellow",
+    "german": "gelb",
+    "hex": "#EAB308"
+  },
+  {
+    "id": "pink",
+    "english": "pink",
+    "german": "rosa",
+    "hex": "#EC4899"
+  },
+  {
+    "id": "purple",
+    "english": "purple",
+    "german": "lila",
+    "hex": "#9333EA"
+  },
+  {
+    "id": "red",
+    "english": "red",
+    "german": "rot",
+    "hex": "#DC2626"
+  },
+  {
+    "id": "orange",
+    "english": "orange",
+    "german": "orange",
+    "hex": "#F97316"
+  },
+  {
+    "id": "brown",
+    "english": "brown",
+    "german": "braun",
+    "hex": "#92400E"
+  },
+  {
+    "id": "beige",
+    "english": "beige",
+    "german": "beige",
+    "hex": "#D4B896"
+  },
+  {
+    "id": "turquoise",
+    "english": "turquoise",
+    "german": "türkis",
+    "hex": "#14B8A6"
+  },
+  {
+    "id": "gold",
+    "english": "gold",
+    "german": "gold",
+    "hex": "#CA8A04"
+  },
+  {
+    "id": "silver",
+    "english": "silver",
+    "german": "silber",
+    "hex": "#94A3B8"
+  }
+]
