@@ -1,6 +1,6 @@
 import { useCallback, useMemo, useState } from 'react'
 import type { ColorEntry } from '../../types/color'
-import { shuffleColors } from '../../utils/colors'
+import { colorPracticeBackground, shuffleColors } from '../../utils/colors'
 
 type ColorPracticeProps = {
   colors: ColorEntry[]
@@ -141,19 +141,20 @@ export function ColorPractice({ colors, onBack }: ColorPracticeProps) {
               const selected = selectedEnglishId === color.id
               const wrong =
                 wrongPair?.englishId === color.id && !matched
-
               return (
                 <li key={color.id}>
                   <button
                     type="button"
                     className={[
                       'color-match__item',
+                      'color-match__item--filled',
                       matched && 'color-match__item--matched',
                       selected && 'color-match__item--selected',
                       wrong && 'color-match__item--wrong',
                     ]
                       .filter(Boolean)
                       .join(' ')}
+                    style={{ backgroundColor: colorPracticeBackground(color.hex) }}
                     disabled={matched}
                     onClick={() => handleEnglishClick(color.id)}
                   >

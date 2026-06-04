@@ -508,30 +508,75 @@
   cursor: pointer;
   text-align: center;
   line-height: 1.25;
-  transition: border-color 0.15s ease, background 0.15s ease, transform 0.1s ease;
+  transition:
+    border-color 0.15s ease,
+    background-color 0.15s ease,
+    box-shadow 0.15s ease,
+    transform 0.15s ease;
 }
 
-.color-match__item:hover:not(:disabled) {
+.color-match__item--filled {
+  border-color: var(--border);
+  color: var(--text);
+}
+
+.color-match__item--filled:hover:not(:disabled):not(.color-match__item--matched) {
+  transform: scale(1.03);
+  border-color: #db2777;
+  box-shadow: 0 4px 16px rgba(219, 39, 119, 0.4);
+}
+
+.color-match__item--filled.color-match__item--selected {
+  transform: scale(1.04);
+  border-width: 3px;
+  border-color: #db2777;
+  padding: calc(0.4rem - 1px) calc(0.35rem - 1px);
+  box-shadow:
+    0 0 0 4px rgba(219, 39, 119, 0.5),
+    0 6px 20px rgba(219, 39, 119, 0.35);
+}
+
+.color-match__item--filled.color-match__item--matched {
+  transform: none;
+  border-color: #27ae60;
+  box-shadow: 0 0 0 2px rgba(39, 174, 96, 0.45);
+  opacity: 0.88;
+}
+
+.color-match__item:not(.color-match__item--filled):hover:not(:disabled) {
   border-color: #db2777;
   background: #fdf2f8;
 }
 
-.color-match__item--selected {
+.color-match__item--selected:not(.color-match__item--filled) {
   border-color: #db2777;
   background: #fce7f3;
   box-shadow: 0 0 0 2px rgba(219, 39, 119, 0.2);
 }
 
-.color-match__item--matched {
+.color-match__item--matched:not(.color-match__item--filled) {
   border-color: #27ae60;
   background: rgba(39, 174, 96, 0.08);
   cursor: default;
   opacity: 0.85;
 }
 
-.color-match__item--wrong {
+.color-match__item--filled.color-match__item--matched {
+  cursor: default;
+}
+
+.color-match__item--wrong:not(.color-match__item--filled) {
   border-color: #e74c3c;
   background: rgba(231, 76, 60, 0.1);
+  animation: color-match-shake 0.35s ease;
+}
+
+.color-match__item--filled.color-match__item--wrong {
+  transform: scale(1.02);
+  border-width: 3px;
+  border-color: #e74c3c;
+  padding: calc(0.4rem - 1px) calc(0.35rem - 1px);
+  box-shadow: 0 0 0 4px rgba(231, 76, 60, 0.55);
   animation: color-match-shake 0.35s ease;
 }
 

@@ -14,6 +14,11 @@ export function shuffleColors(colors: ColorEntry[]): ColorEntry[] {
 }
 
 /** Light colors need a visible border in the UI. */
+/** Subtle tint for practice buttons (hex blended into card background). */
+export function colorPracticeBackground(hex: string, mixPercent = 30): string {
+  return `color-mix(in srgb, ${hex} ${mixPercent}%, var(--card-bg))`
+}
+
 export function isLightSwatch(hex: string): boolean {
   const normalized = hex.replace('#', '')
   if (normalized.length !== 6) return false
